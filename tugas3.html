@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tugas 3 &#8212; Data Mining</title>
+    <title>Konsep/Algoritma K-NN (Tugas 3) &#8212; Data Mining</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -130,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Tugas 3
+   Konsep/Algoritma K-NN (Tugas 3)
   </a>
  </li>
 </ul>
@@ -317,23 +317,70 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Konsep/Algoritma K-NN (Tugas 3)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-a-k-nearest-neighbors-k-nn-model-with-scikit-learn">
+   Building a k-Nearest-Neighbors (k-NN) Model with Scikit-learn
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Tugas 3</h1>
+                <h1>Konsep/Algoritma K-NN (Tugas 3)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Konsep/Algoritma K-NN (Tugas 3)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-a-k-nearest-neighbors-k-nn-model-with-scikit-learn">
+   Building a k-Nearest-Neighbors (k-NN) Model with Scikit-learn
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -341,8 +388,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-3">
-<h1>Tugas 3<a class="headerlink" href="#tugas-3" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="konsep-algoritma-k-nn-tugas-3">
+<h1>Konsep/Algoritma K-NN (Tugas 3)<a class="headerlink" href="#konsep-algoritma-k-nn-tugas-3" title="Permalink to this headline">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="building-a-k-nearest-neighbors-k-nn-model-with-scikit-learn">
+<h1>Building a k-Nearest-Neighbors (k-NN) Model with Scikit-learn<a class="headerlink" href="#building-a-k-nearest-neighbors-k-nn-model-with-scikit-learn" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -356,7 +406,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-a7d0defa-1c5b-4f1f-b3d2-1251e128d421">
+  <div id="df-381721b1-5e08-4d27-abd1-8eacad49fbaf">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -427,7 +477,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-a7d0defa-1c5b-4f1f-b3d2-1251e128d421')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-381721b1-5e08-4d27-abd1-8eacad49fbaf')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -478,12 +528,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-a7d0defa-1c5b-4f1f-b3d2-1251e128d421 button.colab-df-convert');
+          document.querySelector('#df-381721b1-5e08-4d27-abd1-8eacad49fbaf button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-a7d0defa-1c5b-4f1f-b3d2-1251e128d421');
+          const element = document.querySelector('#df-381721b1-5e08-4d27-abd1-8eacad49fbaf');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -528,7 +578,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d4783ff6-5f39-4480-88a1-05cab7a26cce">
+  <div id="df-1678f256-996a-4b34-b918-72c5c3b19ae7">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -593,7 +643,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d4783ff6-5f39-4480-88a1-05cab7a26cce')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1678f256-996a-4b34-b918-72c5c3b19ae7')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -644,12 +694,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d4783ff6-5f39-4480-88a1-05cab7a26cce button.colab-df-convert');
+          document.querySelector('#df-1678f256-996a-4b34-b918-72c5c3b19ae7 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d4783ff6-5f39-4480-88a1-05cab7a26cce');
+          const element = document.querySelector('#df-1678f256-996a-4b34-b918-72c5c3b19ae7');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -712,14 +762,18 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show first 5 model predictions on the test data</span>
-<span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#show first 29 model predictions on the test data</span>
+<span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="mi">29</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Virginica&#39;, &#39;Setosa&#39;, &#39;Versicolor&#39;, &#39;Setosa&#39;, &#39;Setosa&#39;],
-      dtype=object)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Virginica&#39;, &#39;Setosa&#39;, &#39;Versicolor&#39;, &#39;Setosa&#39;, &#39;Setosa&#39;, &#39;Setosa&#39;,
+       &#39;Virginica&#39;, &#39;Virginica&#39;, &#39;Virginica&#39;, &#39;Versicolor&#39;, &#39;Setosa&#39;,
+       &#39;Versicolor&#39;, &#39;Virginica&#39;, &#39;Versicolor&#39;, &#39;Virginica&#39;, &#39;Setosa&#39;,
+       &#39;Virginica&#39;, &#39;Versicolor&#39;, &#39;Versicolor&#39;, &#39;Virginica&#39;, &#39;Versicolor&#39;,
+       &#39;Versicolor&#39;, &#39;Setosa&#39;, &#39;Setosa&#39;, &#39;Virginica&#39;, &#39;Versicolor&#39;,
+       &#39;Setosa&#39;, &#39;Setosa&#39;, &#39;Versicolor&#39;], dtype=object)
 </pre></div>
 </div>
 </div>
@@ -764,7 +818,7 @@ cv_scores mean:0.9666666666666668
 <span class="c1">#create new a knn model</span>
 <span class="n">knn2</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
 <span class="c1">#create a dictionary of all values we want to test for n_neighbors</span>
-<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">25</span><span class="p">)}</span>
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_neighbors&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">25</span><span class="p">)}</span>
 <span class="c1">#use gridsearch to test all values for n_neighbors</span>
 <span class="n">knn_gscv</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">knn2</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="c1">#fit model to data</span>
@@ -774,8 +828,8 @@ cv_scores mean:0.9666666666666668
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>GridSearchCV(cv=5, estimator=KNeighborsClassifier(),
-             param_grid={&#39;n_neighbors&#39;: array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
-       18, 19, 20, 21, 22, 23, 24])})
+             param_grid={&#39;n_neighbors&#39;: array([ 3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+       20, 21, 22, 23, 24])})
 </pre></div>
 </div>
 </div>
