@@ -398,7 +398,19 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pandas as pd
+#read in the data using pandas
+df = pd.read_csv(‘data/diabetes_data.csv’)
+#check data has been read in properly
+df.head()
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  File &quot;&lt;ipython-input-6-1cfd3253ca78&gt;&quot;, line 3
+    df = pd.read_csv(‘data/diabetes_data.csv’)
+                         ^
+SyntaxError: invalid character in identifier
 </pre></div>
 </div>
 </div>
