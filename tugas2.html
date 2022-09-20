@@ -352,37 +352,30 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Diskritisasi (Tugas 2)
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-yang-bertipe-numerik-data-klasifikasi">
    Data yang bertipe numerik (Data Klasifikasi)
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#diskritisasi-dengan-equal-width-dan-equal-frequency-intervals">
    1. Diskritisasi dengan Equal-Width dan Equal-Frequency Intervals
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#persiapan">
-     Persiapan
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#persiapan">
+   Persiapan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fungsi-menghitung-info-entropy-berdasarkan-nilai-pembagi-atau-split-value-yang-diberikan">
+   ##Fungsi menghitung Info entropy berdasarkan nilai pembagi atau split value yang diberikan
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implementasi">
+     Implementasi
     </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fungsi-menghitung-info-entropy-berdasarkan-nilai-pembagi-atau-split-value-yang-diberikan">
-     ##Fungsi menghitung Info entropy berdasarkan nilai pembagi atau split value yang diberikan
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#implementasi">
-       Implementasi
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
@@ -405,37 +398,30 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Diskritisasi (Tugas 2)
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-yang-bertipe-numerik-data-klasifikasi">
    Data yang bertipe numerik (Data Klasifikasi)
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#diskritisasi-dengan-equal-width-dan-equal-frequency-intervals">
    1. Diskritisasi dengan Equal-Width dan Equal-Frequency Intervals
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#persiapan">
-     Persiapan
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#persiapan">
+   Persiapan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fungsi-menghitung-info-entropy-berdasarkan-nilai-pembagi-atau-split-value-yang-diberikan">
+   ##Fungsi menghitung Info entropy berdasarkan nilai pembagi atau split value yang diberikan
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implementasi">
+     Implementasi
     </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fungsi-menghitung-info-entropy-berdasarkan-nilai-pembagi-atau-split-value-yang-diberikan">
-     ##Fungsi menghitung Info entropy berdasarkan nilai pembagi atau split value yang diberikan
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#implementasi">
-       Implementasi
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
@@ -458,9 +444,8 @@ title="Print to PDF"
 </ol>
 <p>yang diupload adalah link github ( web
 statis dari jupyter book)</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="data-yang-bertipe-numerik-data-klasifikasi">
-<h1>Data yang bertipe numerik (Data Klasifikasi)<a class="headerlink" href="#data-yang-bertipe-numerik-data-klasifikasi" title="Permalink to this headline">#</a></h1>
+<section id="data-yang-bertipe-numerik-data-klasifikasi">
+<h2>Data yang bertipe numerik (Data Klasifikasi)<a class="headerlink" href="#data-yang-bertipe-numerik-data-klasifikasi" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -480,7 +465,7 @@ statis dari jupyter book)</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8f9b219a-52b9-4e0f-abbc-45b6cce3e7e1">
+  <div id="df-724f933c-12d1-4d7a-bab9-f85051d7b4a5">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -600,7 +585,7 @@ statis dari jupyter book)</p>
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8f9b219a-52b9-4e0f-abbc-45b6cce3e7e1')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-724f933c-12d1-4d7a-bab9-f85051d7b4a5')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -651,12 +636,12 @@ statis dari jupyter book)</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8f9b219a-52b9-4e0f-abbc-45b6cce3e7e1 button.colab-df-convert');
+          document.querySelector('#df-724f933c-12d1-4d7a-bab9-f85051d7b4a5 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8f9b219a-52b9-4e0f-abbc-45b6cce3e7e1');
+          const element = document.querySelector('#df-724f933c-12d1-4d7a-bab9-f85051d7b4a5');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -693,14 +678,14 @@ statis dari jupyter book)</p>
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="diskritisasi-dengan-equal-width-dan-equal-frequency-intervals">
-<h1>1. Diskritisasi dengan Equal-Width dan Equal-Frequency Intervals<a class="headerlink" href="#diskritisasi-dengan-equal-width-dan-equal-frequency-intervals" title="Permalink to this headline">#</a></h1>
+<section id="diskritisasi-dengan-equal-width-dan-equal-frequency-intervals">
+<h2>1. Diskritisasi dengan Equal-Width dan Equal-Frequency Intervals<a class="headerlink" href="#diskritisasi-dengan-equal-width-dan-equal-frequency-intervals" title="Permalink to this headline">#</a></h2>
 <p><em>Discretization</em> atau <em>binning</em> digunakan untuk mengubah atribut numerik (data berbentuk angka yang dapat diukur) menjadi atribut kategorikal (data yang merepresentasikan suatu karakteristik tertentu, dan biasanya tidak dapat diukur).</p>
 <p>Perubahan tersebut dilakukan dengan mengkategorikan atribut numerik menjadi beberapa tingkatan atribut kategorikal. Mengubah data numerik menjadi kategorikal memungkinkan data tersebut untuk dianalisis dengan menggunakan analisis kategorikal. Sehingga, informasi baru bisa didapatkan dari data tersebut.</p>
 <p>Dalam implementasinya, <em>Discretization</em> memiliki dua pendekatan, <em><strong>equal-width intervals</strong></em> dan <em><strong>equal-frequency intervals</strong></em>.</p>
-<p>##Equal-width intervals</p>
+<p>###Equal-width intervals</p>
 <p><em>Equal-width intervals</em> adalah <em>discretization</em> yang membagi data numerik menjadi beberapa kelompok dengan lebar kelompok yang kurang lebih sama besar. Untuk melakukan perhitungan <em>equal-width intervals</em> menggunakan sebuah method pada library pandas yaitu method <strong>cut</strong>.</p>
-<p>###Sepal Width
+<p>####Sepal Width
 Equal-Width Intervals lebar kelopak bunga Iris</p>
 <p>Dikelompokkan menjadi 3 kategori yaitu</p>
 <ul class="simple">
@@ -746,7 +731,7 @@ Equal-Width Intervals lebar kelopak bunga Iris</p>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-24bad5f7-7a57-4348-a9b8-4e0b249d815d">
+  <div id="df-addcaac3-72a3-4ab0-8f72-5148c2529fdc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -842,7 +827,7 @@ Equal-Width Intervals lebar kelopak bunga Iris</p>
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-24bad5f7-7a57-4348-a9b8-4e0b249d815d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-addcaac3-72a3-4ab0-8f72-5148c2529fdc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -893,12 +878,12 @@ Equal-Width Intervals lebar kelopak bunga Iris</p>
 
       <script>
         const buttonEl =
-          document.querySelector('#df-24bad5f7-7a57-4348-a9b8-4e0b249d815d button.colab-df-convert');
+          document.querySelector('#df-addcaac3-72a3-4ab0-8f72-5148c2529fdc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-24bad5f7-7a57-4348-a9b8-4e0b249d815d');
+          const element = document.querySelector('#df-addcaac3-72a3-4ab0-8f72-5148c2529fdc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -951,7 +936,7 @@ Name: sepal.width, dtype: int64
 </div>
 </div>
 </div>
-<p>###Petal Width</p>
+<p>####Petal Width</p>
 <p><em>Equal-Width Intervals</em> lebar mahkota bunga Iris</p>
 <p>Dikelompokkan menjadi 3 kategori yaitu</p>
 <ul class="simple">
@@ -996,7 +981,7 @@ Name: sepal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8ac7bb0a-ed8f-49b7-a36d-4ccb3dbde78b">
+  <div id="df-ba6581a4-4604-4364-87c1-bf6835c62409">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1092,7 +1077,7 @@ Name: sepal.width, dtype: int64
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8ac7bb0a-ed8f-49b7-a36d-4ccb3dbde78b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ba6581a4-4604-4364-87c1-bf6835c62409')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1143,12 +1128,12 @@ Name: sepal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8ac7bb0a-ed8f-49b7-a36d-4ccb3dbde78b button.colab-df-convert');
+          document.querySelector('#df-ba6581a4-4604-4364-87c1-bf6835c62409 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8ac7bb0a-ed8f-49b7-a36d-4ccb3dbde78b');
+          const element = document.querySelector('#df-ba6581a4-4604-4364-87c1-bf6835c62409');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1201,7 +1186,7 @@ Name: petal.width, dtype: int64
 </div>
 </div>
 </div>
-<p>###Sepal Length</p>
+<p>####Sepal Length</p>
 <p><em>Equal-Width Intervals</em> panjang kelopak bunga Iris</p>
 <p>Dikelompokkan menjadi 3 kategori yaitu</p>
 <ul class="simple">
@@ -1247,7 +1232,7 @@ Name: petal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bdca0111-83e4-411c-ab74-43360ddc48aa">
+  <div id="df-5b751ff4-c6e7-45f6-8fb1-121a93204126">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1343,7 +1328,7 @@ Name: petal.width, dtype: int64
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bdca0111-83e4-411c-ab74-43360ddc48aa')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5b751ff4-c6e7-45f6-8fb1-121a93204126')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1394,12 +1379,12 @@ Name: petal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bdca0111-83e4-411c-ab74-43360ddc48aa button.colab-df-convert');
+          document.querySelector('#df-5b751ff4-c6e7-45f6-8fb1-121a93204126 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bdca0111-83e4-411c-ab74-43360ddc48aa');
+          const element = document.querySelector('#df-5b751ff4-c6e7-45f6-8fb1-121a93204126');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1452,7 +1437,7 @@ Name: sepal.length, dtype: int64
 </div>
 </div>
 </div>
-<p>###Petal Length</p>
+<p>####Petal Length</p>
 <p><em>Equal-Width Intervals</em> panjang mahkota bunga Iris</p>
 <p>Dikelompokkan menjadi 3 kategori yaitu</p>
 <ul class="simple">
@@ -1497,7 +1482,7 @@ Name: sepal.length, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-5f745491-697c-44bc-86e4-26bd17316a43">
+  <div id="df-131ee448-69b4-4f34-959a-4966e3b93d18">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1593,7 +1578,7 @@ Name: sepal.length, dtype: int64
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-5f745491-697c-44bc-86e4-26bd17316a43')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-131ee448-69b4-4f34-959a-4966e3b93d18')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1644,12 +1629,12 @@ Name: sepal.length, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-5f745491-697c-44bc-86e4-26bd17316a43 button.colab-df-convert');
+          document.querySelector('#df-131ee448-69b4-4f34-959a-4966e3b93d18 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-5f745491-697c-44bc-86e4-26bd17316a43');
+          const element = document.querySelector('#df-131ee448-69b4-4f34-959a-4966e3b93d18');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1750,7 +1735,7 @@ Name: petal.length, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-869692b4-57d9-45be-aeac-c2c832df8587">
+  <div id="df-58fdb11f-003d-4919-85ce-164903f0bde5">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1846,7 +1831,7 @@ Name: petal.length, dtype: int64
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-869692b4-57d9-45be-aeac-c2c832df8587')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-58fdb11f-003d-4919-85ce-164903f0bde5')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1897,12 +1882,12 @@ Name: petal.length, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-869692b4-57d9-45be-aeac-c2c832df8587 button.colab-df-convert');
+          document.querySelector('#df-58fdb11f-003d-4919-85ce-164903f0bde5 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-869692b4-57d9-45be-aeac-c2c832df8587');
+          const element = document.querySelector('#df-58fdb11f-003d-4919-85ce-164903f0bde5');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2001,7 +1986,7 @@ Name: sepal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-264f7ed3-06d0-497d-b703-c6f1ab7bc789">
+  <div id="df-2cd5267a-d5b4-418f-be70-66a36e4fc385">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2097,7 +2082,7 @@ Name: sepal.width, dtype: int64
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-264f7ed3-06d0-497d-b703-c6f1ab7bc789')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2cd5267a-d5b4-418f-be70-66a36e4fc385')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2148,12 +2133,12 @@ Name: sepal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-264f7ed3-06d0-497d-b703-c6f1ab7bc789 button.colab-df-convert');
+          document.querySelector('#df-2cd5267a-d5b4-418f-be70-66a36e4fc385 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-264f7ed3-06d0-497d-b703-c6f1ab7bc789');
+          const element = document.querySelector('#df-2cd5267a-d5b4-418f-be70-66a36e4fc385');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2252,7 +2237,7 @@ Name: petal.width, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-8f786872-662e-42ff-b53f-f49a4052c8a1">
+  <div id="df-dfad280a-168c-40c4-a6cd-dcda213ea7b5">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2348,7 +2333,7 @@ Name: petal.width, dtype: int64
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8f786872-662e-42ff-b53f-f49a4052c8a1')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-dfad280a-168c-40c4-a6cd-dcda213ea7b5')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2399,12 +2384,12 @@ Name: petal.width, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-8f786872-662e-42ff-b53f-f49a4052c8a1 button.colab-df-convert');
+          document.querySelector('#df-dfad280a-168c-40c4-a6cd-dcda213ea7b5 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8f786872-662e-42ff-b53f-f49a4052c8a1');
+          const element = document.querySelector('#df-dfad280a-168c-40c4-a6cd-dcda213ea7b5');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2503,7 +2488,7 @@ Name: sepal.length, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d5bb99ad-402a-4d10-a3a1-99082f93e494">
+  <div id="df-b045a714-9575-489f-847d-effadd2944dd">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2599,7 +2584,7 @@ Name: sepal.length, dtype: int64
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d5bb99ad-402a-4d10-a3a1-99082f93e494')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b045a714-9575-489f-847d-effadd2944dd')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2650,12 +2635,12 @@ Name: sepal.length, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d5bb99ad-402a-4d10-a3a1-99082f93e494 button.colab-df-convert');
+          document.querySelector('#df-b045a714-9575-489f-847d-effadd2944dd button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d5bb99ad-402a-4d10-a3a1-99082f93e494');
+          const element = document.querySelector('#df-b045a714-9575-489f-847d-effadd2944dd');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2723,6 +2708,7 @@ Name: petal.length, dtype: int64
 \displaystyle Entropy(S) &amp;= \sum_{i=0}^{k} -pi \ log_{2} \ pi \\
 \end{align*}
 \end{split}\]</div>
+</section>
 <section id="persiapan">
 <h2>Persiapan<a class="headerlink" href="#persiapan" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
@@ -2757,7 +2743,7 @@ Name: petal.length, dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-ddcf3755-c602-4c75-921e-6ec0a00fe635">
+  <div id="df-710e1acc-e284-4aa4-bca8-9201ad92efa3">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2853,7 +2839,7 @@ Name: petal.length, dtype: int64
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-ddcf3755-c602-4c75-921e-6ec0a00fe635')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-710e1acc-e284-4aa4-bca8-9201ad92efa3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2904,12 +2890,12 @@ Name: petal.length, dtype: int64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-ddcf3755-c602-4c75-921e-6ec0a00fe635 button.colab-df-convert');
+          document.querySelector('#df-710e1acc-e284-4aa4-bca8-9201ad92efa3 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-ddcf3755-c602-4c75-921e-6ec0a00fe635');
+          const element = document.querySelector('#df-710e1acc-e284-4aa4-bca8-9201ad92efa3');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
