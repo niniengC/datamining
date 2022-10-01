@@ -17,27 +17,24 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from sklearn.cluster import KMeans
-#number of cluster
-kmeans = kMeans(n_clusters=3)
-#Fitting the input data
-kmeans=kmeans.fit(x)
-#Getting the cluster labels
-prediksi=kmeans.predict
-#centroid values
-centroids=kmeans.cluster_centers
-prediksi
+clusters = unique(prediksi)
+#create scatter plot for samples from each cluster
+for cluster in clusters:
+  #get indexes for samples with this cluster
+  row_1x = where(yhat == cluster)
+  pyplot_scatter(x_new[row_1x,0],x[row_1x,1])
+pyplot.show
 ------------------
 
 [0;31m[0m
 [0;31mNameError[0mTraceback (most recent call last)
-[0;32m<ipython-input-5-168bd1867990>[0m in [0;36m<module>[0;34m[0m
-[1;32m      1[0m [0;32mfrom[0m [0msklearn[0m[0;34m.[0m[0mcluster[0m [0;32mimport[0m [0mKMeans[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      2[0m [0;31m#number of cluster[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[0;32m----> 3[0;31m [0mkmeans[0m [0;34m=[0m [0mkMeans[0m[0;34m([0m[0mn_clusters[0m[0;34m=[0m[0;36m3[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      4[0m [0;31m#Fitting the input data[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
-[1;32m      5[0m [0mkmeans[0m[0;34m=[0m[0mkmeans[0m[0;34m.[0m[0mfit[0m[0;34m([0m[0mx[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m<ipython-input-14-f4af402b9941>[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mclusters[0m [0;34m=[0m [0munique[0m[0;34m([0m[0mprediksi[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      2[0m [0;31m#create scatter plot for samples from each cluster[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      3[0m [0;32mfor[0m [0mcluster[0m [0;32min[0m [0mclusters[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m   [0;31m#get indexes for samples with this cluster[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m   [0mrow_1x[0m [0;34m=[0m [0mwhere[0m[0;34m([0m[0myhat[0m [0;34m==[0m [0mcluster[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-[0;31mNameError[0m: name 'kMeans' is not defined
-NameError: name 'kMeans' is not defined
+[0;31mNameError[0m: name 'unique' is not defined
+NameError: name 'unique' is not defined
 
