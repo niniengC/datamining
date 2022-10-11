@@ -520,7 +520,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-99611825-7952-4c6a-8d84-fc0d144c1d36">
+  <div id="df-a699903b-7913-4190-acb6-0941eb2c754f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -621,7 +621,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-99611825-7952-4c6a-8d84-fc0d144c1d36')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a699903b-7913-4190-acb6-0941eb2c754f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -672,12 +672,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-99611825-7952-4c6a-8d84-fc0d144c1d36 button.colab-df-convert');
+          document.querySelector('#df-a699903b-7913-4190-acb6-0941eb2c754f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-99611825-7952-4c6a-8d84-fc0d144c1d36');
+          const element = document.querySelector('#df-a699903b-7913-4190-acb6-0941eb2c754f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -722,7 +722,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bf56fcf7-9db6-4cbb-8cd1-fc060f1b7b68">
+  <div id="df-a8bb7cd0-98fb-4f37-84fe-771998079c5f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -817,7 +817,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bf56fcf7-9db6-4cbb-8cd1-fc060f1b7b68')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a8bb7cd0-98fb-4f37-84fe-771998079c5f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -868,12 +868,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bf56fcf7-9db6-4cbb-8cd1-fc060f1b7b68 button.colab-df-convert');
+          document.querySelector('#df-a8bb7cd0-98fb-4f37-84fe-771998079c5f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bf56fcf7-9db6-4cbb-8cd1-fc060f1b7b68');
+          const element = document.querySelector('#df-a8bb7cd0-98fb-4f37-84fe-771998079c5f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1042,13 +1042,13 @@ cv_scores mean:0.4916666666666666
 </section>
 <section id="memuat-data-loading-data">
 <h3>2. Memuat Data (Loading Data)<a class="headerlink" href="#memuat-data-loading-data" title="Permalink to this headline">#</a></h3>
-<p>Pertama-tama, muat dataset Iris yang diperlukan menggunakan fungsi <strong>read_csv</strong></p>
+<p>Pertama-tama, muat dataset Breast Cancer Coimbra yang diperlukan menggunakan fungsi <strong>read_csv</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#read in the data using pandas</span>
-<span class="n">iris_dataset</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/niniengC/dataset/main/BreastCancerCoimbraDataSet.csv&quot;</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/niniengC/dataset/main/BreastCancerCoimbraDataSet.csv&quot;</span>
 <span class="c1">#check data has been read in properly</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">iris_dataset</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
 <span class="c1">#check that the target variable has been removed</span>
 <span class="n">df</span>
 </pre></div>
@@ -1056,7 +1056,7 @@ cv_scores mean:0.4916666666666666
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-efade750-ec75-40ae-b9c0-8e15e742b0ce">
+  <div id="df-88d550d4-4404-44bd-a99a-3e2d816b1ae9">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1236,7 +1236,7 @@ cv_scores mean:0.4916666666666666
 </table>
 <p>116 rows × 10 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-efade750-ec75-40ae-b9c0-8e15e742b0ce')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-88d550d4-4404-44bd-a99a-3e2d816b1ae9')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1287,12 +1287,12 @@ cv_scores mean:0.4916666666666666
 
       <script>
         const buttonEl =
-          document.querySelector('#df-efade750-ec75-40ae-b9c0-8e15e742b0ce button.colab-df-convert');
+          document.querySelector('#df-88d550d4-4404-44bd-a99a-3e2d816b1ae9 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-efade750-ec75-40ae-b9c0-8e15e742b0ce');
+          const element = document.querySelector('#df-88d550d4-4404-44bd-a99a-3e2d816b1ae9');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1328,7 +1328,7 @@ cv_scores mean:0.4916666666666666
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-62e4d6b9-9a14-49d6-8408-0d9490d15915">
+  <div id="df-e1f487fd-de72-46ce-a1ad-d96f22acbea2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1484,7 +1484,7 @@ cv_scores mean:0.4916666666666666
 </table>
 <p>116 rows × 8 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-62e4d6b9-9a14-49d6-8408-0d9490d15915')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e1f487fd-de72-46ce-a1ad-d96f22acbea2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1535,12 +1535,12 @@ cv_scores mean:0.4916666666666666
 
       <script>
         const buttonEl =
-          document.querySelector('#df-62e4d6b9-9a14-49d6-8408-0d9490d15915 button.colab-df-convert');
+          document.querySelector('#df-e1f487fd-de72-46ce-a1ad-d96f22acbea2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-62e4d6b9-9a14-49d6-8408-0d9490d15915');
+          const element = document.querySelector('#df-e1f487fd-de72-46ce-a1ad-d96f22acbea2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1571,7 +1571,7 @@ cv_scores mean:0.4916666666666666
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e3c3fbc5-a539-4cb9-927b-673f5d6b2df5">
+  <div id="df-4af46d24-eb03-4030-8360-3fb5a89153ad">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1643,7 +1643,7 @@ cv_scores mean:0.4916666666666666
 </table>
 <p>116 rows × 1 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e3c3fbc5-a539-4cb9-927b-673f5d6b2df5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-4af46d24-eb03-4030-8360-3fb5a89153ad')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1694,12 +1694,12 @@ cv_scores mean:0.4916666666666666
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e3c3fbc5-a539-4cb9-927b-673f5d6b2df5 button.colab-df-convert');
+          document.querySelector('#df-4af46d24-eb03-4030-8360-3fb5a89153ad button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e3c3fbc5-a539-4cb9-927b-673f5d6b2df5');
+          const element = document.querySelector('#df-4af46d24-eb03-4030-8360-3fb5a89153ad');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1760,7 +1760,7 @@ cv_scores mean:0.4916666666666666
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[Text(0.5789473684210527, 0.9375, &#39;X[1] &lt;= 96.5\ngini = 0.5\nsamples = 81\nvalue = [40, 41]&#39;),
  Text(0.42105263157894735, 0.8125, &#39;X[6] &lt;= 13.248\ngini = 0.425\nsamples = 49\nvalue = [34, 15]&#39;),
- Text(0.3157894736842105, 0.6875, &#39;X[2] &lt;= 15.352\ngini = 0.298\nsamples = 33\nvalue = [27, 6]&#39;),
+ Text(0.3157894736842105, 0.6875, &#39;X[3] &lt;= 3.519\ngini = 0.298\nsamples = 33\nvalue = [27, 6]&#39;),
  Text(0.2631578947368421, 0.5625, &#39;X[4] &lt;= 47.33\ngini = 0.225\nsamples = 31\nvalue = [27, 4]&#39;),
  Text(0.21052631578947367, 0.4375, &#39;X[7] &lt;= 209.469\ngini = 0.18\nsamples = 30\nvalue = [27, 3]&#39;),
  Text(0.10526315789473684, 0.3125, &#39;X[5] &lt;= 17.31\ngini = 0.444\nsamples = 6\nvalue = [4, 2]&#39;),
@@ -1782,9 +1782,9 @@ cv_scores mean:0.4916666666666666
  Text(0.6842105263157895, 0.5625, &#39;X[7] &lt;= 67.966\ngini = 0.08\nsamples = 24\nvalue = [1, 23]&#39;),
  Text(0.631578947368421, 0.4375, &#39;gini = 0.0\nsamples = 1\nvalue = [1, 0]&#39;),
  Text(0.7368421052631579, 0.4375, &#39;gini = 0.0\nsamples = 23\nvalue = [0, 23]&#39;),
- Text(0.8947368421052632, 0.5625, &#39;X[1] &lt;= 112.5\ngini = 0.5\nsamples = 6\nvalue = [3, 3]&#39;),
- Text(0.8421052631578947, 0.4375, &#39;gini = 0.0\nsamples = 3\nvalue = [3, 0]&#39;),
- Text(0.9473684210526315, 0.4375, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 3]&#39;)]
+ Text(0.8947368421052632, 0.5625, &#39;X[6] &lt;= 9.338\ngini = 0.5\nsamples = 6\nvalue = [3, 3]&#39;),
+ Text(0.8421052631578947, 0.4375, &#39;gini = 0.0\nsamples = 3\nvalue = [0, 3]&#39;),
+ Text(0.9473684210526315, 0.4375, &#39;gini = 0.0\nsamples = 3\nvalue = [3, 0]&#39;)]
 </pre></div>
 </div>
 <img alt="_images/UTS_25_1.png" src="_images/UTS_25_1.png" />

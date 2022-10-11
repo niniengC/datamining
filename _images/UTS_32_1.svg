@@ -335,94 +335,94 @@
 <!-- 18 -->
 <g id="node19" class="node">
 <title>18</title>
-<path fill="#e58139" stroke="#000000" d="M552,-298.5C552,-298.5 475,-298.5 475,-298.5 469,-298.5 463,-292.5 463,-286.5 463,-286.5 463,-242.5 463,-242.5 463,-236.5 469,-230.5 475,-230.5 475,-230.5 552,-230.5 552,-230.5 558,-230.5 564,-236.5 564,-242.5 564,-242.5 564,-286.5 564,-286.5 564,-292.5 558,-298.5 552,-298.5"/>
-<text text-anchor="start" x="471" y="-283.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
-<text text-anchor="start" x="474" y="-268.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 5</text>
-<text text-anchor="start" x="472" y="-253.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [5, 0]</text>
-<text text-anchor="start" x="484.5" y="-238.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e58139" stroke="#000000" d="M545,-298.5C545,-298.5 468,-298.5 468,-298.5 462,-298.5 456,-292.5 456,-286.5 456,-286.5 456,-242.5 456,-242.5 456,-236.5 462,-230.5 468,-230.5 468,-230.5 545,-230.5 545,-230.5 551,-230.5 557,-236.5 557,-242.5 557,-242.5 557,-286.5 557,-286.5 557,-292.5 551,-298.5 545,-298.5"/>
+<text text-anchor="start" x="464" y="-283.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
+<text text-anchor="start" x="467" y="-268.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 5</text>
+<text text-anchor="start" x="465" y="-253.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [5, 0]</text>
+<text text-anchor="start" x="477.5" y="-238.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 17&#45;&gt;18 -->
 <g id="edge18" class="edge">
 <title>17&#45;&gt;18</title>
-<path fill="none" stroke="#000000" d="M552.5149,-341.8796C546.9707,-330.8835 540.9736,-318.9893 535.3831,-307.9015"/>
-<polygon fill="#000000" stroke="#000000" points="538.4291,-306.1684 530.8016,-298.8149 532.1786,-309.3199 538.4291,-306.1684"/>
+<path fill="none" stroke="#000000" d="M550.0667,-341.8796C543.8137,-330.7735 537.0448,-318.7513 530.749,-307.5691"/>
+<polygon fill="#000000" stroke="#000000" points="533.7761,-305.8116 525.8202,-298.8149 527.6765,-309.2459 533.7761,-305.8116"/>
 </g>
 <!-- 19 -->
 <g id="node20" class="node">
 <title>19</title>
-<path fill="#ffffff" stroke="#000000" d="M672.5,-306C672.5,-306 594.5,-306 594.5,-306 588.5,-306 582.5,-300 582.5,-294 582.5,-294 582.5,-235 582.5,-235 582.5,-229 588.5,-223 594.5,-223 594.5,-223 672.5,-223 672.5,-223 678.5,-223 684.5,-229 684.5,-235 684.5,-235 684.5,-294 684.5,-294 684.5,-300 678.5,-306 672.5,-306"/>
-<text text-anchor="start" x="590.5" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">BMI ≤ 22.665</text>
-<text text-anchor="start" x="591" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 1.0</text>
-<text text-anchor="start" x="594" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 4</text>
-<text text-anchor="start" x="592" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [2, 2]</text>
-<text text-anchor="start" x="604.5" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#ffffff" stroke="#000000" d="M691.5,-306C691.5,-306 587.5,-306 587.5,-306 581.5,-306 575.5,-300 575.5,-294 575.5,-294 575.5,-235 575.5,-235 575.5,-229 581.5,-223 587.5,-223 587.5,-223 691.5,-223 691.5,-223 697.5,-223 703.5,-229 703.5,-235 703.5,-235 703.5,-294 703.5,-294 703.5,-300 697.5,-306 691.5,-306"/>
+<text text-anchor="start" x="583.5" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">MCP.1 ≤ 604.867</text>
+<text text-anchor="start" x="597" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 1.0</text>
+<text text-anchor="start" x="600" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 4</text>
+<text text-anchor="start" x="598" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [2, 2]</text>
+<text text-anchor="start" x="610.5" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 17&#45;&gt;19 -->
 <g id="edge19" class="edge">
 <title>17&#45;&gt;19</title>
-<path fill="none" stroke="#000000" d="M594.4851,-341.8796C598.799,-333.3236 603.3872,-324.2238 607.8446,-315.3833"/>
-<polygon fill="#000000" stroke="#000000" points="611.0484,-316.8031 612.4253,-306.2981 604.7979,-313.6515 611.0484,-316.8031"/>
+<path fill="none" stroke="#000000" d="M596.5836,-341.8796C601.3789,-333.2335 606.4822,-324.0322 611.4338,-315.1042"/>
+<polygon fill="#000000" stroke="#000000" points="614.5284,-316.7407 616.3179,-306.2981 608.4069,-313.3455 614.5284,-316.7407"/>
 </g>
 <!-- 20 -->
 <g id="node21" class="node">
 <title>20</title>
-<path fill="#e58139" stroke="#000000" d="M606,-179.5C606,-179.5 529,-179.5 529,-179.5 523,-179.5 517,-173.5 517,-167.5 517,-167.5 517,-123.5 517,-123.5 517,-117.5 523,-111.5 529,-111.5 529,-111.5 606,-111.5 606,-111.5 612,-111.5 618,-117.5 618,-123.5 618,-123.5 618,-167.5 618,-167.5 618,-173.5 612,-179.5 606,-179.5"/>
-<text text-anchor="start" x="525" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
-<text text-anchor="start" x="528" y="-149.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="start" x="526" y="-134.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 0]</text>
-<text text-anchor="start" x="538.5" y="-119.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e58139" stroke="#000000" d="M614,-179.5C614,-179.5 537,-179.5 537,-179.5 531,-179.5 525,-173.5 525,-167.5 525,-167.5 525,-123.5 525,-123.5 525,-117.5 531,-111.5 537,-111.5 537,-111.5 614,-111.5 614,-111.5 620,-111.5 626,-117.5 626,-123.5 626,-123.5 626,-167.5 626,-167.5 626,-173.5 620,-179.5 614,-179.5"/>
+<text text-anchor="start" x="533" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
+<text text-anchor="start" x="536" y="-149.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
+<text text-anchor="start" x="534" y="-134.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 0]</text>
+<text text-anchor="start" x="546.5" y="-119.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 19&#45;&gt;20 -->
 <g id="edge20" class="edge">
 <title>19&#45;&gt;20</title>
-<path fill="none" stroke="#000000" d="M610.4164,-222.8796C604.2567,-211.7735 597.5889,-199.7513 591.3871,-188.5691"/>
-<polygon fill="#000000" stroke="#000000" points="594.4428,-186.8624 586.5318,-179.8149 588.3213,-190.2576 594.4428,-186.8624"/>
+<path fill="none" stroke="#000000" d="M617.1159,-222.8796C611.202,-211.8835 604.8051,-199.9893 598.842,-188.9015"/>
+<polygon fill="#000000" stroke="#000000" points="601.7742,-186.9642 593.9551,-179.8149 595.6092,-190.2799 601.7742,-186.9642"/>
 </g>
 <!-- 21 -->
 <g id="node22" class="node">
 <title>21</title>
-<path fill="#9ccef2" stroke="#000000" d="M752.5,-187C752.5,-187 648.5,-187 648.5,-187 642.5,-187 636.5,-181 636.5,-175 636.5,-175 636.5,-116 636.5,-116 636.5,-110 642.5,-104 648.5,-104 648.5,-104 752.5,-104 752.5,-104 758.5,-104 764.5,-110 764.5,-116 764.5,-116 764.5,-175 764.5,-175 764.5,-181 758.5,-187 752.5,-187"/>
-<text text-anchor="start" x="644.5" y="-171.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Resistin ≤ 16.329</text>
-<text text-anchor="start" x="649.5" y="-156.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.918</text>
-<text text-anchor="start" x="661" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 3</text>
-<text text-anchor="start" x="659" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 2]</text>
-<text text-anchor="start" x="671.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#9ccef2" stroke="#000000" d="M750.5,-187C750.5,-187 656.5,-187 656.5,-187 650.5,-187 644.5,-181 644.5,-175 644.5,-175 644.5,-116 644.5,-116 644.5,-110 650.5,-104 656.5,-104 656.5,-104 750.5,-104 750.5,-104 756.5,-104 762.5,-110 762.5,-116 762.5,-116 762.5,-175 762.5,-175 762.5,-181 756.5,-187 750.5,-187"/>
+<text text-anchor="start" x="660.5" y="-171.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Insulin ≤ 3.64</text>
+<text text-anchor="start" x="652.5" y="-156.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.918</text>
+<text text-anchor="start" x="664" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 3</text>
+<text text-anchor="start" x="662" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 2]</text>
+<text text-anchor="start" x="674.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 19&#45;&gt;21 -->
 <g id="edge21" class="edge">
 <title>19&#45;&gt;21</title>
-<path fill="none" stroke="#000000" d="M656.9333,-222.8796C661.8013,-214.2335 666.9819,-205.0322 672.0086,-196.1042"/>
-<polygon fill="#000000" stroke="#000000" points="675.1103,-197.729 676.9666,-187.2981 669.0107,-194.2947 675.1103,-197.729"/>
+<path fill="none" stroke="#000000" d="M661.8841,-222.8796C666.4856,-214.3236 671.3796,-205.2238 676.1342,-196.3833"/>
+<polygon fill="#000000" stroke="#000000" points="679.3662,-197.763 681.0204,-187.2981 673.2012,-194.4473 679.3662,-197.763"/>
 </g>
 <!-- 22 -->
 <g id="node23" class="node">
 <title>22</title>
-<path fill="#399de5" stroke="#000000" d="M680,-68C680,-68 603,-68 603,-68 597,-68 591,-62 591,-56 591,-56 591,-12 591,-12 591,-6 597,0 603,0 603,0 680,0 680,0 686,0 692,-6 692,-12 692,-12 692,-56 692,-56 692,-62 686,-68 680,-68"/>
-<text text-anchor="start" x="599" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
-<text text-anchor="start" x="602" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
-<text text-anchor="start" x="600" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 2]</text>
-<text text-anchor="start" x="612.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#e58139" stroke="#000000" d="M683,-68C683,-68 606,-68 606,-68 600,-68 594,-62 594,-56 594,-56 594,-12 594,-12 594,-6 600,0 606,0 606,0 683,0 683,0 689,0 695,-6 695,-12 695,-12 695,-56 695,-56 695,-62 689,-68 683,-68"/>
+<text text-anchor="start" x="602" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
+<text text-anchor="start" x="605" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
+<text text-anchor="start" x="603" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 0]</text>
+<text text-anchor="start" x="615.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 21&#45;&gt;22 -->
 <g id="edge22" class="edge">
 <title>21&#45;&gt;22</title>
-<path fill="none" stroke="#000000" d="M678.5306,-103.9815C673.9105,-95.2504 669.0264,-86.0202 664.374,-77.2281"/>
-<polygon fill="#000000" stroke="#000000" points="667.4013,-75.4655 659.6306,-68.2637 661.2141,-78.7395 667.4013,-75.4655"/>
+<path fill="none" stroke="#000000" d="M681.5306,-103.9815C676.9105,-95.2504 672.0264,-86.0202 667.374,-77.2281"/>
+<polygon fill="#000000" stroke="#000000" points="670.4013,-75.4655 662.6306,-68.2637 664.2141,-78.7395 670.4013,-75.4655"/>
 </g>
 <!-- 23 -->
 <g id="node24" class="node">
 <title>23</title>
-<path fill="#e58139" stroke="#000000" d="M799,-68C799,-68 722,-68 722,-68 716,-68 710,-62 710,-56 710,-56 710,-12 710,-12 710,-6 716,0 722,0 722,0 799,0 799,0 805,0 811,-6 811,-12 811,-12 811,-56 811,-56 811,-62 805,-68 799,-68"/>
-<text text-anchor="start" x="718" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
-<text text-anchor="start" x="721" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="start" x="719" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 0]</text>
-<text text-anchor="start" x="731.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#399de5" stroke="#000000" d="M802,-68C802,-68 725,-68 725,-68 719,-68 713,-62 713,-56 713,-56 713,-12 713,-12 713,-6 719,0 725,0 725,0 802,0 802,0 808,0 814,-6 814,-12 814,-12 814,-56 814,-56 814,-62 808,-68 802,-68"/>
+<text text-anchor="start" x="721" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
+<text text-anchor="start" x="724" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
+<text text-anchor="start" x="722" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 2]</text>
+<text text-anchor="start" x="734.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 21&#45;&gt;23 -->
 <g id="edge23" class="edge">
 <title>21&#45;&gt;23</title>
-<path fill="none" stroke="#000000" d="M722.8418,-103.9815C727.5402,-95.2504 732.5071,-86.0202 737.2383,-77.2281"/>
-<polygon fill="#000000" stroke="#000000" points="740.4056,-78.7282 742.0621,-68.2637 734.2414,-75.4111 740.4056,-78.7282"/>
+<path fill="none" stroke="#000000" d="M725.8418,-103.9815C730.5402,-95.2504 735.5071,-86.0202 740.2383,-77.2281"/>
+<polygon fill="#000000" stroke="#000000" points="743.4056,-78.7282 745.0621,-68.2637 737.2414,-75.4111 743.4056,-78.7282"/>
 </g>
 <!-- 27 -->
 <g id="node28" class="node">
@@ -520,8 +520,8 @@
 <!-- 31 -->
 <g id="node32" class="node">
 <title>31</title>
-<path fill="#ffffff" stroke="#000000" d="M876.5,-544C876.5,-544 780.5,-544 780.5,-544 774.5,-544 768.5,-538 768.5,-532 768.5,-532 768.5,-473 768.5,-473 768.5,-467 774.5,-461 780.5,-461 780.5,-461 876.5,-461 876.5,-461 882.5,-461 888.5,-467 888.5,-473 888.5,-473 888.5,-532 888.5,-532 888.5,-538 882.5,-544 876.5,-544"/>
-<text text-anchor="start" x="776.5" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Resistin ≤ 8.349</text>
+<path fill="#ffffff" stroke="#000000" d="M889,-544C889,-544 768,-544 768,-544 762,-544 756,-538 756,-532 756,-532 756,-473 756,-473 756,-467 762,-461 768,-461 768,-461 889,-461 889,-461 895,-461 901,-467 901,-473 901,-473 901,-532 901,-532 901,-538 895,-544 889,-544"/>
+<text text-anchor="start" x="764" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Adiponectin ≤ 4.449</text>
 <text text-anchor="start" x="786" y="-513.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 1.0</text>
 <text text-anchor="start" x="789" y="-498.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 4</text>
 <text text-anchor="start" x="787" y="-483.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [2, 2]</text>
@@ -536,17 +536,17 @@
 <!-- 34 -->
 <g id="node35" class="node">
 <title>34</title>
-<path fill="#399de5" stroke="#000000" d="M996,-536.5C996,-536.5 919,-536.5 919,-536.5 913,-536.5 907,-530.5 907,-524.5 907,-524.5 907,-480.5 907,-480.5 907,-474.5 913,-468.5 919,-468.5 919,-468.5 996,-468.5 996,-468.5 1002,-468.5 1008,-474.5 1008,-480.5 1008,-480.5 1008,-524.5 1008,-524.5 1008,-530.5 1002,-536.5 996,-536.5"/>
-<text text-anchor="start" x="915" y="-521.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
-<text text-anchor="start" x="918" y="-506.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 7</text>
-<text text-anchor="start" x="916" y="-491.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 7]</text>
-<text text-anchor="start" x="928.5" y="-476.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#399de5" stroke="#000000" d="M1008,-536.5C1008,-536.5 931,-536.5 931,-536.5 925,-536.5 919,-530.5 919,-524.5 919,-524.5 919,-480.5 919,-480.5 919,-474.5 925,-468.5 931,-468.5 931,-468.5 1008,-468.5 1008,-468.5 1014,-468.5 1020,-474.5 1020,-480.5 1020,-480.5 1020,-524.5 1020,-524.5 1020,-530.5 1014,-536.5 1008,-536.5"/>
+<text text-anchor="start" x="927" y="-521.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.0</text>
+<text text-anchor="start" x="930" y="-506.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 7</text>
+<text text-anchor="start" x="928" y="-491.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 7]</text>
+<text text-anchor="start" x="940.5" y="-476.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 30&#45;&gt;34 -->
 <g id="edge34" class="edge">
 <title>30&#45;&gt;34</title>
-<path fill="none" stroke="#000000" d="M874.9184,-579.8796C887.3579,-568.2237 900.8743,-555.5587 913.301,-543.9148"/>
-<polygon fill="#000000" stroke="#000000" points="915.9741,-546.2065 920.8782,-536.8149 911.1879,-541.0985 915.9741,-546.2065"/>
+<path fill="none" stroke="#000000" d="M879.1155,-579.8796C892.8587,-568.1138 907.8031,-555.3197 921.5093,-543.5855"/>
+<polygon fill="#000000" stroke="#000000" points="924.0976,-545.9771 929.4178,-536.8149 919.5452,-540.6596 924.0976,-545.9771"/>
 </g>
 <!-- 32 -->
 <g id="node33" class="node">
