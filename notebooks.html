@@ -382,22 +382,30 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Disimilarity (Tugas 1)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atribut-biner">
+   Atribut Biner
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#categorical-nominal-features">
    Categorical/Nominal Features
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#change-values-to-1-0">
-     Change Values to 1/0
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
-     Dissimilarity Binary Assymetric Value Formula
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#change-values-to-1-0">
+   Change Values to 1/0
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
+   Dissimilarity Binary Assymetric Value Formula
+  </a>
  </li>
 </ul>
 
@@ -418,22 +426,30 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Disimilarity (Tugas 1)
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#atribut-biner">
+   Atribut Biner
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#categorical-nominal-features">
    Categorical/Nominal Features
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#change-values-to-1-0">
-     Change Values to 1/0
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
-     Dissimilarity Binary Assymetric Value Formula
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#change-values-to-1-0">
+   Change Values to 1/0
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
+   Dissimilarity Binary Assymetric Value Formula
+  </a>
  </li>
 </ul>
 
@@ -454,6 +470,15 @@ title="Print to PDF"
 <li><p>Ukur Jarak d(1,3)</p></li>
 <li><p>Ukur Jarak d(1,4)</p></li>
 </ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="atribut-biner">
+<h1>Atribut Biner<a class="headerlink" href="#atribut-biner" title="Permalink to this headline">#</a></h1>
+<p>Atribut biner adalah atribut nominal dengan hanya dua kategori atau status: 0 atau 1, di mana 0 biasanya berarti atribut tidak ada, dan 1 berarti ada. Atribut biner disebut sebagai Boolean jika dua keadaan sesuai dengan benar dan salah.</p>
+<p><strong>Contoh Atribut Biner :</strong>
+Diberikan suatu atribut perokok yang menggambarkan objek pasien, 1 menunjukkan bahwa pasien merokok, sedangkan 0 menunjukkan bahwa pasien tidak. Demikian pula, misalkan pasien menjalani tes medis yang memiliki dua kemungkinan hasil. Atribut tes kesehatan adalah biner, dimana nilai 1 berarti hasil tes untuk pasien positif, sedangkan 0 berarti hasilnya negatif.</p>
+<p>Atribut biner adalah <em><strong>simetris</strong></em> jika kedua statusnya sama-sama bernilai dan memiliki bobot yang sama; yaitu, tidak ada preferensi hasil mana yang harus dikodekan sebagai 0 atau 1. Salah satu contohnya adalah atribut gender yang menyatakan laki-laki dan perempuan.</p>
+<p>Atribut biner <em><strong>asimetris</strong></em> jika hasil dari status tidak sama pentingnya, seperti hasil positif dan negatif dari tes medis untuk HIV. Berdasarkan konvensi, kami mengkodekan hasil yang paling penting, yang biasanya yang paling langka, dengan 1 (misalnya, HIV
+positif) dan yang lainnya dengan 0 (misalnya, HIV negatif).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
@@ -723,8 +748,9 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<section id="categorical-nominal-features">
-<h2>Categorical/Nominal Features<a class="headerlink" href="#categorical-nominal-features" title="Permalink to this headline">#</a></h2>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="categorical-nominal-features">
+<h1>Categorical/Nominal Features<a class="headerlink" href="#categorical-nominal-features" title="Permalink to this headline">#</a></h1>
 <ul class="simple">
 <li><p>sex</p></li>
 <li><p>smoker</p></li>
@@ -873,8 +899,9 @@ title="Print to PDF"
   </div>
 </div></div>
 </div>
-<section id="change-values-to-1-0">
-<h3>Change Values to 1/0<a class="headerlink" href="#change-values-to-1-0" title="Permalink to this headline">#</a></h3>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="change-values-to-1-0">
+<h1>Change Values to 1/0<a class="headerlink" href="#change-values-to-1-0" title="Permalink to this headline">#</a></h1>
 <p>Take all values of ‘sex’ series</p>
 <ul class="simple">
 <li><p>If values is male change to 0</p></li>
@@ -1450,8 +1477,8 @@ title="Print to PDF"
 </div>
 </div>
 </section>
-<section id="dissimilarity-binary-assymetric-value-formula">
-<h3>Dissimilarity Binary Assymetric Value Formula<a class="headerlink" href="#dissimilarity-binary-assymetric-value-formula" title="Permalink to this headline">#</a></h3>
+<section class="tex2jax_ignore mathjax_ignore" id="dissimilarity-binary-assymetric-value-formula">
+<h1>Dissimilarity Binary Assymetric Value Formula<a class="headerlink" href="#dissimilarity-binary-assymetric-value-formula" title="Permalink to this headline">#</a></h1>
 <div class="math notranslate nohighlight">
 \[
 \frac{r + s}{q + r + s}\
@@ -1510,8 +1537,6 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</section>
-</section>
 </section>
 
     <script type="text/x-thebe-config">

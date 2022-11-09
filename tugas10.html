@@ -396,7 +396,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-4c68a401-4908-40df-abd2-cda7f3506b51">
+  <div id="df-fdc96495-9faa-4f80-8528-df231842d909">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -540,7 +540,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4c68a401-4908-40df-abd2-cda7f3506b51')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-fdc96495-9faa-4f80-8528-df231842d909')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -591,12 +591,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4c68a401-4908-40df-abd2-cda7f3506b51 button.colab-df-convert');
+          document.querySelector('#df-fdc96495-9faa-4f80-8528-df231842d909 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4c68a401-4908-40df-abd2-cda7f3506b51');
+          const element = document.querySelector('#df-fdc96495-9faa-4f80-8528-df231842d909');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -616,6 +616,24 @@ title="Print to PDF"
     </div>
   </div>
 </div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import needed packages</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">classification_report</span>
+
+<span class="c1"># If you&#39;re working in Jupyter Notebook, include the following so that plots will display:</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 
