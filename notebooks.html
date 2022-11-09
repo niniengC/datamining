@@ -382,30 +382,37 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Disimilarity (Tugas 1)
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#atribut-biner">
    Atribut Biner
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#categorical-nominal-features">
-   Categorical/Nominal Features
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proximity-measures-for-binary-attributes">
+   Proximity Measures for Binary Attributes
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#change-values-to-1-0">
-   Change Values to 1/0
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#implementasi">
+   Implementasi
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
-   Dissimilarity Binary Assymetric Value Formula
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#categorical-nominal-features">
+     Categorical/Nominal Features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#change-values-to-1-0">
+     Change Values to 1/0
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
+     Dissimilarity Binary Assymetric Value Formula
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -426,30 +433,37 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Disimilarity (Tugas 1)
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#atribut-biner">
    Atribut Biner
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#categorical-nominal-features">
-   Categorical/Nominal Features
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proximity-measures-for-binary-attributes">
+   Proximity Measures for Binary Attributes
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#change-values-to-1-0">
-   Change Values to 1/0
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#implementasi">
+   Implementasi
   </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
-   Dissimilarity Binary Assymetric Value Formula
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#categorical-nominal-features">
+     Categorical/Nominal Features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#change-values-to-1-0">
+     Change Values to 1/0
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
+     Dissimilarity Binary Assymetric Value Formula
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -470,15 +484,61 @@ title="Print to PDF"
 <li><p>Ukur Jarak d(1,3)</p></li>
 <li><p>Ukur Jarak d(1,4)</p></li>
 </ul>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="atribut-biner">
-<h1>Atribut Biner<a class="headerlink" href="#atribut-biner" title="Permalink to this headline">#</a></h1>
+<section id="atribut-biner">
+<h2>Atribut Biner<a class="headerlink" href="#atribut-biner" title="Permalink to this headline">#</a></h2>
 <p>Atribut biner adalah atribut nominal dengan hanya dua kategori atau status: 0 atau 1, di mana 0 biasanya berarti atribut tidak ada, dan 1 berarti ada. Atribut biner disebut sebagai Boolean jika dua keadaan sesuai dengan benar dan salah.</p>
 <p><strong>Contoh Atribut Biner :</strong>
 Diberikan suatu atribut perokok yang menggambarkan objek pasien, 1 menunjukkan bahwa pasien merokok, sedangkan 0 menunjukkan bahwa pasien tidak. Demikian pula, misalkan pasien menjalani tes medis yang memiliki dua kemungkinan hasil. Atribut tes kesehatan adalah biner, dimana nilai 1 berarti hasil tes untuk pasien positif, sedangkan 0 berarti hasilnya negatif.</p>
 <p>Atribut biner adalah <em><strong>simetris</strong></em> jika kedua statusnya sama-sama bernilai dan memiliki bobot yang sama; yaitu, tidak ada preferensi hasil mana yang harus dikodekan sebagai 0 atau 1. Salah satu contohnya adalah atribut gender yang menyatakan laki-laki dan perempuan.</p>
 <p>Atribut biner <em><strong>asimetris</strong></em> jika hasil dari status tidak sama pentingnya, seperti hasil positif dan negatif dari tes medis untuk HIV. Berdasarkan konvensi, kami mengkodekan hasil yang paling penting, yang biasanya yang paling langka, dengan 1 (misalnya, HIV
 positif) dan yang lainnya dengan 0 (misalnya, HIV negatif).</p>
+</section>
+<section id="proximity-measures-for-binary-attributes">
+<h2>Proximity Measures for Binary Attributes<a class="headerlink" href="#proximity-measures-for-binary-attributes" title="Permalink to this headline">#</a></h2>
+<p>“Jadi, bagaimana kita bisa menghitung perbedaan antara dua atribut biner?”</p>
+<p>Salah satu pendekatan melibatkan komputasi <em>dissimilarity matrix</em> dari data biner yang diberikan.
+Jika semua atribut biner dianggap memiliki bobot yang sama, kita memiliki tabel kontingensi 2 × 2, di mana :</p>
+<p><em>q</em> = jumlah atribut yang sama dengan 1 untuk kedua objek <em>i</em></p>
+<p><em>j</em>,* r* = jumlah atribut yang sama dengan 1 untuk objek <em>i</em> tetapi sama dengan 0 untuk objek <em>j</em></p>
+<p><em>s</em> = jumlah atribut yang sama dengan 0 untuk objek <em>i</em> tetapi sama dengan 1 untuk objek <em>j</em></p>
+<p><em>t</em> = jumlah atribut yang sama dengan 0 untuk kedua objek <em>i</em> dan <em>j</em>.</p>
+<p><em>p</em> = jumlah total atribut, di mana p = q + r + s + t.</p>
+<p>Ingatlah bahwa untuk atribut biner simetris, setiap keadaan sama-sama berharga. Dissimilarity yang didasarkan pada atribut biner simetris disebut <em>symmetric binary dissimilarity</em>. Jika objek <em>i</em> dan <em>j</em> dideskripsikan dengan atribut biner simetris, maka dissimilarity antara <em>i</em> dan <em>j</em> adalah</p>
+<div class="math notranslate nohighlight">
+\[
+d(i, j)=\frac{r + s}{q + r + s + t}\
+\]</div>
+<p>Untuk atribut biner asimetris, kedua keadaan tidak sama pentingnya, seperti hasil positif (1) dan negatif (0) dari tes penyakit. Diberikan dua atribut biner asimetris, kesepakatan dua 1s (kecocokan positif) kemudian dianggap lebih signifikan daripada dua 0s (kecocokan negatif). Oleh karena itu, atribut biner seperti itu sering dianggap “monary” (memiliki satu state). Dissimilarity berdasarkan atribut ini disebut asymmetric binary dissimilarity, di mana jumlah kecocokan negatif, t, dianggap tidak penting dan dengan demikian diabaikan dalam perhitungan berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+d(i,j)=\frac{r + s}{q + r + s + }\
+\]</div>
+<p>Sebagai pelengkap, kita dapat mengukur dissimilarity antara dua atribut biner berdasarkan gagasan similarity, bukan dissimilarity. Misalnya, asymmetric binary similarity antara objek i dan j dapat dihitung sebagai:</p>
+<div class="math notranslate nohighlight">
+\[
+sim(i,j)=\frac{r + s}{q + r + s}\
+\]</div>
+<p>Koefisien sim(i, j) disebut koefisien Jaccard dan secara populer dirujuk dalam literatur.</p>
+<p>Ketika atribut biner simetris dan asimetris muncul dalam kumpulan data yang sama, pendekatan atribut campuran yang dijelaskan sebagai berikut.</p>
+<p>contoh:
+Misalkan tabel catatan pasien berisi atribut name, gender, fever, cough, test-1, test-2, test-3, dan test-4, di mana name adalah pengidentifikasi objek, gender adalah atribut simetris , dan atribut yang tersisa adalah biner asimetris.
+Untuk nilai atribut asimetris, biarkan nilai Y (ya) dan P (positif) diatur ke 1, dan nilai N (tidak atau negatif) diatur ke 0. Misalkan jarak antara objek (pasien) dihitung hanya berdasarkan atribut asimetris. Menurut Persamaan. (2.14), jarak antara masing-masing pasangan dari tiga pasien —Jack, Mary, dan Jim— adalah</p>
+<div class="math notranslate nohighlight">
+\[
+d(Jack, Jim)=\frac{1 + 1}{1 + 1 + 1}=0,67\
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+d(Jack, Mary)=\frac{0 + 1}{2 + 0 + 1}=0,33\
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
+\]</div>
+<p>Pengukuran ini menunjukkan bahwa Jim dan Mary tidak mungkin memiliki penyakit serupa karena mereka memiliki nilai dissimilarity tertinggi di antara ketiga pasangan tersebut. Dari ketiga pasien tersebut, Jack dan Mary adalah yang paling mungkin memiliki penyakit serupa.</p>
+</section>
+<section id="implementasi">
+<h2>Implementasi<a class="headerlink" href="#implementasi" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
@@ -748,9 +808,8 @@ positif) dan yang lainnya dengan 0 (misalnya, HIV negatif).</p>
 </div>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="categorical-nominal-features">
-<h1>Categorical/Nominal Features<a class="headerlink" href="#categorical-nominal-features" title="Permalink to this headline">#</a></h1>
+<section id="categorical-nominal-features">
+<h3>Categorical/Nominal Features<a class="headerlink" href="#categorical-nominal-features" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>sex</p></li>
 <li><p>smoker</p></li>
@@ -900,8 +959,8 @@ positif) dan yang lainnya dengan 0 (misalnya, HIV negatif).</p>
 </div></div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="change-values-to-1-0">
-<h1>Change Values to 1/0<a class="headerlink" href="#change-values-to-1-0" title="Permalink to this headline">#</a></h1>
+<section id="change-values-to-1-0">
+<h3>Change Values to 1/0<a class="headerlink" href="#change-values-to-1-0" title="Permalink to this headline">#</a></h3>
 <p>Take all values of ‘sex’ series</p>
 <ul class="simple">
 <li><p>If values is male change to 0</p></li>
@@ -1477,8 +1536,8 @@ positif) dan yang lainnya dengan 0 (misalnya, HIV negatif).</p>
 </div>
 </div>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="dissimilarity-binary-assymetric-value-formula">
-<h1>Dissimilarity Binary Assymetric Value Formula<a class="headerlink" href="#dissimilarity-binary-assymetric-value-formula" title="Permalink to this headline">#</a></h1>
+<section id="dissimilarity-binary-assymetric-value-formula">
+<h3>Dissimilarity Binary Assymetric Value Formula<a class="headerlink" href="#dissimilarity-binary-assymetric-value-formula" title="Permalink to this headline">#</a></h3>
 <div class="math notranslate nohighlight">
 \[
 \frac{r + s}{q + r + s}\
@@ -1537,6 +1596,8 @@ positif) dan yang lainnya dengan 0 (misalnya, HIV negatif).</p>
 </div>
 </div>
 </div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
