@@ -388,6 +388,11 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dissimilarity-matrix">
+   Dissimilarity matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#proximity-measures-for-binary-attributes">
    Proximity Measures for Binary Attributes
   </a>
@@ -396,23 +401,6 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#implementasi">
    Implementasi
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#categorical-nominal-features">
-     Categorical/Nominal Features
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#change-values-to-1-0">
-     Change Values to 1/0
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
-     Dissimilarity Binary Assymetric Value Formula
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -439,6 +427,11 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dissimilarity-matrix">
+   Dissimilarity matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#proximity-measures-for-binary-attributes">
    Proximity Measures for Binary Attributes
   </a>
@@ -447,23 +440,6 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#implementasi">
    Implementasi
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#categorical-nominal-features">
-     Categorical/Nominal Features
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#change-values-to-1-0">
-     Change Values to 1/0
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dissimilarity-binary-assymetric-value-formula">
-     Dissimilarity Binary Assymetric Value Formula
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -493,16 +469,193 @@ Diberikan suatu atribut perokok yang menggambarkan objek pasien, 1 menunjukkan b
 <p>Atribut biner <em><strong>asimetris</strong></em> jika hasil dari status tidak sama pentingnya, seperti hasil positif dan negatif dari tes medis untuk HIV. Berdasarkan konvensi, kami mengkodekan hasil yang paling penting, yang biasanya yang paling langka, dengan 1 (misalnya, HIV
 positif) dan yang lainnya dengan 0 (misalnya, HIV negatif).</p>
 </section>
+<section id="dissimilarity-matrix">
+<h2>Dissimilarity matrix<a class="headerlink" href="#dissimilarity-matrix" title="Permalink to this headline">#</a></h2>
+<p>Dissimilarity matrix (atau object-by-object structure): Struktur ini menyimpan kumpulan kedekatan yang tersedia untuk semua pasangan n objek. Hal ini sering diwakili oleh tabel n-by-n:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,],</span>
+              <span class="p">[</span><span class="s1">&#39;d(2,1)&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> 
+              <span class="p">[</span><span class="s1">&#39;d(3,1)&#39;</span><span class="p">,</span> <span class="s1">&#39;d(3,2)&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> 
+              <span class="p">[</span><span class="s1">&#39;...&#39;</span><span class="p">,</span> <span class="s1">&#39;....&#39;</span><span class="p">,</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span> <span class="s1">&#39;...&#39;</span><span class="p">],</span> 
+              <span class="p">[</span><span class="s1">&#39;d(n,1)&#39;</span><span class="p">,</span> <span class="s1">&#39;d(n,2)&#39;</span><span class="p">,</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[&#39;0&#39; &#39;0&#39; &#39;0&#39; &#39;0&#39;]
+ [&#39;d(2,1)&#39; &#39;0&#39; &#39;0&#39; &#39;0&#39;]
+ [&#39;d(3,1)&#39; &#39;d(3,2)&#39; &#39;0&#39; &#39;0&#39;]
+ [&#39;...&#39; &#39;....&#39; &#39;...&#39; &#39;...&#39;]
+ [&#39;d(n,1)&#39; &#39;d(n,2)&#39; &#39;...&#39; &#39;0&#39;]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>dimana d(i, j) adalah dissimilarity atau “different” terukur antara objek i dan j. Secara umum, d(i,j) adalah bilangan non-negatif yang mendekati 0 ketika objek i dan j sangat mirip atau “dekat” satu sama lain, dan semakin besar perbedaannya. Perhatikan bahwa d(i, i) = 0; yaitu, selisih antara objek dan dirinya sendiri adalah 0. Selanjutnya, d(i, j) = d(j, i). (Untuk keterbacaan, kami tidak menunjukkan entri d(j, i); matriksnya simetris.</p>
+</section>
 <section id="proximity-measures-for-binary-attributes">
 <h2>Proximity Measures for Binary Attributes<a class="headerlink" href="#proximity-measures-for-binary-attributes" title="Permalink to this headline">#</a></h2>
 <p>“Jadi, bagaimana kita bisa menghitung perbedaan antara dua atribut biner?”</p>
 <p>Salah satu pendekatan melibatkan komputasi <em>dissimilarity matrix</em> dari data biner yang diberikan.
-Jika semua atribut biner dianggap memiliki bobot yang sama, kita memiliki tabel kontingensi 2 × 2, di mana :</p>
-<p><em>q</em> = jumlah atribut yang sama dengan 1 untuk kedua objek <em>i</em></p>
-<p><em>j</em>,* r* = jumlah atribut yang sama dengan 1 untuk objek <em>i</em> tetapi sama dengan 0 untuk objek <em>j</em></p>
+Jika semua atribut biner dianggap memiliki bobot yang sama, kita memiliki tabel kontingensi 2 × 2,</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;object i/j&#39;</span><span class="p">:[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">],</span>
+    <span class="s1">&#39;1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;q&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;q + s&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;0&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;r + t&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;sum&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;q + r&#39;</span><span class="p">,</span><span class="s1">&#39;s + t&#39;</span><span class="p">,</span><span class="s1">&#39;p&#39;</span> <span class="p">],</span>
+<span class="p">}</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contingency Tabel for Binary attribut</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">dataset</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Contingency Tabel for Binary attribut
+</pre></div>
+</div>
+<div class="output text_html">
+  <div id="df-90a33734-0169-4576-adf9-9ad399bc9d67">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>object i/j</th>
+      <th>1</th>
+      <th>0</th>
+      <th>sum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>q</td>
+      <td>r</td>
+      <td>q + r</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>s</td>
+      <td>t</td>
+      <td>s + t</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+      <td>q + s</td>
+      <td>r + t</td>
+      <td>p</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-90a33734-0169-4576-adf9-9ad399bc9d67')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-90a33734-0169-4576-adf9-9ad399bc9d67 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-90a33734-0169-4576-adf9-9ad399bc9d67');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<p>di mana :</p>
+<p><em>q</em> = jumlah atribut yang sama dengan 1 untuk kedua objek <em>i</em> dan <em>j</em></p>
+<p><em>r</em> = jumlah atribut yang sama dengan 1 untuk objek <em>i</em> tetapi sama dengan 0 untuk objek <em>j</em></p>
 <p><em>s</em> = jumlah atribut yang sama dengan 0 untuk objek <em>i</em> tetapi sama dengan 1 untuk objek <em>j</em></p>
 <p><em>t</em> = jumlah atribut yang sama dengan 0 untuk kedua objek <em>i</em> dan <em>j</em>.</p>
-<p><em>p</em> = jumlah total atribut, di mana p = q + r + s + t.</p>
+<p><em>p</em> = jumlah total atribut, di mana : $<span class="math notranslate nohighlight">\( p = q + r + s + t\$\)</span></p>
 <p>Ingatlah bahwa untuk atribut biner simetris, setiap keadaan sama-sama berharga. Dissimilarity yang didasarkan pada atribut biner simetris disebut <em>symmetric binary dissimilarity</em>. Jika objek <em>i</em> dan <em>j</em> dideskripsikan dengan atribut biner simetris, maka dissimilarity antara <em>i</em> dan <em>j</em> adalah</p>
 <div class="math notranslate nohighlight">
 \[
@@ -511,26 +664,368 @@ d(i, j)=\frac{r + s}{q + r + s + t}\
 <p>Untuk atribut biner asimetris, kedua keadaan tidak sama pentingnya, seperti hasil positif (1) dan negatif (0) dari tes penyakit. Diberikan dua atribut biner asimetris, kesepakatan dua 1s (kecocokan positif) kemudian dianggap lebih signifikan daripada dua 0s (kecocokan negatif). Oleh karena itu, atribut biner seperti itu sering dianggap “monary” (memiliki satu state). Dissimilarity berdasarkan atribut ini disebut asymmetric binary dissimilarity, di mana jumlah kecocokan negatif, t, dianggap tidak penting dan dengan demikian diabaikan dalam perhitungan berikut:</p>
 <div class="math notranslate nohighlight">
 \[
-d(i,j)=\frac{r + s}{q + r + s + }\
+d(i,j)=\frac{r + s}{q + r + s}\
 \]</div>
 <p>Sebagai pelengkap, kita dapat mengukur dissimilarity antara dua atribut biner berdasarkan gagasan similarity, bukan dissimilarity. Misalnya, asymmetric binary similarity antara objek i dan j dapat dihitung sebagai:</p>
 <div class="math notranslate nohighlight">
 \[
-sim(i,j)=\frac{r + s}{q + r + s}\
+sim(i,j)=\frac{r + s}{q + r + s}=1-d(i, j)\
 \]</div>
-<p>Koefisien sim(i, j) disebut koefisien Jaccard dan secara populer dirujuk dalam literatur.</p>
+<p>Koefisien sim(i, j) disebut koefisien <strong>Jaccard</strong> dan secara populer dirujuk dalam literatur.</p>
 <p>Ketika atribut biner simetris dan asimetris muncul dalam kumpulan data yang sama, pendekatan atribut campuran yang dijelaskan sebagai berikut.</p>
 <p>contoh:
 Misalkan tabel catatan pasien berisi atribut name, gender, fever, cough, test-1, test-2, test-3, dan test-4, di mana name adalah pengidentifikasi objek, gender adalah atribut simetris , dan atribut yang tersisa adalah biner asimetris.
-Untuk nilai atribut asimetris, biarkan nilai Y (ya) dan P (positif) diatur ke 1, dan nilai N (tidak atau negatif) diatur ke 0. Misalkan jarak antara objek (pasien) dihitung hanya berdasarkan atribut asimetris. Menurut Persamaan. (2.14), jarak antara masing-masing pasangan dari tiga pasien —Jack, Mary, dan Jim— adalah</p>
+Untuk nilai atribut asimetris, biarkan nilai Y (ya) dan P (positif) diatur ke 1, dan nilai N (tidak atau negatif) diatur ke 0.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataPatiens</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;name&#39;</span><span class="p">:[</span><span class="s1">&#39;Jack&#39;</span><span class="p">,</span><span class="s1">&#39;Jim&#39;</span><span class="p">,</span><span class="s1">&#39;Mary&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;gender&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">,</span><span class="s1">&#39;F &#39;</span><span class="p">],</span>
+    <span class="s1">&#39;fever&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span><span class="s1">&#39;Y&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;cough&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span> <span class="p">],</span>
+    <span class="s1">&#39;test-1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;P&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="s1">&#39;P&#39;</span> <span class="p">],</span>
+    <span class="s1">&#39;test-2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span> <span class="p">],</span>
+    <span class="s1">&#39;test-3&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="s1">&#39;P&#39;</span> <span class="p">],</span>
+    <span class="s1">&#39;test-4&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span> <span class="p">]}</span>
+<span class="n">dataShow</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dataPatiens</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Relational Table Where Patients Are Described by Binary Attributes</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">dataShow</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Relational Table Where Patients Are Described by Binary Attributes
+</pre></div>
+</div>
+<div class="output text_html">
+  <div id="df-2d80e729-4e66-499d-b307-d072c143cb46">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>gender</th>
+      <th>fever</th>
+      <th>cough</th>
+      <th>test-1</th>
+      <th>test-2</th>
+      <th>test-3</th>
+      <th>test-4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Jack</td>
+      <td>M</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>P</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Jim</td>
+      <td>M</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mary</td>
+      <td>F</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>P</td>
+      <td>N</td>
+      <td>P</td>
+      <td>N</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2d80e729-4e66-499d-b307-d072c143cb46')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-2d80e729-4e66-499d-b307-d072c143cb46 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-2d80e729-4e66-499d-b307-d072c143cb46');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataBinary</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;name&#39;</span><span class="p">:[</span><span class="s1">&#39;Jack&#39;</span><span class="p">,</span><span class="s1">&#39;Jim&#39;</span><span class="p">,</span><span class="s1">&#39;Mary&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;gender&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">,</span><span class="s1">&#39;F &#39;</span><span class="p">],</span>
+    <span class="s1">&#39;fever&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;cough&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span> <span class="p">],</span>
+    <span class="s1">&#39;test-1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span> <span class="p">],</span>
+    <span class="s1">&#39;test-2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span> <span class="p">],</span>
+    <span class="s1">&#39;test-3&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span> <span class="p">],</span>
+    <span class="s1">&#39;test-4&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;0&#39;</span> <span class="p">]}</span>
+<span class="n">data</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dataBinary</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Relational Table Where Patients Are Described by Binary Attributes</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Relational Table Where Patients Are Described by Binary Attributes
+</pre></div>
+</div>
+<div class="output text_html">
+  <div id="df-e9597db1-8d0b-4701-8d41-f764baa72e23">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>gender</th>
+      <th>fever</th>
+      <th>cough</th>
+      <th>test-1</th>
+      <th>test-2</th>
+      <th>test-3</th>
+      <th>test-4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Jack</td>
+      <td>M</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Jim</td>
+      <td>M</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Mary</td>
+      <td>F</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e9597db1-8d0b-4701-8d41-f764baa72e23')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-e9597db1-8d0b-4701-8d41-f764baa72e23 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-e9597db1-8d0b-4701-8d41-f764baa72e23');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<p>Misalkan jarak antara objek (pasien) dihitung hanya berdasarkan atribut asimetris. Maka, jarak antara masing-masing pasangan dari tiga pasien —Jack, Mary, dan Jim— adalah</p>
+<p>r(1,0) = 1 (test-1);</p>
+<p>s(0,1) = 1 (cough);</p>
+<p>q(1,1) = 1 (test-2, test-3, test-4)</p>
 <div class="math notranslate nohighlight">
 \[
 d(Jack, Jim)=\frac{1 + 1}{1 + 1 + 1}=0,67\
 \]</div>
+<p>r(1,0) = 0 ;</p>
+<p>s(0,1) = 1 (test-3);</p>
+<p>q(1,1) = 2 (fever, test-1)</p>
 <div class="math notranslate nohighlight">
 \[
 d(Jack, Mary)=\frac{0 + 1}{2 + 0 + 1}=0,33\
 \]</div>
+<p>r(1,0) = 1 (cough);</p>
+<p>s(0,1) = 2 (test-1, test-3);</p>
+<p>q(1,1) = 1 (fever)</p>
 <div class="math notranslate nohighlight">
 \[
 d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
@@ -548,7 +1043,7 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">d5df0069828e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="n">d5df0069828e</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
 
@@ -597,28 +1092,24 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Library</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;MedicalCostPersonal.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;ISO-8859-1&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/niniengC/dataset/main/healthcareDatasetStrokeData.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-6419e91f-de54-4a54-95d5-12cd549002cf">
+  <div id="df-77c73d87-9a66-4478-b1bb-20f85225a729">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -638,70 +1129,100 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>id</th>
+      <th>gender</th>
       <th>age</th>
-      <th>sex</th>
+      <th>hypertension</th>
+      <th>heart_disease</th>
+      <th>ever_married</th>
+      <th>work_type</th>
+      <th>Residence_type</th>
+      <th>avg_glucose_level</th>
       <th>bmi</th>
-      <th>children</th>
-      <th>smoker</th>
-      <th>region</th>
-      <th>charges</th>
+      <th>smoking_status</th>
+      <th>stroke</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>19</td>
-      <td>female</td>
-      <td>27.900</td>
+      <td>9046</td>
+      <td>Male</td>
+      <td>67.0</td>
       <td>0</td>
-      <td>yes</td>
-      <td>southwest</td>
-      <td>16884.92400</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>Private</td>
+      <td>Urban</td>
+      <td>228.69</td>
+      <td>36.6</td>
+      <td>formerly smoked</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>18</td>
-      <td>male</td>
-      <td>33.770</td>
+      <td>51676</td>
+      <td>Female</td>
+      <td>61.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Yes</td>
+      <td>Self-employed</td>
+      <td>Rural</td>
+      <td>202.21</td>
+      <td>NaN</td>
+      <td>never smoked</td>
       <td>1</td>
-      <td>no</td>
-      <td>southeast</td>
-      <td>1725.55230</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>28</td>
-      <td>male</td>
-      <td>33.000</td>
-      <td>3</td>
-      <td>no</td>
-      <td>southeast</td>
-      <td>4449.46200</td>
+      <td>31112</td>
+      <td>Male</td>
+      <td>80.0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>Private</td>
+      <td>Rural</td>
+      <td>105.92</td>
+      <td>32.5</td>
+      <td>never smoked</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>33</td>
-      <td>male</td>
-      <td>22.705</td>
+      <td>60182</td>
+      <td>Female</td>
+      <td>49.0</td>
       <td>0</td>
-      <td>no</td>
-      <td>northwest</td>
-      <td>21984.47061</td>
+      <td>0</td>
+      <td>Yes</td>
+      <td>Private</td>
+      <td>Urban</td>
+      <td>171.23</td>
+      <td>34.4</td>
+      <td>smokes</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>32</td>
-      <td>male</td>
-      <td>28.880</td>
+      <td>1665</td>
+      <td>Female</td>
+      <td>79.0</td>
+      <td>1</td>
       <td>0</td>
-      <td>no</td>
-      <td>northwest</td>
-      <td>3866.85520</td>
+      <td>Yes</td>
+      <td>Self-employed</td>
+      <td>Rural</td>
+      <td>174.12</td>
+      <td>24.0</td>
+      <td>never smoked</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-6419e91f-de54-4a54-95d5-12cd549002cf')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-77c73d87-9a66-4478-b1bb-20f85225a729')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -752,12 +1273,12 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
 
       <script>
         const buttonEl =
-          document.querySelector('#df-6419e91f-de54-4a54-95d5-12cd549002cf button.colab-df-convert');
+          document.querySelector('#df-77c73d87-9a66-4478-b1bb-20f85225a729 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-6419e91f-de54-4a54-95d5-12cd549002cf');
+          const element = document.querySelector('#df-77c73d87-9a66-4478-b1bb-20f85225a729');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -780,49 +1301,13 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show dataset shape</span>
-<span class="n">number_of_columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show all columns for dataset</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="n">number_of_columns</span><span class="p">)</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="n">number_of_columns</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show all columns from dataframe</span>
-<span class="n">df</span><span class="o">.</span><span class="n">columns</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;age&#39;, &#39;sex&#39;, &#39;bmi&#39;, &#39;children&#39;, &#39;smoker&#39;, &#39;region&#39;, &#39;charges&#39;], dtype=&#39;object&#39;)
-</pre></div>
-</div>
-</div>
-</div>
-<section id="categorical-nominal-features">
-<h3>Categorical/Nominal Features<a class="headerlink" href="#categorical-nominal-features" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>sex</p></li>
-<li><p>smoker</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="s1">&#39;smoker&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;hypertension&#39;</span><span class="p">,</span> <span class="s1">&#39;heart_disease&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-94393a18-c1ee-40bc-8560-de133d36d337">
+  <div id="df-d19f5515-3ebf-4009-9585-da3f4fa16873">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -842,46 +1327,46 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>age</th>
-      <th>sex</th>
-      <th>smoker</th>
+      <th>id</th>
+      <th>hypertension</th>
+      <th>heart_disease</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>19</td>
-      <td>female</td>
-      <td>yes</td>
+      <td>9046</td>
+      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>18</td>
-      <td>male</td>
-      <td>no</td>
+      <td>51676</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>28</td>
-      <td>male</td>
-      <td>no</td>
+      <td>31112</td>
+      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>33</td>
-      <td>male</td>
-      <td>no</td>
+      <td>60182</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>32</td>
-      <td>male</td>
-      <td>no</td>
+      <td>1665</td>
+      <td>1</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-94393a18-c1ee-40bc-8560-de133d36d337')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d19f5515-3ebf-4009-9585-da3f4fa16873')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -932,217 +1417,12 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
 
       <script>
         const buttonEl =
-          document.querySelector('#df-94393a18-c1ee-40bc-8560-de133d36d337 button.colab-df-convert');
+          document.querySelector('#df-d19f5515-3ebf-4009-9585-da3f4fa16873 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-94393a18-c1ee-40bc-8560-de133d36d337');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-</div></div>
-</div>
-</section>
-<section id="change-values-to-1-0">
-<h3>Change Values to 1/0<a class="headerlink" href="#change-values-to-1-0" title="Permalink to this headline">#</a></h3>
-<p>Take all values of ‘sex’ series</p>
-<ul class="simple">
-<li><p>If values is male change to 0</p></li>
-<li><p>If values is female change to 1</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># sex code</span>
-<span class="n">code_sex_for_male</span> <span class="o">=</span> <span class="s2">&quot;male&quot;</span>
-<span class="n">code_sex_for_female</span> <span class="o">=</span> <span class="s2">&quot;female&quot;</span>
-
-<span class="c1"># binary value</span>
-<span class="n">value_of_one</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">value_of_zero</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="k">def</span> <span class="nf">change_code_sex_to_biner</span><span class="p">(</span><span class="n">sex</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">value_of_one</span> <span class="k">if</span> <span class="n">sex</span> <span class="o">==</span> <span class="n">code_sex_for_male</span> <span class="k">else</span> <span class="n">value_of_zero</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Update all values of &#39;sex&#39; series</span>
-<span class="n">df</span><span class="p">[</span><span class="s2">&quot;sex&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;sex&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">change_code_sex_to_biner</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Take all values of ‘smoker’ series</p>
-<ul class="simple">
-<li><p>If values is yes change to 1</p></li>
-<li><p>If values is no change to 0</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># smoker code</span>
-<span class="n">code_smoker_for_no</span> <span class="o">=</span> <span class="s2">&quot;no&quot;</span>
-<span class="n">code_smoker_for_yes</span> <span class="o">=</span> <span class="s2">&quot;yes&quot;</span>
-
-<span class="c1"># binary value</span>
-<span class="n">value_of_one</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">value_of_zero</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="k">def</span> <span class="nf">change_code_smoker_to_biner</span><span class="p">(</span><span class="n">smoker</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">value_of_one</span> <span class="k">if</span> <span class="n">smoker</span> <span class="o">==</span> <span class="n">code_smoker_for_yes</span> <span class="k">else</span> <span class="n">value_of_zero</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Update all values of &#39;smoker&#39; series</span>
-<span class="n">df</span><span class="p">[</span><span class="s2">&quot;smoker&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;smoker&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">change_code_smoker_to_biner</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="s1">&#39;smoker&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-152eadd6-f475-42e4-8ab0-6582ef408728">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>age</th>
-      <th>sex</th>
-      <th>smoker</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>19</td>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>18</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>28</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>33</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>32</td>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-152eadd6-f475-42e4-8ab0-6582ef408728')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-152eadd6-f475-42e4-8ab0-6582ef408728 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-152eadd6-f475-42e4-8ab0-6582ef408728');
+          const element = document.querySelector('#df-d19f5515-3ebf-4009-9585-da3f4fa16873');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1200,267 +1480,6 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="s1">&#39;smoker&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-d4af5218-640f-4ba3-a235-6730485967b4">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>1</th>
-      <th>2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>sex</th>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>smoker</th>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d4af5218-640f-4ba3-a235-6730485967b4')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-d4af5218-640f-4ba3-a235-6730485967b4 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d4af5218-640f-4ba3-a235-6730485967b4');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-</div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="s1">&#39;smoker&#39;</span><span class="p">]]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-8e26eb10-366a-42f7-b0bd-46330e54d5e8">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sex</th>
-      <th>smoker</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-8e26eb10-366a-42f7-b0bd-46330e54d5e8')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-8e26eb10-366a-42f7-b0bd-46330e54d5e8 button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-8e26eb10-366a-42f7-b0bd-46330e54d5e8');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-</div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">count_contingency_value</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">start_index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">last_index</span> <span class="o">=</span> <span class="mi">1</span><span class="p">):</span>
 
     <span class="n">CONTINGENCY_VALUE</span> <span class="o">=</span> <span class="p">{</span>
@@ -1492,61 +1511,159 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># d(1,2)</span>
-<span class="n">df_1_2</span> <span class="o">=</span> <span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="s1">&#39;smoker&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c_d_1_2</span> <span class="o">=</span> <span class="n">count_contingency_value</span><span class="p">(</span><span class="n">df_1_2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># d(1,3)</span>
-<span class="n">df_1_3</span> <span class="o">=</span> <span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="s1">&#39;smoker&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c_d_1_3</span> <span class="o">=</span> <span class="n">count_contingency_value</span><span class="p">(</span><span class="n">df_1_3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># d(1,4)</span>
-<span class="n">df_1_4</span> <span class="o">=</span> <span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="s1">&#39;smoker&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c_d_1_4</span> <span class="o">=</span> <span class="n">count_contingency_value</span><span class="p">(</span><span class="n">df_1_4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="dissimilarity-binary-assymetric-value-formula">
-<h3>Dissimilarity Binary Assymetric Value Formula<a class="headerlink" href="#dissimilarity-binary-assymetric-value-formula" title="Permalink to this headline">#</a></h3>
-<div class="math notranslate nohighlight">
-\[
-\frac{r + s}{q + r + s}\
-\]</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">measure_dissimilarity_binary_value_assymetric_distance</span><span class="p">(</span><span class="n">contingency_value</span><span class="p">):</span>
+  <span class="n">r</span><span class="o">=</span><span class="n">contingency_value</span><span class="p">[</span><span class="s2">&quot;r&quot;</span><span class="p">]</span>
+  <span class="n">s</span><span class="o">=</span> <span class="n">contingency_value</span><span class="p">[</span><span class="s2">&quot;s&quot;</span><span class="p">]</span>
+  <span class="n">q</span><span class="o">=</span> <span class="n">contingency_value</span><span class="p">[</span><span class="s2">&quot;q&quot;</span><span class="p">]</span>
+  <span class="n">t</span><span class="o">=</span> <span class="n">contingency_value</span><span class="p">[</span><span class="s2">&quot;t&quot;</span><span class="p">]</span>
+  <span class="n">objek_i</span><span class="o">=</span> <span class="n">r</span><span class="o">+</span><span class="n">s</span>
+  <span class="n">objek_j</span> <span class="o">=</span> <span class="n">q</span><span class="o">+</span><span class="n">r</span><span class="o">+</span><span class="n">s</span><span class="o">+</span><span class="n">t</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">objek_j</span><span class="o">==</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">objek_i</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">objek_j</span><span class="o">!=</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">objek_i</span><span class="o">==</span><span class="mi">0</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="mf">0.0</span>
+  <span class="k">elif</span> <span class="p">(</span><span class="n">objek_j</span><span class="o">==</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">objek_i</span><span class="o">!=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="s2">&quot;infinity&quot;</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">df</span> <span class="o">=</span>  <span class="n">objek_i</span><span class="o">/</span><span class="n">objek_j</span>
+                                                           
+  <span class="k">return</span> <span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#df(1,2)</span>
+<span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;hypertension&#39;</span><span class="p">,</span><span class="s1">&#39;heart_disease&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-8214a712-ba56-4d78-8935-81c8ca6e88fa">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-    <span class="k">return</span> <span class="p">(</span><span class="n">contingency_value</span><span class="p">[</span><span class="s2">&quot;r&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">contingency_value</span><span class="p">[</span><span class="s2">&quot;s&quot;</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">contingency_value</span><span class="p">[</span><span class="s2">&quot;q&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">contingency_value</span><span class="p">[</span><span class="s2">&quot;r&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">contingency_value</span><span class="p">[</span><span class="s2">&quot;s&quot;</span><span class="p">])</span>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hypertension</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>heart_disease</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8214a712-ba56-4d78-8935-81c8ca6e88fa')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-8214a712-ba56-4d78-8935-81c8ca6e88fa button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-8214a712-ba56-4d78-8935-81c8ca6e88fa');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_1_2</span> <span class="o">=</span> <span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;hypertension&#39;</span><span class="p">,</span><span class="s1">&#39;heart_disease&#39;</span><span class="p">])</span>
+<span class="n">c_d_1_2</span> <span class="o">=</span> <span class="n">count_contingency_value</span><span class="p">(</span><span class="n">df_1_2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">c_d_1_2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;q&#39;: 0, &#39;r&#39;: 0, &#39;s&#39;: 1, &#39;t&#39;: 1}
 </pre></div>
 </div>
 </div>
@@ -1554,15 +1671,158 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d_1_2</span> <span class="o">=</span> <span class="n">measure_dissimilarity_binary_value_assymetric_distance</span><span class="p">(</span><span class="n">c_d_1_2</span><span class="p">)</span>
-<span class="n">d_1_3</span> <span class="o">=</span> <span class="n">measure_dissimilarity_binary_value_assymetric_distance</span><span class="p">(</span><span class="n">c_d_1_2</span><span class="p">)</span>
-<span class="n">d_1_4</span> <span class="o">=</span> <span class="n">measure_dissimilarity_binary_value_assymetric_distance</span><span class="p">(</span><span class="n">c_d_1_2</span><span class="p">)</span>
+<span class="n">d_1_2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d_1_2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#df(1,3)</span>
+<span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;hypertension&#39;</span><span class="p">,</span><span class="s1">&#39;heart_disease&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-c15fa9fd-5dd8-47cc-961a-9ff37cad7396">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1</th>
+      <th>3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hypertension</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>heart_disease</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c15fa9fd-5dd8-47cc-961a-9ff37cad7396')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-c15fa9fd-5dd8-47cc-961a-9ff37cad7396 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-c15fa9fd-5dd8-47cc-961a-9ff37cad7396');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_1_3</span> <span class="o">=</span> <span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;hypertension&#39;</span><span class="p">,</span><span class="s1">&#39;heart_disease&#39;</span><span class="p">])</span>
+<span class="n">c_d_1_3</span> <span class="o">=</span> <span class="n">count_contingency_value</span><span class="p">(</span><span class="n">df_1_3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">c_d_1_3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;q&#39;: 0, &#39;r&#39;: 0, &#39;s&#39;: 0, &#39;t&#39;: 2}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d_1_3</span> <span class="o">=</span> <span class="n">measure_dissimilarity_binary_value_assymetric_distance</span><span class="p">(</span><span class="n">c_d_1_3</span><span class="p">)</span>
+<span class="n">d_1_3</span>
 </pre></div>
 </div>
 </div>
@@ -1574,29 +1834,155 @@ d(Jim, Mary)=\frac{1 + 2}{1 + 1 + 2}=0,75\
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d_1_3</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#df(1,4)</span>
+<span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;hypertension&#39;</span><span class="p">,</span><span class="s1">&#39;heart_disease&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.0
+<div class="output text_html">
+  <div id="df-592f7f7a-1f9e-4cf1-9d4b-5462f1f1080f">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hypertension</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>heart_disease</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-592f7f7a-1f9e-4cf1-9d4b-5462f1f1080f')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-592f7f7a-1f9e-4cf1-9d4b-5462f1f1080f button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-592f7f7a-1f9e-4cf1-9d4b-5462f1f1080f');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_1_4</span> <span class="o">=</span> <span class="n">get_dissimilarity_dataset</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;hypertension&#39;</span><span class="p">,</span><span class="s1">&#39;heart_disease&#39;</span><span class="p">])</span>
+<span class="n">c_d_1_4</span> <span class="o">=</span> <span class="n">count_contingency_value</span><span class="p">(</span><span class="n">df_1_4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">c_d_1_4</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;q&#39;: 0, &#39;r&#39;: 0, &#39;s&#39;: 1, &#39;t&#39;: 1}
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d_1_4</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d_1_4</span> <span class="o">=</span> <span class="n">measure_dissimilarity_binary_value_assymetric_distance</span><span class="p">(</span><span class="n">c_d_1_4</span><span class="p">)</span>
+<span class="n">d_1_4</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.0
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0
 </pre></div>
 </div>
 </div>
 </div>
-</section>
 </section>
 </section>
 
