@@ -12,172 +12,172 @@
 <!-- 0 -->
 <g id="node1" class="node">
 <title>0</title>
-<path fill="#fafdfe" stroke="#000000" d="M661.5,-901C661.5,-901 569.5,-901 569.5,-901 563.5,-901 557.5,-895 557.5,-889 557.5,-889 557.5,-830 557.5,-830 557.5,-824 563.5,-818 569.5,-818 569.5,-818 661.5,-818 661.5,-818 667.5,-818 673.5,-824 673.5,-830 673.5,-830 673.5,-889 673.5,-889 673.5,-895 667.5,-901 661.5,-901"/>
-<text text-anchor="start" x="566.5" y="-885.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Glucose ≤ 96.5</text>
-<text text-anchor="start" x="586" y="-870.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.5</text>
-<text text-anchor="start" x="571.5" y="-855.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 81</text>
-<text text-anchor="start" x="565.5" y="-840.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [40, 41]</text>
-<text text-anchor="start" x="586.5" y="-825.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#fafdfe" stroke="#000000" d="M660.5,-901C660.5,-901 568.5,-901 568.5,-901 562.5,-901 556.5,-895 556.5,-889 556.5,-889 556.5,-830 556.5,-830 556.5,-824 562.5,-818 568.5,-818 568.5,-818 660.5,-818 660.5,-818 666.5,-818 672.5,-824 672.5,-830 672.5,-830 672.5,-889 672.5,-889 672.5,-895 666.5,-901 660.5,-901"/>
+<text text-anchor="start" x="565.5" y="-885.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Glucose ≤ 96.5</text>
+<text text-anchor="start" x="585" y="-870.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.5</text>
+<text text-anchor="start" x="570.5" y="-855.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 81</text>
+<text text-anchor="start" x="564.5" y="-840.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [40, 41]</text>
+<text text-anchor="start" x="585.5" y="-825.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 1 -->
 <g id="node2" class="node">
 <title>1</title>
-<path fill="#f0b990" stroke="#000000" d="M599.5,-782C599.5,-782 495.5,-782 495.5,-782 489.5,-782 483.5,-776 483.5,-770 483.5,-770 483.5,-711 483.5,-711 483.5,-705 489.5,-699 495.5,-699 495.5,-699 599.5,-699 599.5,-699 605.5,-699 611.5,-705 611.5,-711 611.5,-711 611.5,-770 611.5,-770 611.5,-776 605.5,-782 599.5,-782"/>
-<text text-anchor="start" x="491.5" y="-766.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Resistin ≤ 13.248</text>
-<text text-anchor="start" x="509.5" y="-751.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.425</text>
-<text text-anchor="start" x="503.5" y="-736.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 49</text>
-<text text-anchor="start" x="497.5" y="-721.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [34, 15]</text>
-<text text-anchor="start" x="518.5" y="-706.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#f0b990" stroke="#000000" d="M598.5,-782C598.5,-782 494.5,-782 494.5,-782 488.5,-782 482.5,-776 482.5,-770 482.5,-770 482.5,-711 482.5,-711 482.5,-705 488.5,-699 494.5,-699 494.5,-699 598.5,-699 598.5,-699 604.5,-699 610.5,-705 610.5,-711 610.5,-711 610.5,-770 610.5,-770 610.5,-776 604.5,-782 598.5,-782"/>
+<text text-anchor="start" x="490.5" y="-766.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Resistin ≤ 13.248</text>
+<text text-anchor="start" x="508.5" y="-751.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.425</text>
+<text text-anchor="start" x="502.5" y="-736.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 49</text>
+<text text-anchor="start" x="496.5" y="-721.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [34, 15]</text>
+<text text-anchor="start" x="517.5" y="-706.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 0&#45;&gt;1 -->
 <g id="edge1" class="edge">
 <title>0&#45;&gt;1</title>
-<path fill="none" stroke="#000000" d="M591.7169,-817.8796C586.7763,-809.2335 581.5184,-800.0322 576.4167,-791.1042"/>
-<polygon fill="#000000" stroke="#000000" points="579.3849,-789.244 571.3846,-782.2981 573.3072,-792.717 579.3849,-789.244"/>
-<text text-anchor="middle" x="564.8067" y="-802.7172" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">True</text>
+<path fill="none" stroke="#000000" d="M590.7169,-817.8796C585.7763,-809.2335 580.5184,-800.0322 575.4167,-791.1042"/>
+<polygon fill="#000000" stroke="#000000" points="578.3849,-789.244 570.3846,-782.2981 572.3072,-792.717 578.3849,-789.244"/>
+<text text-anchor="middle" x="563.8067" y="-802.7172" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">True</text>
 </g>
 <!-- 18 -->
 <g id="node19" class="node">
 <title>18</title>
-<path fill="#67b4eb" stroke="#000000" d="M725.5,-782C725.5,-782 641.5,-782 641.5,-782 635.5,-782 629.5,-776 629.5,-770 629.5,-770 629.5,-711 629.5,-711 629.5,-705 635.5,-699 641.5,-699 641.5,-699 725.5,-699 725.5,-699 731.5,-699 737.5,-705 737.5,-711 737.5,-711 737.5,-770 737.5,-770 737.5,-776 731.5,-782 725.5,-782"/>
-<text text-anchor="start" x="637.5" y="-766.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Leptin ≤ 6.059</text>
-<text text-anchor="start" x="645.5" y="-751.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.305</text>
-<text text-anchor="start" x="639.5" y="-736.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 32</text>
-<text text-anchor="start" x="638" y="-721.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [6, 26]</text>
-<text text-anchor="start" x="654.5" y="-706.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#67b4eb" stroke="#000000" d="M724.5,-782C724.5,-782 640.5,-782 640.5,-782 634.5,-782 628.5,-776 628.5,-770 628.5,-770 628.5,-711 628.5,-711 628.5,-705 634.5,-699 640.5,-699 640.5,-699 724.5,-699 724.5,-699 730.5,-699 736.5,-705 736.5,-711 736.5,-711 736.5,-770 736.5,-770 736.5,-776 730.5,-782 724.5,-782"/>
+<text text-anchor="start" x="636.5" y="-766.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Leptin ≤ 6.059</text>
+<text text-anchor="start" x="644.5" y="-751.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.305</text>
+<text text-anchor="start" x="638.5" y="-736.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 32</text>
+<text text-anchor="start" x="637" y="-721.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [6, 26]</text>
+<text text-anchor="start" x="653.5" y="-706.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 0&#45;&gt;18 -->
 <g id="edge18" class="edge">
 <title>0&#45;&gt;18</title>
-<path fill="none" stroke="#000000" d="M639.2831,-817.8796C644.2237,-809.2335 649.4816,-800.0322 654.5833,-791.1042"/>
-<polygon fill="#000000" stroke="#000000" points="657.6928,-792.717 659.6154,-782.2981 651.6151,-789.244 657.6928,-792.717"/>
-<text text-anchor="middle" x="666.1933" y="-802.7172" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">False</text>
+<path fill="none" stroke="#000000" d="M638.2831,-817.8796C643.2237,-809.2335 648.4816,-800.0322 653.5833,-791.1042"/>
+<polygon fill="#000000" stroke="#000000" points="656.6928,-792.717 658.6154,-782.2981 650.6151,-789.244 656.6928,-792.717"/>
+<text text-anchor="middle" x="665.1933" y="-802.7172" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">False</text>
 </g>
 <!-- 2 -->
 <g id="node3" class="node">
 <title>2</title>
-<path fill="#eb9d65" stroke="#000000" d="M468,-663C468,-663 373,-663 373,-663 367,-663 361,-657 361,-651 361,-651 361,-592 361,-592 361,-586 367,-580 373,-580 373,-580 468,-580 468,-580 474,-580 480,-586 480,-592 480,-592 480,-651 480,-651 480,-657 474,-663 468,-663"/>
-<text text-anchor="start" x="369" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Insulin ≤ 15.352</text>
-<text text-anchor="start" x="382.5" y="-632.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.298</text>
-<text text-anchor="start" x="376.5" y="-617.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 33</text>
-<text text-anchor="start" x="375" y="-602.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [27, 6]</text>
-<text text-anchor="start" x="391.5" y="-587.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#eb9d65" stroke="#000000" d="M467,-663C467,-663 372,-663 372,-663 366,-663 360,-657 360,-651 360,-651 360,-592 360,-592 360,-586 366,-580 372,-580 372,-580 467,-580 467,-580 473,-580 479,-586 479,-592 479,-592 479,-651 479,-651 479,-657 473,-663 467,-663"/>
+<text text-anchor="start" x="368" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Insulin ≤ 15.352</text>
+<text text-anchor="start" x="381.5" y="-632.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.298</text>
+<text text-anchor="start" x="375.5" y="-617.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 33</text>
+<text text-anchor="start" x="374" y="-602.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [27, 6]</text>
+<text text-anchor="start" x="390.5" y="-587.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 1&#45;&gt;2 -->
 <g id="edge2" class="edge">
 <title>1&#45;&gt;2</title>
-<path fill="none" stroke="#000000" d="M503.0816,-698.8796C493.1814,-689.6031 482.5991,-679.6874 472.4269,-670.1559"/>
-<polygon fill="#000000" stroke="#000000" points="474.7984,-667.5816 465.108,-663.2981 470.0121,-672.6896 474.7984,-667.5816"/>
+<path fill="none" stroke="#000000" d="M502.0816,-698.8796C492.1814,-689.6031 481.5991,-679.6874 471.4269,-670.1559"/>
+<polygon fill="#000000" stroke="#000000" points="473.7984,-667.5816 464.108,-663.2981 469.0121,-672.6896 473.7984,-667.5816"/>
 </g>
 <!-- 15 -->
 <g id="node16" class="node">
 <title>15</title>
-<path fill="#d3e9f9" stroke="#000000" d="M590.5,-663C590.5,-663 510.5,-663 510.5,-663 504.5,-663 498.5,-657 498.5,-651 498.5,-651 498.5,-592 498.5,-592 498.5,-586 504.5,-580 510.5,-580 510.5,-580 590.5,-580 590.5,-580 596.5,-580 602.5,-586 602.5,-592 602.5,-592 602.5,-651 602.5,-651 602.5,-657 596.5,-663 590.5,-663"/>
-<text text-anchor="start" x="507.5" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">BMI ≤ 29.972</text>
-<text text-anchor="start" x="512.5" y="-632.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.492</text>
-<text text-anchor="start" x="506.5" y="-617.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 16</text>
-<text text-anchor="start" x="509" y="-602.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [7, 9]</text>
-<text text-anchor="start" x="521.5" y="-587.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#d3e9f9" stroke="#000000" d="M589.5,-663C589.5,-663 509.5,-663 509.5,-663 503.5,-663 497.5,-657 497.5,-651 497.5,-651 497.5,-592 497.5,-592 497.5,-586 503.5,-580 509.5,-580 509.5,-580 589.5,-580 589.5,-580 595.5,-580 601.5,-586 601.5,-592 601.5,-592 601.5,-651 601.5,-651 601.5,-657 595.5,-663 589.5,-663"/>
+<text text-anchor="start" x="506.5" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">BMI ≤ 29.972</text>
+<text text-anchor="start" x="511.5" y="-632.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.492</text>
+<text text-anchor="start" x="505.5" y="-617.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 16</text>
+<text text-anchor="start" x="508" y="-602.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [7, 9]</text>
+<text text-anchor="start" x="520.5" y="-587.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 1&#45;&gt;15 -->
 <g id="edge15" class="edge">
 <title>1&#45;&gt;15</title>
-<path fill="none" stroke="#000000" d="M548.5493,-698.8796C548.7559,-690.6838 548.9751,-681.9891 549.189,-673.5013"/>
-<polygon fill="#000000" stroke="#000000" points="552.693,-673.3831 549.4463,-663.2981 545.6953,-673.2067 552.693,-673.3831"/>
+<path fill="none" stroke="#000000" d="M547.5493,-698.8796C547.7559,-690.6838 547.9751,-681.9891 548.189,-673.5013"/>
+<polygon fill="#000000" stroke="#000000" points="551.693,-673.3831 548.4463,-663.2981 544.6953,-673.2067 551.693,-673.3831"/>
 </g>
 <!-- 3 -->
 <g id="node4" class="node">
 <title>3</title>
-<path fill="#e99456" stroke="#000000" d="M344.5,-544C344.5,-544 260.5,-544 260.5,-544 254.5,-544 248.5,-538 248.5,-532 248.5,-532 248.5,-473 248.5,-473 248.5,-467 254.5,-461 260.5,-461 260.5,-461 344.5,-461 344.5,-461 350.5,-461 356.5,-467 356.5,-473 356.5,-473 356.5,-532 356.5,-532 356.5,-538 350.5,-544 344.5,-544"/>
-<text text-anchor="start" x="256.5" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Leptin ≤ 47.33</text>
-<text text-anchor="start" x="264.5" y="-513.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.225</text>
-<text text-anchor="start" x="258.5" y="-498.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 31</text>
-<text text-anchor="start" x="257" y="-483.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [27, 4]</text>
-<text text-anchor="start" x="273.5" y="-468.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e99456" stroke="#000000" d="M343.5,-544C343.5,-544 259.5,-544 259.5,-544 253.5,-544 247.5,-538 247.5,-532 247.5,-532 247.5,-473 247.5,-473 247.5,-467 253.5,-461 259.5,-461 259.5,-461 343.5,-461 343.5,-461 349.5,-461 355.5,-467 355.5,-473 355.5,-473 355.5,-532 355.5,-532 355.5,-538 349.5,-544 343.5,-544"/>
+<text text-anchor="start" x="255.5" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Leptin ≤ 47.33</text>
+<text text-anchor="start" x="263.5" y="-513.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.225</text>
+<text text-anchor="start" x="257.5" y="-498.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 31</text>
+<text text-anchor="start" x="256" y="-483.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [27, 4]</text>
+<text text-anchor="start" x="272.5" y="-468.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 2&#45;&gt;3 -->
 <g id="edge3" class="edge">
 <title>2&#45;&gt;3</title>
-<path fill="none" stroke="#000000" d="M379.2293,-579.8796C370.1201,-570.6931 360.3892,-560.8798 351.0224,-551.4336"/>
-<polygon fill="#000000" stroke="#000000" points="353.4733,-548.9345 343.9468,-544.2981 348.5027,-553.8634 353.4733,-548.9345"/>
+<path fill="none" stroke="#000000" d="M378.2293,-579.8796C369.1201,-570.6931 359.3892,-560.8798 350.0224,-551.4336"/>
+<polygon fill="#000000" stroke="#000000" points="352.4733,-548.9345 342.9468,-544.2981 347.5027,-553.8634 352.4733,-548.9345"/>
 </g>
 <!-- 14 -->
 <g id="node15" class="node">
 <title>14</title>
-<path fill="#399de5" stroke="#000000" d="M462,-536.5C462,-536.5 387,-536.5 387,-536.5 381,-536.5 375,-530.5 375,-524.5 375,-524.5 375,-480.5 375,-480.5 375,-474.5 381,-468.5 387,-468.5 387,-468.5 462,-468.5 462,-468.5 468,-468.5 474,-474.5 474,-480.5 474,-480.5 474,-524.5 474,-524.5 474,-530.5 468,-536.5 462,-536.5"/>
-<text text-anchor="start" x="395" y="-521.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="385" y="-506.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
-<text text-anchor="start" x="383" y="-491.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 2]</text>
-<text text-anchor="start" x="395.5" y="-476.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#399de5" stroke="#000000" d="M461,-536.5C461,-536.5 386,-536.5 386,-536.5 380,-536.5 374,-530.5 374,-524.5 374,-524.5 374,-480.5 374,-480.5 374,-474.5 380,-468.5 386,-468.5 386,-468.5 461,-468.5 461,-468.5 467,-468.5 473,-474.5 473,-480.5 473,-480.5 473,-524.5 473,-524.5 473,-530.5 467,-536.5 461,-536.5"/>
+<text text-anchor="start" x="394" y="-521.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="384" y="-506.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
+<text text-anchor="start" x="382" y="-491.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 2]</text>
+<text text-anchor="start" x="394.5" y="-476.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 2&#45;&gt;14 -->
 <g id="edge14" class="edge">
 <title>2&#45;&gt;14</title>
-<path fill="none" stroke="#000000" d="M421.899,-579.8796C422.2575,-569.2134 422.6445,-557.7021 423.0075,-546.9015"/>
-<polygon fill="#000000" stroke="#000000" points="426.5085,-546.9269 423.3466,-536.8149 419.5125,-546.6917 426.5085,-546.9269"/>
+<path fill="none" stroke="#000000" d="M420.899,-579.8796C421.2575,-569.2134 421.6445,-557.7021 422.0075,-546.9015"/>
+<polygon fill="#000000" stroke="#000000" points="425.5085,-546.9269 422.3466,-536.8149 418.5125,-546.6917 425.5085,-546.9269"/>
 </g>
 <!-- 4 -->
 <g id="node5" class="node">
 <title>4</title>
-<path fill="#e88f4f" stroke="#000000" d="M288.5,-425C288.5,-425 184.5,-425 184.5,-425 178.5,-425 172.5,-419 172.5,-413 172.5,-413 172.5,-354 172.5,-354 172.5,-348 178.5,-342 184.5,-342 184.5,-342 288.5,-342 288.5,-342 294.5,-342 300.5,-348 300.5,-354 300.5,-354 300.5,-413 300.5,-413 300.5,-419 294.5,-425 288.5,-425"/>
-<text text-anchor="start" x="180.5" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">MCP.1 ≤ 209.469</text>
-<text text-anchor="start" x="203" y="-394.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.18</text>
-<text text-anchor="start" x="192.5" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 30</text>
-<text text-anchor="start" x="191" y="-364.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [27, 3]</text>
-<text text-anchor="start" x="207.5" y="-349.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e88f4f" stroke="#000000" d="M287.5,-425C287.5,-425 183.5,-425 183.5,-425 177.5,-425 171.5,-419 171.5,-413 171.5,-413 171.5,-354 171.5,-354 171.5,-348 177.5,-342 183.5,-342 183.5,-342 287.5,-342 287.5,-342 293.5,-342 299.5,-348 299.5,-354 299.5,-354 299.5,-413 299.5,-413 299.5,-419 293.5,-425 287.5,-425"/>
+<text text-anchor="start" x="179.5" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">MCP.1 ≤ 209.469</text>
+<text text-anchor="start" x="202" y="-394.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.18</text>
+<text text-anchor="start" x="191.5" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 30</text>
+<text text-anchor="start" x="190" y="-364.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [27, 3]</text>
+<text text-anchor="start" x="206.5" y="-349.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 3&#45;&gt;4 -->
 <g id="edge4" class="edge">
 <title>3&#45;&gt;4</title>
-<path fill="none" stroke="#000000" d="M279.4164,-460.8796C274.6211,-452.2335 269.5178,-443.0322 264.5662,-434.1042"/>
-<polygon fill="#000000" stroke="#000000" points="267.5931,-432.3455 259.6821,-425.2981 261.4716,-435.7407 267.5931,-432.3455"/>
+<path fill="none" stroke="#000000" d="M278.4164,-460.8796C273.6211,-452.2335 268.5178,-443.0322 263.5662,-434.1042"/>
+<polygon fill="#000000" stroke="#000000" points="266.5931,-432.3455 258.6821,-425.2981 260.4716,-435.7407 266.5931,-432.3455"/>
 </g>
 <!-- 13 -->
 <g id="node14" class="node">
 <title>13</title>
-<path fill="#399de5" stroke="#000000" d="M406,-417.5C406,-417.5 331,-417.5 331,-417.5 325,-417.5 319,-411.5 319,-405.5 319,-405.5 319,-361.5 319,-361.5 319,-355.5 325,-349.5 331,-349.5 331,-349.5 406,-349.5 406,-349.5 412,-349.5 418,-355.5 418,-361.5 418,-361.5 418,-405.5 418,-405.5 418,-411.5 412,-417.5 406,-417.5"/>
-<text text-anchor="start" x="339" y="-402.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="329" y="-387.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="start" x="327" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1]</text>
-<text text-anchor="start" x="339.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#399de5" stroke="#000000" d="M405,-417.5C405,-417.5 330,-417.5 330,-417.5 324,-417.5 318,-411.5 318,-405.5 318,-405.5 318,-361.5 318,-361.5 318,-355.5 324,-349.5 330,-349.5 330,-349.5 405,-349.5 405,-349.5 411,-349.5 417,-355.5 417,-361.5 417,-361.5 417,-405.5 417,-405.5 417,-411.5 411,-417.5 405,-417.5"/>
+<text text-anchor="start" x="338" y="-402.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="328" y="-387.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
+<text text-anchor="start" x="326" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1]</text>
+<text text-anchor="start" x="338.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 3&#45;&gt;13 -->
 <g id="edge13" class="edge">
 <title>3&#45;&gt;13</title>
-<path fill="none" stroke="#000000" d="M325.5836,-460.8796C331.7433,-449.7735 338.4111,-437.7513 344.6129,-426.5691"/>
-<polygon fill="#000000" stroke="#000000" points="347.6787,-428.2576 349.4682,-417.8149 341.5572,-424.8624 347.6787,-428.2576"/>
+<path fill="none" stroke="#000000" d="M324.5836,-460.8796C330.7433,-449.7735 337.4111,-437.7513 343.6129,-426.5691"/>
+<polygon fill="#000000" stroke="#000000" points="346.6787,-428.2576 348.4682,-417.8149 340.5572,-424.8624 346.6787,-428.2576"/>
 </g>
 <!-- 5 -->
 <g id="node6" class="node">
 <title>5</title>
-<path fill="#f2c09c" stroke="#000000" d="M211.5,-306C211.5,-306 107.5,-306 107.5,-306 101.5,-306 95.5,-300 95.5,-294 95.5,-294 95.5,-235 95.5,-235 95.5,-229 101.5,-223 107.5,-223 107.5,-223 211.5,-223 211.5,-223 217.5,-223 223.5,-229 223.5,-235 223.5,-235 223.5,-294 223.5,-294 223.5,-300 217.5,-306 211.5,-306"/>
-<text text-anchor="start" x="103.5" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">MCP.1 ≤ 192.795</text>
-<text text-anchor="start" x="121.5" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.444</text>
-<text text-anchor="start" x="120" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 6</text>
-<text text-anchor="start" x="118" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [4, 2]</text>
-<text text-anchor="start" x="130.5" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#f2c09c" stroke="#000000" d="M206.5,-306C206.5,-306 116.5,-306 116.5,-306 110.5,-306 104.5,-300 104.5,-294 104.5,-294 104.5,-235 104.5,-235 104.5,-229 110.5,-223 116.5,-223 116.5,-223 206.5,-223 206.5,-223 212.5,-223 218.5,-229 218.5,-235 218.5,-235 218.5,-294 218.5,-294 218.5,-300 212.5,-306 206.5,-306"/>
+<text text-anchor="start" x="112.5" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Glucose ≤ 89.0</text>
+<text text-anchor="start" x="123.5" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.444</text>
+<text text-anchor="start" x="122" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 6</text>
+<text text-anchor="start" x="120" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [4, 2]</text>
+<text text-anchor="start" x="132.5" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 4&#45;&gt;5 -->
 <g id="edge5" class="edge">
 <title>4&#45;&gt;5</title>
-<path fill="none" stroke="#000000" d="M209.5691,-341.8796C203.9163,-333.1434 197.8967,-323.8404 192.0634,-314.8253"/>
-<polygon fill="#000000" stroke="#000000" points="194.9169,-312.7924 186.5458,-306.2981 189.0399,-316.5952 194.9169,-312.7924"/>
+<path fill="none" stroke="#000000" d="M209.6184,-341.8796C204.1858,-333.1434 198.4008,-323.8404 192.7947,-314.8253"/>
+<polygon fill="#000000" stroke="#000000" points="195.7451,-312.9418 187.4921,-306.2981 189.8007,-316.6383 195.7451,-312.9418"/>
 </g>
 <!-- 8 -->
 <g id="node9" class="node">
 <title>8</title>
-<path fill="#e68642" stroke="#000000" d="M375,-306C375,-306 254,-306 254,-306 248,-306 242,-300 242,-294 242,-294 242,-235 242,-235 242,-229 248,-223 254,-223 254,-223 375,-223 375,-223 381,-223 387,-229 387,-235 387,-235 387,-294 387,-294 387,-300 381,-306 375,-306"/>
-<text text-anchor="start" x="250" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Adiponectin ≤ 3.986</text>
-<text text-anchor="start" x="281" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.08</text>
-<text text-anchor="start" x="270.5" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 24</text>
-<text text-anchor="start" x="269" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [23, 1]</text>
-<text text-anchor="start" x="285.5" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e68642" stroke="#000000" d="M370,-306C370,-306 249,-306 249,-306 243,-306 237,-300 237,-294 237,-294 237,-235 237,-235 237,-229 243,-223 249,-223 249,-223 370,-223 370,-223 376,-223 382,-229 382,-235 382,-235 382,-294 382,-294 382,-300 376,-306 370,-306"/>
+<text text-anchor="start" x="245" y="-290.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Adiponectin ≤ 3.986</text>
+<text text-anchor="start" x="276" y="-275.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.08</text>
+<text text-anchor="start" x="265.5" y="-260.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 24</text>
+<text text-anchor="start" x="264" y="-245.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [23, 1]</text>
+<text text-anchor="start" x="280.5" y="-230.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 4&#45;&gt;8 -->
 <g id="edge8" class="edge">
 <title>4&#45;&gt;8</title>
-<path fill="none" stroke="#000000" d="M263.7806,-341.8796C269.5068,-333.1434 275.6046,-323.8404 281.5137,-314.8253"/>
-<polygon fill="#000000" stroke="#000000" points="284.5482,-316.5803 287.1029,-306.2981 278.6937,-312.7429 284.5482,-316.5803"/>
+<path fill="none" stroke="#000000" d="M261.3816,-341.8796C266.8142,-333.1434 272.5992,-323.8404 278.2053,-314.8253"/>
+<polygon fill="#000000" stroke="#000000" points="281.1993,-316.6383 283.5079,-306.2981 275.2549,-312.9418 281.1993,-316.6383"/>
 </g>
 <!-- 6 -->
 <g id="node7" class="node">
@@ -191,8 +191,8 @@
 <!-- 5&#45;&gt;6 -->
 <g id="edge6" class="edge">
 <title>5&#45;&gt;6</title>
-<path fill="none" stroke="#000000" d="M121.0273,-222.8796C110.3547,-211.3337 98.7667,-198.7976 88.0875,-187.2446"/>
-<polygon fill="#000000" stroke="#000000" points="90.5778,-184.7825 81.2197,-179.8149 85.4375,-189.534 90.5778,-184.7825"/>
+<path fill="none" stroke="#000000" d="M122.3278,-222.8796C111.4611,-211.3337 99.6624,-198.7976 88.7891,-187.2446"/>
+<polygon fill="#000000" stroke="#000000" points="91.1988,-184.6982 81.7964,-179.8149 86.1014,-189.4958 91.1988,-184.6982"/>
 </g>
 <!-- 7 -->
 <g id="node8" class="node">
@@ -206,152 +206,152 @@
 <!-- 5&#45;&gt;7 -->
 <g id="edge7" class="edge">
 <title>5&#45;&gt;7</title>
-<path fill="none" stroke="#000000" d="M161.9483,-222.8796C162.5757,-212.2134 163.2528,-200.7021 163.8881,-189.9015"/>
-<polygon fill="#000000" stroke="#000000" points="167.3881,-190.0032 164.4815,-179.8149 160.4002,-189.5921 167.3881,-190.0032"/>
+<path fill="none" stroke="#000000" d="M163.2488,-222.8796C163.6969,-212.2134 164.1806,-200.7021 164.6344,-189.9015"/>
+<polygon fill="#000000" stroke="#000000" points="168.1352,-189.9531 165.0582,-179.8149 161.1414,-189.6592 168.1352,-189.9531"/>
 </g>
 <!-- 9 -->
 <g id="node10" class="node">
 <title>9</title>
-<path fill="#ffffff" stroke="#000000" d="M355.5,-187C355.5,-187 259.5,-187 259.5,-187 253.5,-187 247.5,-181 247.5,-175 247.5,-175 247.5,-116 247.5,-116 247.5,-110 253.5,-104 259.5,-104 259.5,-104 355.5,-104 355.5,-104 361.5,-104 367.5,-110 367.5,-116 367.5,-116 367.5,-175 367.5,-175 367.5,-181 361.5,-187 355.5,-187"/>
-<text text-anchor="start" x="255.5" y="-171.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Resistin ≤ 10.36</text>
-<text text-anchor="start" x="278" y="-156.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.5</text>
-<text text-anchor="start" x="268" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
-<text text-anchor="start" x="266" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 1]</text>
-<text text-anchor="start" x="278.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#ffffff" stroke="#000000" d="M352.5,-187C352.5,-187 256.5,-187 256.5,-187 250.5,-187 244.5,-181 244.5,-175 244.5,-175 244.5,-116 244.5,-116 244.5,-110 250.5,-104 256.5,-104 256.5,-104 352.5,-104 352.5,-104 358.5,-104 364.5,-110 364.5,-116 364.5,-116 364.5,-175 364.5,-175 364.5,-181 358.5,-187 352.5,-187"/>
+<text text-anchor="start" x="252.5" y="-171.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Resistin ≤ 10.36</text>
+<text text-anchor="start" x="275" y="-156.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.5</text>
+<text text-anchor="start" x="265" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
+<text text-anchor="start" x="263" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 1]</text>
+<text text-anchor="start" x="275.5" y="-111.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 8&#45;&gt;9 -->
 <g id="edge9" class="edge">
 <title>8&#45;&gt;9</title>
-<path fill="none" stroke="#000000" d="M312.0517,-222.8796C311.5696,-214.6838 311.0582,-205.9891 310.5589,-197.5013"/>
-<polygon fill="#000000" stroke="#000000" points="314.04,-197.0753 309.9587,-187.2981 307.0521,-197.4864 314.04,-197.0753"/>
+<path fill="none" stroke="#000000" d="M307.7512,-222.8796C307.4069,-214.6838 307.0416,-205.9891 306.6849,-197.5013"/>
+<polygon fill="#000000" stroke="#000000" points="310.173,-197.1423 306.2562,-187.2981 303.1792,-197.4362 310.173,-197.1423"/>
 </g>
 <!-- 12 -->
 <g id="node13" class="node">
 <title>12</title>
-<path fill="#e58139" stroke="#000000" d="M481,-179.5C481,-179.5 398,-179.5 398,-179.5 392,-179.5 386,-173.5 386,-167.5 386,-167.5 386,-123.5 386,-123.5 386,-117.5 392,-111.5 398,-111.5 398,-111.5 481,-111.5 481,-111.5 487,-111.5 493,-117.5 493,-123.5 493,-123.5 493,-167.5 493,-167.5 493,-173.5 487,-179.5 481,-179.5"/>
-<text text-anchor="start" x="410" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="395.5" y="-149.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 22</text>
-<text text-anchor="start" x="394" y="-134.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [22, 0]</text>
-<text text-anchor="start" x="410.5" y="-119.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e58139" stroke="#000000" d="M478,-179.5C478,-179.5 395,-179.5 395,-179.5 389,-179.5 383,-173.5 383,-167.5 383,-167.5 383,-123.5 383,-123.5 383,-117.5 389,-111.5 395,-111.5 395,-111.5 478,-111.5 478,-111.5 484,-111.5 490,-117.5 490,-123.5 490,-123.5 490,-167.5 490,-167.5 490,-173.5 484,-179.5 478,-179.5"/>
+<text text-anchor="start" x="407" y="-164.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="392.5" y="-149.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 22</text>
+<text text-anchor="start" x="391" y="-134.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [22, 0]</text>
+<text text-anchor="start" x="407.5" y="-119.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 8&#45;&gt;12 -->
 <g id="edge12" class="edge">
 <title>8&#45;&gt;12</title>
-<path fill="none" stroke="#000000" d="M358.2189,-222.8796C370.4625,-211.2237 383.7661,-198.5587 395.9971,-186.9148"/>
-<polygon fill="#000000" stroke="#000000" points="398.6254,-189.245 403.4549,-179.8149 393.7988,-184.1751 398.6254,-189.245"/>
+<path fill="none" stroke="#000000" d="M353.9184,-222.8796C366.3579,-211.2237 379.8743,-198.5587 392.301,-186.9148"/>
+<polygon fill="#000000" stroke="#000000" points="394.9741,-189.2065 399.8782,-179.8149 390.1879,-184.0985 394.9741,-189.2065"/>
 </g>
 <!-- 10 -->
 <g id="node11" class="node">
 <title>10</title>
-<path fill="#399de5" stroke="#000000" d="M287,-68C287,-68 212,-68 212,-68 206,-68 200,-62 200,-56 200,-56 200,-12 200,-12 200,-6 206,0 212,0 212,0 287,0 287,0 293,0 299,-6 299,-12 299,-12 299,-56 299,-56 299,-62 293,-68 287,-68"/>
-<text text-anchor="start" x="220" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="210" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="start" x="208" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1]</text>
-<text text-anchor="start" x="220.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#399de5" stroke="#000000" d="M284,-68C284,-68 209,-68 209,-68 203,-68 197,-62 197,-56 197,-56 197,-12 197,-12 197,-6 203,0 209,0 209,0 284,0 284,0 290,0 296,-6 296,-12 296,-12 296,-56 296,-56 296,-62 290,-68 284,-68"/>
+<text text-anchor="start" x="217" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="207" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
+<text text-anchor="start" x="205" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 1]</text>
+<text text-anchor="start" x="217.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 9&#45;&gt;10 -->
 <g id="edge10" class="edge">
 <title>9&#45;&gt;10</title>
-<path fill="none" stroke="#000000" d="M285.9029,-103.9815C281.3612,-95.2504 276.5598,-86.0202 271.9863,-77.2281"/>
-<polygon fill="#000000" stroke="#000000" points="275.0431,-75.52 267.3233,-68.2637 268.8331,-78.7504 275.0431,-75.52"/>
+<path fill="none" stroke="#000000" d="M282.9029,-103.9815C278.3612,-95.2504 273.5598,-86.0202 268.9863,-77.2281"/>
+<polygon fill="#000000" stroke="#000000" points="272.0431,-75.52 264.3233,-68.2637 265.8331,-78.7504 272.0431,-75.52"/>
 </g>
 <!-- 11 -->
 <g id="node12" class="node">
 <title>11</title>
-<path fill="#e58139" stroke="#000000" d="M404,-68C404,-68 329,-68 329,-68 323,-68 317,-62 317,-56 317,-56 317,-12 317,-12 317,-6 323,0 329,0 329,0 404,0 404,0 410,0 416,-6 416,-12 416,-12 416,-56 416,-56 416,-62 410,-68 404,-68"/>
-<text text-anchor="start" x="337" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="327" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="start" x="325" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 0]</text>
-<text text-anchor="start" x="337.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e58139" stroke="#000000" d="M401,-68C401,-68 326,-68 326,-68 320,-68 314,-62 314,-56 314,-56 314,-12 314,-12 314,-6 320,0 326,0 326,0 401,0 401,0 407,0 413,-6 413,-12 413,-12 413,-56 413,-56 413,-62 407,-68 401,-68"/>
+<text text-anchor="start" x="334" y="-52.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="324" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
+<text text-anchor="start" x="322" y="-22.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 0]</text>
+<text text-anchor="start" x="334.5" y="-7.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 9&#45;&gt;11 -->
 <g id="edge11" class="edge">
 <title>9&#45;&gt;11</title>
-<path fill="none" stroke="#000000" d="M329.4694,-103.9815C334.0895,-95.2504 338.9736,-86.0202 343.626,-77.2281"/>
-<polygon fill="#000000" stroke="#000000" points="346.7859,-78.7395 348.3694,-68.2637 340.5987,-75.4655 346.7859,-78.7395"/>
+<path fill="none" stroke="#000000" d="M326.4694,-103.9815C331.0895,-95.2504 335.9736,-86.0202 340.626,-77.2281"/>
+<polygon fill="#000000" stroke="#000000" points="343.7859,-78.7395 345.3694,-68.2637 337.5987,-75.4655 343.7859,-78.7395"/>
 </g>
 <!-- 16 -->
 <g id="node17" class="node">
 <title>16</title>
-<path fill="#399de5" stroke="#000000" d="M585,-536.5C585,-536.5 510,-536.5 510,-536.5 504,-536.5 498,-530.5 498,-524.5 498,-524.5 498,-480.5 498,-480.5 498,-474.5 504,-468.5 510,-468.5 510,-468.5 585,-468.5 585,-468.5 591,-468.5 597,-474.5 597,-480.5 597,-480.5 597,-524.5 597,-524.5 597,-530.5 591,-536.5 585,-536.5"/>
-<text text-anchor="start" x="518" y="-521.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="508" y="-506.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 9</text>
-<text text-anchor="start" x="506" y="-491.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 9]</text>
-<text text-anchor="start" x="518.5" y="-476.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#399de5" stroke="#000000" d="M584,-536.5C584,-536.5 509,-536.5 509,-536.5 503,-536.5 497,-530.5 497,-524.5 497,-524.5 497,-480.5 497,-480.5 497,-474.5 503,-468.5 509,-468.5 509,-468.5 584,-468.5 584,-468.5 590,-468.5 596,-474.5 596,-480.5 596,-480.5 596,-524.5 596,-524.5 596,-530.5 590,-536.5 584,-536.5"/>
+<text text-anchor="start" x="517" y="-521.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="507" y="-506.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 9</text>
+<text text-anchor="start" x="505" y="-491.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 9]</text>
+<text text-anchor="start" x="517.5" y="-476.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 15&#45;&gt;16 -->
 <g id="edge16" class="edge">
 <title>15&#45;&gt;16</title>
-<path fill="none" stroke="#000000" d="M549.4507,-579.8796C549.1818,-569.2134 548.8916,-557.7021 548.6194,-546.9015"/>
-<polygon fill="#000000" stroke="#000000" points="552.1161,-546.7235 548.3651,-536.8149 545.1183,-546.9 552.1161,-546.7235"/>
+<path fill="none" stroke="#000000" d="M548.4507,-579.8796C548.1818,-569.2134 547.8916,-557.7021 547.6194,-546.9015"/>
+<polygon fill="#000000" stroke="#000000" points="551.1161,-546.7235 547.3651,-536.8149 544.1183,-546.9 551.1161,-546.7235"/>
 </g>
 <!-- 17 -->
 <g id="node18" class="node">
 <title>17</title>
-<path fill="#e58139" stroke="#000000" d="M702,-536.5C702,-536.5 627,-536.5 627,-536.5 621,-536.5 615,-530.5 615,-524.5 615,-524.5 615,-480.5 615,-480.5 615,-474.5 621,-468.5 627,-468.5 627,-468.5 702,-468.5 702,-468.5 708,-468.5 714,-474.5 714,-480.5 714,-480.5 714,-524.5 714,-524.5 714,-530.5 708,-536.5 702,-536.5"/>
-<text text-anchor="start" x="635" y="-521.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="625" y="-506.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 7</text>
-<text text-anchor="start" x="623" y="-491.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [7, 0]</text>
-<text text-anchor="start" x="635.5" y="-476.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e58139" stroke="#000000" d="M701,-536.5C701,-536.5 626,-536.5 626,-536.5 620,-536.5 614,-530.5 614,-524.5 614,-524.5 614,-480.5 614,-480.5 614,-474.5 620,-468.5 626,-468.5 626,-468.5 701,-468.5 701,-468.5 707,-468.5 713,-474.5 713,-480.5 713,-480.5 713,-524.5 713,-524.5 713,-530.5 707,-536.5 701,-536.5"/>
+<text text-anchor="start" x="634" y="-521.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="624" y="-506.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 7</text>
+<text text-anchor="start" x="622" y="-491.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [7, 0]</text>
+<text text-anchor="start" x="634.5" y="-476.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 15&#45;&gt;17 -->
 <g id="edge17" class="edge">
 <title>15&#45;&gt;17</title>
-<path fill="none" stroke="#000000" d="M590.3717,-579.8796C601.4324,-568.3337 613.4418,-555.7976 624.5094,-544.2446"/>
-<polygon fill="#000000" stroke="#000000" points="627.2365,-546.4573 631.6269,-536.8149 622.1817,-541.6149 627.2365,-546.4573"/>
+<path fill="none" stroke="#000000" d="M589.3717,-579.8796C600.4324,-568.3337 612.4418,-555.7976 623.5094,-544.2446"/>
+<polygon fill="#000000" stroke="#000000" points="626.2365,-546.4573 630.6269,-536.8149 621.1817,-541.6149 626.2365,-546.4573"/>
 </g>
 <!-- 19 -->
 <g id="node20" class="node">
 <title>19</title>
-<path fill="#e58139" stroke="#000000" d="M716,-655.5C716,-655.5 641,-655.5 641,-655.5 635,-655.5 629,-649.5 629,-643.5 629,-643.5 629,-599.5 629,-599.5 629,-593.5 635,-587.5 641,-587.5 641,-587.5 716,-587.5 716,-587.5 722,-587.5 728,-593.5 728,-599.5 728,-599.5 728,-643.5 728,-643.5 728,-649.5 722,-655.5 716,-655.5"/>
-<text text-anchor="start" x="649" y="-640.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="639" y="-625.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
-<text text-anchor="start" x="637" y="-610.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [2, 0]</text>
-<text text-anchor="start" x="649.5" y="-595.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e58139" stroke="#000000" d="M715,-655.5C715,-655.5 640,-655.5 640,-655.5 634,-655.5 628,-649.5 628,-643.5 628,-643.5 628,-599.5 628,-599.5 628,-593.5 634,-587.5 640,-587.5 640,-587.5 715,-587.5 715,-587.5 721,-587.5 727,-593.5 727,-599.5 727,-599.5 727,-643.5 727,-643.5 727,-649.5 721,-655.5 715,-655.5"/>
+<text text-anchor="start" x="648" y="-640.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="638" y="-625.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 2</text>
+<text text-anchor="start" x="636" y="-610.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [2, 0]</text>
+<text text-anchor="start" x="648.5" y="-595.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 18&#45;&gt;19 -->
 <g id="edge19" class="edge">
 <title>18&#45;&gt;19</title>
-<path fill="none" stroke="#000000" d="M681.7512,-698.8796C681.3031,-688.2134 680.8194,-676.7021 680.3656,-665.9015"/>
-<polygon fill="#000000" stroke="#000000" points="683.8586,-665.6592 679.9418,-655.8149 676.8648,-665.9531 683.8586,-665.6592"/>
+<path fill="none" stroke="#000000" d="M680.7512,-698.8796C680.3031,-688.2134 679.8194,-676.7021 679.3656,-665.9015"/>
+<polygon fill="#000000" stroke="#000000" points="682.8586,-665.6592 678.9418,-655.8149 675.8648,-665.9531 682.8586,-665.6592"/>
 </g>
 <!-- 20 -->
 <g id="node21" class="node">
 <title>20</title>
-<path fill="#57ace9" stroke="#000000" d="M841,-663C841,-663 758,-663 758,-663 752,-663 746,-657 746,-651 746,-651 746,-592 746,-592 746,-586 752,-580 758,-580 758,-580 841,-580 841,-580 847,-580 853,-586 853,-592 853,-592 853,-651 853,-651 853,-657 847,-663 841,-663"/>
-<text text-anchor="start" x="756.5" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">BMI ≤ 33.777</text>
-<text text-anchor="start" x="761.5" y="-632.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.231</text>
-<text text-anchor="start" x="755.5" y="-617.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 30</text>
-<text text-anchor="start" x="754" y="-602.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [4, 26]</text>
-<text text-anchor="start" x="770.5" y="-587.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#57ace9" stroke="#000000" d="M840,-663C840,-663 757,-663 757,-663 751,-663 745,-657 745,-651 745,-651 745,-592 745,-592 745,-586 751,-580 757,-580 757,-580 840,-580 840,-580 846,-580 852,-586 852,-592 852,-592 852,-651 852,-651 852,-657 846,-663 840,-663"/>
+<text text-anchor="start" x="755.5" y="-647.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">BMI ≤ 33.777</text>
+<text text-anchor="start" x="760.5" y="-632.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.231</text>
+<text text-anchor="start" x="754.5" y="-617.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 30</text>
+<text text-anchor="start" x="753" y="-602.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [4, 26]</text>
+<text text-anchor="start" x="769.5" y="-587.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 18&#45;&gt;20 -->
 <g id="edge20" class="edge">
 <title>18&#45;&gt;20</title>
-<path fill="none" stroke="#000000" d="M724.0712,-698.8796C732.9382,-689.7832 742.4044,-680.0722 751.5291,-670.7116"/>
-<polygon fill="#000000" stroke="#000000" points="754.2817,-672.9019 758.7557,-663.2981 749.2691,-668.0158 754.2817,-672.9019"/>
+<path fill="none" stroke="#000000" d="M723.0712,-698.8796C731.9382,-689.7832 741.4044,-680.0722 750.5291,-670.7116"/>
+<polygon fill="#000000" stroke="#000000" points="753.2817,-672.9019 757.7557,-663.2981 748.2691,-668.0158 753.2817,-672.9019"/>
 </g>
 <!-- 21 -->
 <g id="node22" class="node">
 <title>21</title>
-<path fill="#42a1e6" stroke="#000000" d="M845,-544C845,-544 750,-544 750,-544 744,-544 738,-538 738,-532 738,-532 738,-473 738,-473 738,-467 744,-461 750,-461 750,-461 845,-461 845,-461 851,-461 857,-467 857,-473 857,-473 857,-532 857,-532 857,-538 851,-544 845,-544"/>
-<text text-anchor="start" x="746" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">MCP.1 ≤ 67.966</text>
-<text text-anchor="start" x="764" y="-513.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.08</text>
-<text text-anchor="start" x="753.5" y="-498.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 24</text>
-<text text-anchor="start" x="752" y="-483.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 23]</text>
-<text text-anchor="start" x="768.5" y="-468.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#42a1e6" stroke="#000000" d="M844,-544C844,-544 749,-544 749,-544 743,-544 737,-538 737,-532 737,-532 737,-473 737,-473 737,-467 743,-461 749,-461 749,-461 844,-461 844,-461 850,-461 856,-467 856,-473 856,-473 856,-532 856,-532 856,-538 850,-544 844,-544"/>
+<text text-anchor="start" x="745" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">MCP.1 ≤ 67.966</text>
+<text text-anchor="start" x="763" y="-513.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.08</text>
+<text text-anchor="start" x="752.5" y="-498.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 24</text>
+<text text-anchor="start" x="751" y="-483.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 23]</text>
+<text text-anchor="start" x="767.5" y="-468.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 20&#45;&gt;21 -->
 <g id="edge21" class="edge">
 <title>20&#45;&gt;21</title>
-<path fill="none" stroke="#000000" d="M798.8005,-579.8796C798.6628,-571.6838 798.5166,-562.9891 798.374,-554.5013"/>
-<polygon fill="#000000" stroke="#000000" points="801.8701,-554.2378 798.2025,-544.2981 794.8711,-554.3555 801.8701,-554.2378"/>
+<path fill="none" stroke="#000000" d="M797.8005,-579.8796C797.6628,-571.6838 797.5166,-562.9891 797.374,-554.5013"/>
+<polygon fill="#000000" stroke="#000000" points="800.8701,-554.2378 797.2025,-544.2981 793.8711,-554.3555 800.8701,-554.2378"/>
 </g>
 <!-- 24 -->
 <g id="node25" class="node">
 <title>24</title>
-<path fill="#ffffff" stroke="#000000" d="M983.5,-544C983.5,-544 887.5,-544 887.5,-544 881.5,-544 875.5,-538 875.5,-532 875.5,-532 875.5,-473 875.5,-473 875.5,-467 881.5,-461 887.5,-461 887.5,-461 983.5,-461 983.5,-461 989.5,-461 995.5,-467 995.5,-473 995.5,-473 995.5,-532 995.5,-532 995.5,-538 989.5,-544 983.5,-544"/>
-<text text-anchor="start" x="883.5" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Resistin ≤ 9.338</text>
+<path fill="#ffffff" stroke="#000000" d="M984.5,-544C984.5,-544 886.5,-544 886.5,-544 880.5,-544 874.5,-538 874.5,-532 874.5,-532 874.5,-473 874.5,-473 874.5,-467 880.5,-461 886.5,-461 886.5,-461 984.5,-461 984.5,-461 990.5,-461 996.5,-467 996.5,-473 996.5,-473 996.5,-532 996.5,-532 996.5,-538 990.5,-544 984.5,-544"/>
+<text text-anchor="start" x="882.5" y="-528.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Glucose ≤ 112.5</text>
 <text text-anchor="start" x="906" y="-513.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.5</text>
 <text text-anchor="start" x="896" y="-498.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 6</text>
 <text text-anchor="start" x="894" y="-483.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [3, 3]</text>
@@ -360,47 +360,47 @@
 <!-- 20&#45;&gt;24 -->
 <g id="edge24" class="edge">
 <title>20&#45;&gt;24</title>
-<path fill="none" stroke="#000000" d="M847.0662,-579.8796C857.6679,-570.6031 869.0002,-560.6874 879.8933,-551.1559"/>
-<polygon fill="#000000" stroke="#000000" points="882.5098,-553.5172 887.7308,-544.2981 877.9002,-548.2491 882.5098,-553.5172"/>
+<path fill="none" stroke="#000000" d="M846.416,-579.8796C857.1993,-570.513 868.7329,-560.4948 879.8039,-550.8784"/>
+<polygon fill="#000000" stroke="#000000" points="882.1251,-553.4982 887.3795,-544.2981 877.5347,-548.2134 882.1251,-553.4982"/>
 </g>
 <!-- 22 -->
 <g id="node23" class="node">
 <title>22</title>
-<path fill="#e58139" stroke="#000000" d="M718,-417.5C718,-417.5 643,-417.5 643,-417.5 637,-417.5 631,-411.5 631,-405.5 631,-405.5 631,-361.5 631,-361.5 631,-355.5 637,-349.5 643,-349.5 643,-349.5 718,-349.5 718,-349.5 724,-349.5 730,-355.5 730,-361.5 730,-361.5 730,-405.5 730,-405.5 730,-411.5 724,-417.5 718,-417.5"/>
-<text text-anchor="start" x="651" y="-402.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="641" y="-387.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
-<text text-anchor="start" x="639" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 0]</text>
-<text text-anchor="start" x="651.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<path fill="#e58139" stroke="#000000" d="M717,-417.5C717,-417.5 642,-417.5 642,-417.5 636,-417.5 630,-411.5 630,-405.5 630,-405.5 630,-361.5 630,-361.5 630,-355.5 636,-349.5 642,-349.5 642,-349.5 717,-349.5 717,-349.5 723,-349.5 729,-355.5 729,-361.5 729,-361.5 729,-405.5 729,-405.5 729,-411.5 723,-417.5 717,-417.5"/>
+<text text-anchor="start" x="650" y="-402.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="640" y="-387.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 1</text>
+<text text-anchor="start" x="638" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 0]</text>
+<text text-anchor="start" x="650.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 21&#45;&gt;22 -->
 <g id="edge22" class="edge">
 <title>21&#45;&gt;22</title>
-<path fill="none" stroke="#000000" d="M756.5791,-460.8796C745.2272,-449.3337 732.9018,-436.7976 721.543,-425.2446"/>
-<polygon fill="#000000" stroke="#000000" points="723.7449,-422.4919 714.2382,-417.8149 718.7534,-427.3995 723.7449,-422.4919"/>
+<path fill="none" stroke="#000000" d="M755.5791,-460.8796C744.2272,-449.3337 731.9018,-436.7976 720.543,-425.2446"/>
+<polygon fill="#000000" stroke="#000000" points="722.7449,-422.4919 713.2382,-417.8149 717.7534,-427.3995 722.7449,-422.4919"/>
 </g>
 <!-- 23 -->
 <g id="node24" class="node">
 <title>23</title>
-<path fill="#399de5" stroke="#000000" d="M843,-417.5C843,-417.5 760,-417.5 760,-417.5 754,-417.5 748,-411.5 748,-405.5 748,-405.5 748,-361.5 748,-361.5 748,-355.5 754,-349.5 760,-349.5 760,-349.5 843,-349.5 843,-349.5 849,-349.5 855,-355.5 855,-361.5 855,-361.5 855,-405.5 855,-405.5 855,-411.5 849,-417.5 843,-417.5"/>
-<text text-anchor="start" x="772" y="-402.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
-<text text-anchor="start" x="757.5" y="-387.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 23</text>
-<text text-anchor="start" x="756" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 23]</text>
-<text text-anchor="start" x="772.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<path fill="#399de5" stroke="#000000" d="M842,-417.5C842,-417.5 759,-417.5 759,-417.5 753,-417.5 747,-411.5 747,-405.5 747,-405.5 747,-361.5 747,-361.5 747,-355.5 753,-349.5 759,-349.5 759,-349.5 842,-349.5 842,-349.5 848,-349.5 854,-355.5 854,-361.5 854,-361.5 854,-405.5 854,-405.5 854,-411.5 848,-417.5 842,-417.5"/>
+<text text-anchor="start" x="771" y="-402.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
+<text text-anchor="start" x="756.5" y="-387.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 23</text>
+<text text-anchor="start" x="755" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 23]</text>
+<text text-anchor="start" x="771.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 21&#45;&gt;23 -->
 <g id="edge23" class="edge">
 <title>21&#45;&gt;23</title>
-<path fill="none" stroke="#000000" d="M798.899,-460.8796C799.2575,-450.2134 799.6445,-438.7021 800.0075,-427.9015"/>
-<polygon fill="#000000" stroke="#000000" points="803.5085,-427.9269 800.3466,-417.8149 796.5125,-427.6917 803.5085,-427.9269"/>
+<path fill="none" stroke="#000000" d="M797.899,-460.8796C798.2575,-450.2134 798.6445,-438.7021 799.0075,-427.9015"/>
+<polygon fill="#000000" stroke="#000000" points="802.5085,-427.9269 799.3466,-417.8149 795.5125,-427.6917 802.5085,-427.9269"/>
 </g>
 <!-- 25 -->
 <g id="node26" class="node">
 <title>25</title>
-<path fill="#399de5" stroke="#000000" d="M968,-417.5C968,-417.5 893,-417.5 893,-417.5 887,-417.5 881,-411.5 881,-405.5 881,-405.5 881,-361.5 881,-361.5 881,-355.5 887,-349.5 893,-349.5 893,-349.5 968,-349.5 968,-349.5 974,-349.5 980,-355.5 980,-361.5 980,-361.5 980,-405.5 980,-405.5 980,-411.5 974,-417.5 968,-417.5"/>
+<path fill="#e58139" stroke="#000000" d="M968,-417.5C968,-417.5 893,-417.5 893,-417.5 887,-417.5 881,-411.5 881,-405.5 881,-405.5 881,-361.5 881,-361.5 881,-355.5 887,-349.5 893,-349.5 893,-349.5 968,-349.5 968,-349.5 974,-349.5 980,-355.5 980,-361.5 980,-361.5 980,-405.5 980,-405.5 980,-411.5 974,-417.5 968,-417.5"/>
 <text text-anchor="start" x="901" y="-402.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
 <text text-anchor="start" x="891" y="-387.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 3</text>
-<text text-anchor="start" x="889" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 3]</text>
-<text text-anchor="start" x="901.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
+<text text-anchor="start" x="889" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [3, 0]</text>
+<text text-anchor="start" x="901.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
 </g>
 <!-- 24&#45;&gt;25 -->
 <g id="edge25" class="edge">
@@ -411,11 +411,11 @@
 <!-- 26 -->
 <g id="node27" class="node">
 <title>26</title>
-<path fill="#e58139" stroke="#000000" d="M1085,-417.5C1085,-417.5 1010,-417.5 1010,-417.5 1004,-417.5 998,-411.5 998,-405.5 998,-405.5 998,-361.5 998,-361.5 998,-355.5 1004,-349.5 1010,-349.5 1010,-349.5 1085,-349.5 1085,-349.5 1091,-349.5 1097,-355.5 1097,-361.5 1097,-361.5 1097,-405.5 1097,-405.5 1097,-411.5 1091,-417.5 1085,-417.5"/>
+<path fill="#399de5" stroke="#000000" d="M1085,-417.5C1085,-417.5 1010,-417.5 1010,-417.5 1004,-417.5 998,-411.5 998,-405.5 998,-405.5 998,-361.5 998,-361.5 998,-355.5 1004,-349.5 1010,-349.5 1010,-349.5 1085,-349.5 1085,-349.5 1091,-349.5 1097,-355.5 1097,-361.5 1097,-361.5 1097,-405.5 1097,-405.5 1097,-411.5 1091,-417.5 1085,-417.5"/>
 <text text-anchor="start" x="1018" y="-402.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">gini = 0.0</text>
 <text text-anchor="start" x="1008" y="-387.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 3</text>
-<text text-anchor="start" x="1006" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [3, 0]</text>
-<text text-anchor="start" x="1018.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 1</text>
+<text text-anchor="start" x="1006" y="-372.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [0, 3]</text>
+<text text-anchor="start" x="1018.5" y="-357.3" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">class = 2</text>
 </g>
 <!-- 24&#45;&gt;26 -->
 <g id="edge26" class="edge">
