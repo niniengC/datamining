@@ -515,19 +515,15 @@ positif) dan yang lainnya dengan 0 (misalnya, HIV negatif).</p>
 Jika semua atribut biner dianggap memiliki bobot yang sama, kita memiliki tabel kontingensi 2 × 2,</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">cd</span> /content/drive/MyDrive/datamining/tugas/image
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-<span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;ContingencyTableforBinaryAttribut.png&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">im</span><span class="p">)</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;/content/drive/MyDrive/datamining/tugas/image/ContingencyTableforBinaryAttribut.png&quot;</span><span class="p">)</span>
+<span class="n">im</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/datamining/tugas/image
-&lt;PIL.PngImagePlugin.PngImageFile image mode=RGBA size=484x173 at 0x7F6D54492950&gt;
-</pre></div>
-</div>
+<img alt="_images/notebooks_7_0.png" src="_images/notebooks_7_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -551,7 +547,7 @@ Jika semua atribut biner dianggap memiliki bobot yang sama, kita memiliki tabel 
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-3b03ff46-3889-486d-8bbe-473916415250">
+  <div id="df-5b414c50-aac4-415f-b9d1-6a7e95b6f565">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -602,7 +598,7 @@ Jika semua atribut biner dianggap memiliki bobot yang sama, kita memiliki tabel 
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3b03ff46-3889-486d-8bbe-473916415250')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5b414c50-aac4-415f-b9d1-6a7e95b6f565')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -653,12 +649,12 @@ Jika semua atribut biner dianggap memiliki bobot yang sama, kita memiliki tabel 
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3b03ff46-3889-486d-8bbe-473916415250 button.colab-df-convert');
+          document.querySelector('#df-5b414c50-aac4-415f-b9d1-6a7e95b6f565 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3b03ff46-3889-486d-8bbe-473916415250');
+          const element = document.querySelector('#df-5b414c50-aac4-415f-b9d1-6a7e95b6f565');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -727,7 +723,7 @@ Untuk nilai atribut asimetris, biarkan nilai Y (ya) dan P (positif) diatur ke 1,
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-71cb0774-a03f-4770-88c3-5ca3ee954a28">
+  <div id="df-62208cc2-722f-4db5-ab64-f0b2e92a01c8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -794,7 +790,7 @@ Untuk nilai atribut asimetris, biarkan nilai Y (ya) dan P (positif) diatur ke 1,
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-71cb0774-a03f-4770-88c3-5ca3ee954a28')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-62208cc2-722f-4db5-ab64-f0b2e92a01c8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -845,12 +841,12 @@ Untuk nilai atribut asimetris, biarkan nilai Y (ya) dan P (positif) diatur ke 1,
 
       <script>
         const buttonEl =
-          document.querySelector('#df-71cb0774-a03f-4770-88c3-5ca3ee954a28 button.colab-df-convert');
+          document.querySelector('#df-62208cc2-722f-4db5-ab64-f0b2e92a01c8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-71cb0774-a03f-4770-88c3-5ca3ee954a28');
+          const element = document.querySelector('#df-62208cc2-722f-4db5-ab64-f0b2e92a01c8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -893,7 +889,7 @@ Untuk nilai atribut asimetris, biarkan nilai Y (ya) dan P (positif) diatur ke 1,
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-4c951c2e-6631-436f-9de8-171be4e22f00">
+  <div id="df-bf0f08f3-f9c1-4dae-b647-86da9508ff49">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -960,7 +956,7 @@ Untuk nilai atribut asimetris, biarkan nilai Y (ya) dan P (positif) diatur ke 1,
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-4c951c2e-6631-436f-9de8-171be4e22f00')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bf0f08f3-f9c1-4dae-b647-86da9508ff49')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1011,12 +1007,12 @@ Untuk nilai atribut asimetris, biarkan nilai Y (ya) dan P (positif) diatur ke 1,
 
       <script>
         const buttonEl =
-          document.querySelector('#df-4c951c2e-6631-436f-9de8-171be4e22f00 button.colab-df-convert');
+          document.querySelector('#df-bf0f08f3-f9c1-4dae-b647-86da9508ff49 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-4c951c2e-6631-436f-9de8-171be4e22f00');
+          const element = document.querySelector('#df-bf0f08f3-f9c1-4dae-b647-86da9508ff49');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
