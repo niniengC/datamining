@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="STROKE PREDICTION DATASET" href="stroke_prediction.html" />
     <link rel="prev" title="Ensamble Stacking (Tugas 12)" href="Tugas10.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -188,6 +189,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    PROJECT (STROKE PREDICTION DATA SET)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="stroke_prediction.html">
+   STROKE PREDICTION DATASET
   </a>
  </li>
 </ul>
@@ -486,7 +492,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-99f00020-0e9b-4a0f-bd36-9dd4d2e2c05e">
+  <div id="df-d58953b5-4eee-4cd3-89bb-3bb861d2e1f1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -690,7 +696,7 @@ title="Print to PDF"
 </table>
 <p>5110 rows × 12 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-99f00020-0e9b-4a0f-bd36-9dd4d2e2c05e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d58953b5-4eee-4cd3-89bb-3bb861d2e1f1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -741,12 +747,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-99f00020-0e9b-4a0f-bd36-9dd4d2e2c05e button.colab-df-convert');
+          document.querySelector('#df-d58953b5-4eee-4cd3-89bb-3bb861d2e1f1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-99f00020-0e9b-4a0f-bd36-9dd4d2e2c05e');
+          const element = document.querySelector('#df-d58953b5-4eee-4cd3-89bb-3bb861d2e1f1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -791,7 +797,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f9b84caecd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f26c8b28160&gt;
 </pre></div>
 </div>
 <img alt="_images/project_6_1.png" src="_images/project_6_1.png" />
@@ -958,7 +964,7 @@ Name: stroke, dtype: int64
   warnings.warn(msg, FutureWarning)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f9b8253a910&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f26c64afb20&gt;
 </pre></div>
 </div>
 <img alt="_images/project_16_2.png" src="_images/project_16_2.png" />
@@ -977,7 +983,7 @@ Name: stroke, dtype: int64
   warnings.warn(msg, FutureWarning)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f9b82566b20&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f26c42ba310&gt;
 </pre></div>
 </div>
 <img alt="_images/project_17_2.png" src="_images/project_17_2.png" />
@@ -1045,11 +1051,13 @@ Name: stroke, dtype: int64
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.8/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-/usr/local/lib/python3.8/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.8/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 </pre></div>
 </div>
-<img alt="_images/project_20_1.png" src="_images/project_20_1.png" />
+<img alt="_images/project_20_2.png" src="_images/project_20_2.png" />
 </div>
 </div>
 <p>4.Scatter plot</p>
@@ -1189,7 +1197,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f9b7d80f220&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f26c21eaa30&gt;
 </pre></div>
 </div>
 <img alt="_images/project_30_1.png" src="_images/project_30_1.png" />
@@ -1232,7 +1240,7 @@ Number of null values after: 0
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3f88a1f1-2ef6-44d0-80bf-9b35748d0e7e">
+  <div id="df-3490e9a7-53b7-4283-abf4-1977c9b1ab4a">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1424,7 +1432,7 @@ Number of null values after: 0
 </table>
 <p>5110 rows × 11 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3f88a1f1-2ef6-44d0-80bf-9b35748d0e7e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3490e9a7-53b7-4283-abf4-1977c9b1ab4a')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1475,12 +1483,12 @@ Number of null values after: 0
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3f88a1f1-2ef6-44d0-80bf-9b35748d0e7e button.colab-df-convert');
+          document.querySelector('#df-3490e9a7-53b7-4283-abf4-1977c9b1ab4a button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3f88a1f1-2ef6-44d0-80bf-9b35748d0e7e');
+          const element = document.querySelector('#df-3490e9a7-53b7-4283-abf4-1977c9b1ab4a');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1511,7 +1519,7 @@ Number of null values after: 0
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7a95e74f-99a4-40bc-9170-8ba1d5220ee8">
+  <div id="df-ad1d0e19-a531-4531-882f-ba52092b6ade">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1823,7 +1831,7 @@ Number of null values after: 0
 </table>
 <p>5110 rows × 22 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7a95e74f-99a4-40bc-9170-8ba1d5220ee8')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ad1d0e19-a531-4531-882f-ba52092b6ade')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1874,12 +1882,12 @@ Number of null values after: 0
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7a95e74f-99a4-40bc-9170-8ba1d5220ee8 button.colab-df-convert');
+          document.querySelector('#df-ad1d0e19-a531-4531-882f-ba52092b6ade button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7a95e74f-99a4-40bc-9170-8ba1d5220ee8');
+          const element = document.querySelector('#df-ad1d0e19-a531-4531-882f-ba52092b6ade');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1937,7 +1945,7 @@ Number of null values after: 0
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-037db0e2-ded2-48ea-9861-b9279a24ba5a">
+  <div id="df-fce1ba38-b6ee-4532-82e0-21025cc6cdf4">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2249,7 +2257,7 @@ Number of null values after: 0
 </table>
 <p>5110 rows × 22 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-037db0e2-ded2-48ea-9861-b9279a24ba5a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-fce1ba38-b6ee-4532-82e0-21025cc6cdf4')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2300,12 +2308,12 @@ Number of null values after: 0
 
       <script>
         const buttonEl =
-          document.querySelector('#df-037db0e2-ded2-48ea-9861-b9279a24ba5a button.colab-df-convert');
+          document.querySelector('#df-fce1ba38-b6ee-4532-82e0-21025cc6cdf4 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-037db0e2-ded2-48ea-9861-b9279a24ba5a');
+          const element = document.querySelector('#df-fce1ba38-b6ee-4532-82e0-21025cc6cdf4');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2382,9 +2390,7 @@ Number of null values after: 0
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>accuracy_Naive Bayes: 0.193
 model score Naive Bayes: 0.193
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
+              precision    recall  f1-score   support
 
            0       0.99      0.15      0.26       968
            1       0.06      0.96      0.11        54
@@ -3098,7 +3104,9 @@ Confusion matrix KNN
  [[968   0]
  [ 54   0]]
 accuracy_KNN: 0.947
-K =  94
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>K =  94
 Confusion matrix KNN
  [[968   0]
  [ 54   0]]
@@ -3117,7 +3125,9 @@ Confusion matrix KNN
  [[968   0]
  [ 54   0]]
 accuracy_KNN: 0.947
-K =  97
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>K =  97
 Confusion matrix KNN
  [[968   0]
  [ 54   0]]
@@ -3129,7 +3139,9 @@ Confusion matrix KNN
  [[968   0]
  [ 54   0]]
 accuracy_KNN: 0.947
-K =  99
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>K =  99
 Confusion matrix KNN
  [[968   0]
  [ 54   0]]
@@ -3160,7 +3172,7 @@ accuracy_KNN: 0.947
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.9119373776908023
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy: 0.9158512720156555
 </pre></div>
 </div>
 </div>
@@ -3223,6 +3235,13 @@ accuracy_KNN: 0.947
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Ensamble Stacking (Tugas 12)</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="stroke_prediction.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">STROKE PREDICTION DATASET</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
