@@ -1,0 +1,761 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Getting to Know Your Data &#8212; Data Mining</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="INTRODUCTION" href="introduction.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Mining</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  MATERI
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="introduction.html">
+   INTRODUCTION
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Getting to Know Your Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown-notebooks.html">
+   Notebooks with MyST Markdown
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  TUGAS
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Disimilarity (Tugas 1)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tugas2.html">
+   Diskritisasi (Tugas 2)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tugas3.html">
+   Konsep/Algoritma K-NN (Tugas 3)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tugas4.html">
+   Naive Bayes Gaussian (Tugas 4)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tugas5.html">
+   K-Means clustering(Tugas 5)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tugas6.html">
+   Decision  Tree (Tugas 6)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="UTS.html">
+   UTS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tugas8.html">
+   Credit Score (Tugas 8)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tugas9.html">
+   Best Accuracy Between Normalization vs Unnomarlization  (Tugas 9)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas10.html">
+   Ensamble Stacking (Tugas 12)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project.html">
+   PROJECT (STROKE PREDICTION DATA SET)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="stroke_prediction.html">
+   STROKE PREDICTION DATASET
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://colab.research.google.com/github/niniengC/datamining/blob/gh-pages/_sources/chapter2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/niniengC/datamining"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/niniengC/datamining/issues/new?title=Issue%20on%20page%20%2Fchapter2.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/chapter2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Getting to Know Your Data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-objek-dan-tipe-atribut">
+     Data Objek dan Tipe Atribut
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#apa-itu-atribut">
+       Apa itu Atribut?
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tipe-atribut">
+       Tipe Atribut
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#atribut-nominal">
+         Atribut Nominal
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#atribut-biner">
+         Atribut Biner
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#atribut-ordinal">
+         Atribut Ordinal
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#atribut-numerik">
+         Atribut Numerik
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#atribut-berskala-interval">
+           Atribut Berskala Interval
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#atribut-berskala-rasio">
+           Atribut Berskala Rasio
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#atribut-diskrit-versus-kontinu">
+           Atribut Diskrit versus Kontinu
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deskripsi-statistik-dasar-data">
+   Deskripsi Statistik Dasar Data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mengukur-central-tendency-mean-median-dan-modus">
+     Mengukur
+     <em>
+      Central Tendency
+     </em>
+     : Mean, Median, dan Modus
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Getting to Know Your Data</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Getting to Know Your Data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-objek-dan-tipe-atribut">
+     Data Objek dan Tipe Atribut
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#apa-itu-atribut">
+       Apa itu Atribut?
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tipe-atribut">
+       Tipe Atribut
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#atribut-nominal">
+         Atribut Nominal
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#atribut-biner">
+         Atribut Biner
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#atribut-ordinal">
+         Atribut Ordinal
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#atribut-numerik">
+         Atribut Numerik
+        </a>
+        <ul class="nav section-nav flex-column">
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#atribut-berskala-interval">
+           Atribut Berskala Interval
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#atribut-berskala-rasio">
+           Atribut Berskala Rasio
+          </a>
+         </li>
+         <li class="toc-h5 nav-item toc-entry">
+          <a class="reference internal nav-link" href="#atribut-diskrit-versus-kontinu">
+           Atribut Diskrit versus Kontinu
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deskripsi-statistik-dasar-data">
+   Deskripsi Statistik Dasar Data
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mengukur-central-tendency-mean-median-dan-modus">
+     Mengukur
+     <em>
+      Central Tendency
+     </em>
+     : Mean, Median, dan Modus
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="getting-to-know-your-data">
+<h1>Getting to Know Your Data<a class="headerlink" href="#getting-to-know-your-data" title="Permalink to this headline">#</a></h1>
+<section id="data-objek-dan-tipe-atribut">
+<h2>Data Objek dan Tipe Atribut<a class="headerlink" href="#data-objek-dan-tipe-atribut" title="Permalink to this headline">#</a></h2>
+<p>Kumpulan data terdiri dari objek data. Objek data mewakili entitas—dalam database penjualan, objek tersebut mungkin berupa pelanggan, barang toko, dan penjualan; dalam database medis, objeknya mungkin pasien; dalam database universitas, objeknya mungkin mahasiswa, profesor, dan kursus. Objek data biasanya dijelaskan oleh atribut. Objek data juga dapat disebut sebagai sampel, contoh, contoh, poin data, atau objek. Jika objek data disimpan dalam database, itu adalah tupel data. Artinya, baris database sesuai dengan objek data, dan kolom sesuai dengan atribut.</p>
+<section id="apa-itu-atribut">
+<h3>Apa itu Atribut?<a class="headerlink" href="#apa-itu-atribut" title="Permalink to this headline">#</a></h3>
+<p>Atribut adalah bidang data, yang mewakili karakteristik atau fitur dari objek data. Atribut kata benda, dimensi, fitur, dan variabel sering digunakan secara bergantian dalam literatur. Istilah dimensi umumnya digunakan dalam <em>data werehousing</em>. Literatur pembelajaran mesin cenderung menggunakan istilah fitur, sedangkan ahli statistik lebih menyukai istilah variabel. Penambangan data dan profesional basis data biasanya menggunakan istilah atribut, dan kami juga melakukannya di sini. Atribut yang mendeskripsikan objek pelanggan dapat mencakup, misalnya, ID pelanggan, nama, dan alamat. Nilai yang diamati untuk atribut tertentu dikenal sebagai pengamatan. Seperangkat atribut yang digunakan untuk mendeskripsikan objek tertentu disebut vektor atribut (atau vektor fitur). Distribusi data yang melibatkan satu atribut (atau variabel) disebut univariat. Distribusi bivariat melibatkan dua atribut, dan seterusnya.
+Jenis atribut ditentukan oleh kumpulan nilai yang mungkin—nominal, biner, ordinal, atau numerik—yang dapat dimiliki atribut tersebut.</p>
+</section>
+<section id="tipe-atribut">
+<h3>Tipe Atribut<a class="headerlink" href="#tipe-atribut" title="Permalink to this headline">#</a></h3>
+<section id="atribut-nominal">
+<h4>Atribut Nominal<a class="headerlink" href="#atribut-nominal" title="Permalink to this headline">#</a></h4>
+<p>Nominal berarti “berkaitan dengan nama.” Nilai atribut nominal adalah simbol atau nama benda. Setiap nilai mewakili beberapa jenis kategori, kode, atau keadaan, sehingga atribut nominal juga disebut sebagai kategori. Nilai tidak memiliki urutan yang berarti. Dalam ilmu komputer, nilai juga dikenal sebagai pencacahan.</p>
+<p><strong>Contoh atribut Nominal :</strong></p>
+<p>Misalkan warna rambut dan status perkawinan adalah dua atribut yang menggambarkan objek seseorang. Dalam aplikasi kita, nilai yang mungkin untuk warna rambut adalah hitam, coklat, pirang, merah, pirang, abu-abu, dan putih. Atribut status perkawinan dapat mengambil nilai lajang, menikah, bercerai, dan janda. Warna rambut dan status perkawinan adalah atribut nominal. Contoh atribut nominal lainnya adalah pekerjaan, dengan nilai guru, dokter gigi, programer, petani, dan sebagainya.</p>
+<p>Meskipun dikatakan bahwa nilai atribut nominal adalah simbol atau “nama benda”, simbol atau “nama” tersebut dapat direpresentasikan dengan angka. Dengan warna rambut misalnya, kita bisa memberi kode 0 untuk hitam, 1 untuk cokelat, dan seterusnya. Contoh lainnya adalah customor ID, dengan kemungkinan nilai yang semuanya numerik. Namun, dalam kasus seperti itu, angka tersebut tidak dimaksudkan untuk digunakan secara kuantitatif. Artinya, operasi matematis pada nilai atribut nominal tidak bermakna. Tidak masuk akal untuk mengurangi satu nomor ID pelanggan dari yang lain, tidak seperti, katakanlah, mengurangkan nilai usia dari yang lain (di mana usia adalah atribut numerik). Meskipun atribut nominal mungkin memiliki bilangan bulat sebagai nilai, itu tidak dianggap sebagai atribut numerik karena bilangan bulat tidak dimaksudkan untuk digunakan secara kuantitatif.
+Karena nilai atribut nominal tidak memiliki urutan yang berarti tentangnya dan tidak kuantitatif, tidak masuk akal untuk menemukan nilai rata-rata (rata-rata) atau nilai median (tengah) untuk atribut seperti itu, mengingat sekumpulan objek. Namun, satu hal yang menarik adalah nilai atribut yang paling sering muncul. Nilai ini dikenal sebagai modus, merupakan salah satu ukuran tendensi sentral.</p>
+</section>
+<section id="atribut-biner">
+<h4>Atribut Biner<a class="headerlink" href="#atribut-biner" title="Permalink to this headline">#</a></h4>
+<p>Atribut biner adalah atribut nominal dengan hanya dua kategori atau status: 0 atau 1, di mana 0 biasanya berarti atribut tersebut tidak ada, dan 1 berarti ada. Atribut biner disebut sebagai Boolean jika kedua status sesuai dengan benar dan salah.</p>
+<p><strong>Contoh Atribut biner :</strong></p>
+<p>Mengingat atribut perokok menggambarkan objek pasien, 1 menunjukkan bahwa pasien merokok, sedangkan 0 menunjukkan bahwa pasien tidak merokok. Demikian pula, misalkan pasien menjalani tes medis yang memiliki dua kemungkinan hasil. Tes medis atribut bersifat biner, dimana nilai 1 berarti hasil tes untuk pasien positif, sedangkan 0 berarti hasilnya negatif.
+Atribut biner adalah simetris jika kedua statusnya sama-sama berharga dan memiliki bobot yang sama; yaitu, tidak ada preferensi hasil mana yang harus diberi kode 0 atau 1. Salah satu contohnya adalah atribut jenis kelamin yang memiliki status pria dan wanita.
+Atribut biner adalah asimetris jika hasil dari keadaan tidak sama pentingnya, seperti hasil positif dan negatif dari tes medis untuk HIV. Dengan konvensi, kami memberi kode hasil yang paling penting, yang biasanya paling langka, dengan 1 (misalnya, HIV positif) dan yang lainnya dengan 0 (misalnya, HIV negatif).</p>
+</section>
+<section id="atribut-ordinal">
+<h4>Atribut Ordinal<a class="headerlink" href="#atribut-ordinal" title="Permalink to this headline">#</a></h4>
+<p>Atribut ordinal adalah atribut dengan kemungkinan nilai yang memiliki urutan atau peringkat yang bermakna di antara mereka, tetapi besarnya antara nilai-nilai yang berurutan tidak diketahui.</p>
+<p><strong>Contoh atribut ordinal :</strong></p>
+<p>Misalkan ukuran minuman sesuai dengan ukuran minuman yang tersedia di restoran cepat saji. Atribut nominal ini memiliki tiga kemungkinan nilai: kecil, sedang, dan besar. Nilai memiliki urutan yang bermakna (yang sesuai dengan peningkatan ukuran minuman); namun, kita tidak dapat mengetahui dari nilai seberapa besar, katakanlah, sebuah media daripada yang besar. Contoh atribut ordinal lainnya termasuk grade (mis., A+, A, A−, B+, dan seterusnya) dan peringkat profesional. Pangkat profesional dapat disebutkan secara berurutan: misalnya, asisten, rekan, dan penuh untuk profesor, dan swasta, kelas satu swasta, spesialis, kopral, dan sersan untuk pangkat tentara.</p>
+<p>Atribut ordinal berguna untuk mencatat penilaian subjektif atas kualitas yang tidak dapat diukur secara objektif; sehingga atribut ordinal sering digunakan dalam survei untuk pemeringkatan. Dalam satu survei, peserta diminta menilai seberapa puas mereka sebagai pelanggan. Kepuasan pelanggan memiliki urutan kategori sebagai berikut: 0: sangat tidak puas, 1: agak tidak puas, 2: netral, 3: puas, dan 4: sangat puas.</p>
+<p>Atribut ordinal juga dapat diperoleh dari diskritisasi kuantitas numerik dengan membagi rentang nilai menjadi sejumlah kategori terurut yang terbatas seperti yang dijelaskan dalam Bab 3 tentang reduksi data.</p>
+<p><em>Central tendency</em> dari atribut ordinal dapat diwakili oleh mode dan mediannya (nilai tengah dalam urutan berurutan), tetapi rata-rata tidak dapat ditentukan.</p>
+<p>Perhatikan bahwa atribut nominal, biner, dan ordinal bersifat kualitatif. Artinya, mereka mendeskripsikan fitur suatu objek tanpa memberikan ukuran atau kuantitas sebenarnya. Nilai dari atribut kualitatif tersebut biasanya adalah kata-kata yang mewakili kategori. Jika digunakan bilangan bulat, bilangan bulat mewakili kode komputer untuk kategori tersebut, berlawanan dengan jumlah terukur (misalnya, 0 untuk ukuran minuman kecil, 1 untuk ukuran sedang, dan 2 untuk ukuran besar).</p>
+</section>
+<section id="atribut-numerik">
+<h4>Atribut Numerik<a class="headerlink" href="#atribut-numerik" title="Permalink to this headline">#</a></h4>
+<p>Atribut numerik bersifat kuantitatif; yaitu, itu adalah kuantitas yang dapat diukur, direpresentasikan dalam bilangan bulat atau nilai nyata. Atribut numerik dapat berskala interval atau berskala rasio.</p>
+<section id="atribut-berskala-interval">
+<h5>Atribut Berskala Interval<a class="headerlink" href="#atribut-berskala-interval" title="Permalink to this headline">#</a></h5>
+<p>Atribut berskala interval diukur pada skala unit berukuran sama. Nilai atribut berskala interval memiliki urutan dan bisa positif, 0, atau negatif. Jadi, selain memberikan peringkat nilai, atribut semacam itu memungkinkan kita untuk membandingkan dan mengukur perbedaan antar nilai.
+Contoh atribut berskala Interval. Atribut suhu berskala interval. Misalkan kita memiliki nilai suhu luar ruangan untuk beberapa hari yang berbeda, dimana setiap hari adalah sebuah objek. Dengan mengurutkan nilai, kami memperoleh peringkat objek sehubungan dengan suhu. Selain itu, kita dapat mengukur perbedaan antara nilai-nilai. Misalnya, suhu 20◦C lima derajat lebih tinggi dari suhu 15◦C. Tanggal kalender adalah contoh lain. Misalnya, tahun 2002 dan 2010 berjarak delapan tahun.</p>
+<p>Suhu dalam Celcius dan Fahrenheit tidak memiliki titik nol sebenarnya, yaitu, baik 0 ◦C maupun 0◦F tidak menunjukkan “tidak ada suhu”. (Pada skala Celcius, misalnya, satuan pengukurannya adalah 1/100 perbedaan antara suhu leleh dan suhu didih air dalam tekanan atmosfer.) Meskipun kita dapat menghitung perbedaan antara nilai suhu, kita tidak dapat membicarakan satu nilai suhu sebagai kelipatan dari yang lain. Tanpa nol sejati, kita tidak dapat mengatakan, misalnya, bahwa 10◦C dua kali lebih hangat dari 5◦C. Artinya, kita tidak dapat berbicara tentang nilai-nilai dalam bentuk rasio. Demikian pula, tidak ada titik nol sebenarnya untuk tanggal kalender. (Tahun 0 tidak sesuai dengan awal waktu.) Ini membawa kita ke atribut berskala rasio, yang keluar dari titik nol yang sebenarnya.
+Karena atribut berskala interval bersifat numerik, kita dapat menghitung nilai rata-ratanya, selain ukuran median dan modus tendensi sentral.</p>
+</section>
+<section id="atribut-berskala-rasio">
+<h5>Atribut Berskala Rasio<a class="headerlink" href="#atribut-berskala-rasio" title="Permalink to this headline">#</a></h5>
+<p>Atribut skala rasio adalah atribut numerik dengan titik nol yang melekat. Artinya, jika pengukuran berskala rasio, kita dapat berbicara tentang suatu nilai sebagai kelipatan (atau rasio) dari nilai lain. Selain itu, nilai-nilai diurutkan, dan kita juga dapat menghitung selisih antara nilai-nilai, serta rata-rata, median, dan modus.</p>
+<p><strong>Contoh atribut berskala rasio :</strong></p>
+<p>Tidak seperti suhu dalam Celsius dan Fahrenheit, skala suhu Kelvin (K) dianggap sebagai titik nol sebenarnya (0◦K = −273,15◦C): Ini adalah titik di mana partikel penyusun materi memiliki energi kinetik nol. Contoh lain dari atribut berskala rasio termasuk menghitung atribut seperti pengalaman bertahun-tahun (misalnya, objek adalah karyawan) dan jumlah kata (misalnya, objek adalah dokumen). Contoh tambahan termasuk atribut untuk mengukur koordinat berat, tinggi, lintang dan bujur (mis., saat mengelompokkan rumah), dan jumlah uang (mis., Anda 100 kali lebih kaya dengan 100 dolar dibandingkan dengan 1 dolar).</p>
+</section>
+<section id="atribut-diskrit-versus-kontinu">
+<h5>Atribut Diskrit versus Kontinu<a class="headerlink" href="#atribut-diskrit-versus-kontinu" title="Permalink to this headline">#</a></h5>
+<p>Dalam presentasi kami, kami telah mengatur atribut menjadi tipe nominal, biner, ordinal, dan numerik. Ada banyak cara untuk mengatur tipe atribut. Jenisnya tidak saling eksklusif.</p>
+<p>Algoritme klasifikasi yang dikembangkan dari bidang pembelajaran mesin sering berbicara tentang atribut sebagai diskrit atau kontinu. Setiap jenis dapat diproses secara berbeda. Atribut diskrit memiliki kumpulan nilai yang terbatas atau tak terbatas, yang mungkin atau tidak mungkin direpresentasikan sebagai bilangan bulat. Atribut warna rambut, perokok, tes medis, dan ukuran minuman masing-masing memiliki jumlah nilai yang terbatas, dan juga diskrit. Perhatikan bahwa atribut diskrit mungkin memiliki nilai numerik, seperti 0 dan 1 untuk atribut biner atau, nilai 0 hingga 110 untuk usia atribut. Atribut dihitung tak terbatas jika himpunan nilai yang mungkin tak terbatas tetapi nilainya dapat diletakkan dalam korespondensi <em>one-to-one</em> dengan bilangan asli. Misalnya, ID pelanggan atribut terhitung tak terbatas. Jumlah pelanggan dapat bertambah hingga tak terhingga, tetapi pada kenyataannya, kumpulan nilai sebenarnya dapat dihitung (di mana nilai dapat diletakkan dalam korespondensi <em>one-to-one</em> dengan kumpulan bilangan bulat). Kode pos adalah contoh lain.</p>
+<p>Jika suatu atribut tidak diskrit, maka atribut tersebut kontinu. Istilah atribut numerik dan atribut kontinyu sering digunakan secara bergantian dalam literatur. (Hal ini dapat membingungkan karena, dalam pengertian klasik, nilai kontinu adalah bilangan real, sedangkan nilai numerik dapat berupa bilangan bulat atau bilangan real.) Dalam praktiknya, nilai real direpresentasikan menggunakan jumlah digit yang terbatas. Atribut kontinu biasanya direpresentasikan sebagai variabel <em>floating-point</em>.</p>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="deskripsi-statistik-dasar-data">
+<h1>Deskripsi Statistik Dasar Data<a class="headerlink" href="#deskripsi-statistik-dasar-data" title="Permalink to this headline">#</a></h1>
+<section id="mengukur-central-tendency-mean-median-dan-modus">
+<h2>Mengukur <em>Central Tendency</em>: Mean, Median, dan Modus<a class="headerlink" href="#mengukur-central-tendency-mean-median-dan-modus" title="Permalink to this headline">#</a></h2>
+<p>Pada bagian ini, kita melihat berbagai cara untuk mengukur <em>Central Tendency</em> data. Misalkan kita memiliki beberapa atribut X, seperti gaji, yang telah dicatat untuk sekumpulan objek. Misalkan <span class="math notranslate nohighlight">\(x_1,x_2,...,x_N\)</span> adalah himpunan <span class="math notranslate nohighlight">\(N\)</span> nilai pengamatan atau pengamatan untuk <span class="math notranslate nohighlight">\(X\)</span>. Di sini, nilai ini juga dapat disebut sebagai kumpulan data (untuk <span class="math notranslate nohighlight">\(X\)</span>). Jika kita memplot pengamatan untuk gaji, di mana sebagian besar nilainya akan jatuh? Ini memberi kita gambaran tentang <em>Central Tendency</em> dari data. Ukuran tendensi sentral meliputi mean, median, modus, dan midrange. Ukuran numerik paling umum dan efektif dari “<em>Central</em>” sekumpulan data adalah <em>Mean</em>(aritmatika). Misalkan <span class="math notranslate nohighlight">\(x_1,x_2,...,x_N\)</span> adalah sekumpulan nilai atau observasi <span class="math notranslate nohighlight">\(N\)</span>, seperti atribut numerik <span class="math notranslate nohighlight">\(X\)</span>, seperti gaji. Rata-rata <em>(Mean)</em> dari himpunan nilai tersebut adalah</p>
+<div class="math notranslate nohighlight">
+\[
+\overline{x}=\frac{\sum \limits_{i=1}^{N}x_i}{N}=\frac{x_1 + x_2+ ... + x_N}{N}\
+\]</div>
+<p>Ini sesuai dengan fungsi agregat bawaan, rata-rata (<em>avg()</em> dalam SQL), yang disediakan dalam <em>relational database systems</em>.</p>
+<p>Agar prapemrosesan data berhasil, penting untuk memiliki gambaran keseluruhan tentang data Anda. Deskripsi statistik dasar dapat digunakan untuk mengidentifikasi properti data dan menyoroti nilai data mana yang harus diperlakukan sebagai noise atau outlier.
+Bagian ini membahas tiga bidang deskripsi statistik dasar. Kita mulai dengan ukuran tendensi sentral (Bagian 2.2.1), yang mengukur lokasi tengah atau pusat distribusi data. Berbicara secara intuitif, mengingat atribut, di mana sebagian besar nilainya jatuh? Secara khusus, kita membahas rata-rata, median, modus, dan midrange.
+Selain menilai kecenderungan sentral dari kumpulan data kami, kami juga ingin memiliki gagasan tentang penyebaran data. Artinya, bagaimana data tersebar? Ukuran dispersi data yang paling umum adalah jangkauan, kuartil, dan jangkauan interkuartil; ringkasan lima angka dan plot kotak; dan varians dan standar deviasi data Langkah-langkah ini berguna untuk mengidentifikasi outlier dan dijelaskan dalam Bagian 2.2.2.
+Terakhir, kita dapat menggunakan banyak tampilan grafis dari deskripsi statistik dasar untuk memeriksa data kita secara visual (Bagian 2.2.3). Sebagian besar paket perangkat lunak penyajian data statistik atau grafis mencakup diagram batang, diagram lingkaran, dan grafik garis. Tampilan ringkasan dan distribusi data populer lainnya termasuk plot kuantil, plot kuantil-kuantil, histogram, dan plot pencar.</p>
+<p>Mengukur Tendensi Sentral: Mean, Median, dan Modus
+Pada bagian ini, kita melihat berbagai cara untuk mengukur tendensi sentral data. Misalkan kita memiliki beberapa atribut X, seperti gaji, yang telah dicatat untuk sekumpulan objek. Misalkan x1,x2,…,xN adalah himpunan N nilai pengamatan atau pengamatan untuk X. Di sini, nilai ini juga dapat disebut sebagai kumpulan data (untuk X). Jika kita memplot pengamatan untuk gaji, di mana sebagian besar nilainya akan jatuh? Ini memberi kita gambaran tentang kecenderungan sentral dari data. Ukuran tendensi sentral meliputi mean, median, modus, dan midrange. Ukuran numerik paling umum dan efektif dari “pusat” sekumpulan data adalah rata-rata (aritmatika). Misalkan x1,x2,…,xN adalah sekumpulan nilai atau observasi N, seperti atribut numerik X, seperti gaji. Rata-rata dari himpunan nilai tersebut adalah</p>
+<p>Ini sesuai dengan fungsi agregat bawaan, rata-rata (rata-rata () dalam SQL), yang disediakan dalam sistem basis data relasional.</p>
+<p><strong>Contoh Mean :</strong> Misalkan kita memiliki nilai berikut untuk gaji (dalam ribuan dolar), ditunjukkan dalam urutan meningkat: 30, 36, 47, 50, 52, 52, 56, 60, 63, 70, 70, 110. Maka:</p>
+<div class="math notranslate nohighlight">
+\[
+\overline{x}=\frac{30 + 36 + 47 + 50 + 52 + 52 + 56 + 60 + 63 + 70 + 70 + 110}{12}=\frac{696}{12}=58
+\]</div>
+<p>Jadi, gaji rata-rata adalah $58.000.</p>
+<p>Terkadang, setiap nilai <span class="math notranslate nohighlight">\(x_i\)</span> dalam suatu himpunan dapat dikaitkan dengan bobot <span class="math notranslate nohighlight">\(w_i\)</span> untuk <span class="math notranslate nohighlight">\(i = 1,...,N\)</span>. Bobot mencerminkan signifikansi, kepentingan, atau frekuensi kejadian yang melekat pada nilainya masing-masing. Dalam hal ini, dapat dihitung dengan menggunakan rumus:</p>
+<div class="math notranslate nohighlight">
+\[
+\overline{x}=\frac{\sum \limits_{i=1}^{N}w_ix_i}{\sum \limits_{i=1}^{N}w_i}=\frac{w_1x_1 + w_2x_2+ ... + w_Nx_N}{w_1 + w_2+ ... + w_N}\
+\]</div>
+<p>Ini disebut <em><strong>weighted arithmetic mean</strong></em> or <em><strong>the weighted average</strong></em>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="introduction.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">INTRODUCTION</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="markdown-notebooks.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Ninieng Choirunnisa' -200411100094<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
