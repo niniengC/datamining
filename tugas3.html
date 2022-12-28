@@ -121,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="introduction.html">
-   INTRODUCTION
+   Pengantar
   </a>
  </li>
  <li class="toctree-l1">
@@ -425,7 +425,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f803cee8-7c2e-4832-9617-be37a794ee0e">
+  <div id="df-28f7d3ba-fa3d-49a4-98ad-924e6ba59a5c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -496,7 +496,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f803cee8-7c2e-4832-9617-be37a794ee0e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-28f7d3ba-fa3d-49a4-98ad-924e6ba59a5c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -547,12 +547,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f803cee8-7c2e-4832-9617-be37a794ee0e button.colab-df-convert');
+          document.querySelector('#df-28f7d3ba-fa3d-49a4-98ad-924e6ba59a5c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f803cee8-7c2e-4832-9617-be37a794ee0e');
+          const element = document.querySelector('#df-28f7d3ba-fa3d-49a4-98ad-924e6ba59a5c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -597,7 +597,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-db9d7dbc-7ed1-4096-b812-e92fb657bf5d">
+  <div id="df-1a489b12-fb4d-4c2e-b3e2-978a34089340">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -662,7 +662,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-db9d7dbc-7ed1-4096-b812-e92fb657bf5d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1a489b12-fb4d-4c2e-b3e2-978a34089340')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -713,12 +713,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-db9d7dbc-7ed1-4096-b812-e92fb657bf5d button.colab-df-convert');
+          document.querySelector('#df-1a489b12-fb4d-4c2e-b3e2-978a34089340 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-db9d7dbc-7ed1-4096-b812-e92fb657bf5d');
+          const element = document.querySelector('#df-1a489b12-fb4d-4c2e-b3e2-978a34089340');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -758,7 +758,7 @@ title="Print to PDF"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="c1">#split dataset into train and test data</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -787,12 +787,12 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Virginica&#39;, &#39;Setosa&#39;, &#39;Versicolor&#39;, &#39;Setosa&#39;, &#39;Setosa&#39;, &#39;Setosa&#39;,
-       &#39;Virginica&#39;, &#39;Virginica&#39;, &#39;Virginica&#39;, &#39;Versicolor&#39;, &#39;Setosa&#39;,
-       &#39;Versicolor&#39;, &#39;Virginica&#39;, &#39;Versicolor&#39;, &#39;Virginica&#39;, &#39;Setosa&#39;,
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Setosa&#39;, &#39;Versicolor&#39;, &#39;Setosa&#39;, &#39;Virginica&#39;, &#39;Setosa&#39;,
+       &#39;Versicolor&#39;, &#39;Virginica&#39;, &#39;Setosa&#39;, &#39;Setosa&#39;, &#39;Versicolor&#39;,
        &#39;Virginica&#39;, &#39;Versicolor&#39;, &#39;Versicolor&#39;, &#39;Virginica&#39;, &#39;Versicolor&#39;,
-       &#39;Versicolor&#39;, &#39;Setosa&#39;, &#39;Setosa&#39;, &#39;Virginica&#39;, &#39;Versicolor&#39;,
-       &#39;Setosa&#39;, &#39;Setosa&#39;, &#39;Versicolor&#39;], dtype=object)
+       &#39;Virginica&#39;, &#39;Virginica&#39;, &#39;Versicolor&#39;, &#39;Versicolor&#39;, &#39;Setosa&#39;,
+       &#39;Setosa&#39;, &#39;Virginica&#39;, &#39;Virginica&#39;, &#39;Virginica&#39;, &#39;Setosa&#39;,
+       &#39;Versicolor&#39;, &#39;Versicolor&#39;, &#39;Virginica&#39;, &#39;Setosa&#39;], dtype=object)
 </pre></div>
 </div>
 </div>
@@ -805,7 +805,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9666666666666667
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0
 </pre></div>
 </div>
 </div>
