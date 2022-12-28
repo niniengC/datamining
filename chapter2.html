@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Getting to Know Your Data &#8212; Data Mining</title>
+    <title>Mengenal Data &#8212; Data Mining</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -128,7 +128,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Getting to Know Your Data
+   Mengenal Data
   </a>
  </li>
  <li class="toctree-l1">
@@ -411,7 +411,7 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Getting to Know Your Data
+   Mengenal Data
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -485,6 +485,23 @@ title="Print to PDF"
      </em>
      : Mean, Median, dan Modus
     </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mengukur-dispersi-penyebaran-data-jangkauan-kuartil-varians-standar-deviasi-dan-jangkauan-interkuartil">
+     Mengukur Dispersi/Penyebaran Data: Jangkauan, Kuartil, Varians, Standar Deviasi, dan Jangkauan Interkuartil
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#jangkauan-kuartil-dan-jangkauan-interkuartil">
+       Jangkauan, Kuartil, dan Jangkauan Interkuartil
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#varians-dan-standar-deviasi">
+       Varians dan Standar Deviasi
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -497,7 +514,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Getting to Know Your Data</h1>
+                <h1>Mengenal Data</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -509,7 +526,7 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Getting to Know Your Data
+   Mengenal Data
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
@@ -583,6 +600,23 @@ title="Print to PDF"
      </em>
      : Mean, Median, dan Modus
     </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mengukur-dispersi-penyebaran-data-jangkauan-kuartil-varians-standar-deviasi-dan-jangkauan-interkuartil">
+     Mengukur Dispersi/Penyebaran Data: Jangkauan, Kuartil, Varians, Standar Deviasi, dan Jangkauan Interkuartil
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#jangkauan-kuartil-dan-jangkauan-interkuartil">
+       Jangkauan, Kuartil, dan Jangkauan Interkuartil
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#varians-dan-standar-deviasi">
+       Varians dan Standar Deviasi
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -596,8 +630,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="getting-to-know-your-data">
-<h1>Getting to Know Your Data<a class="headerlink" href="#getting-to-know-your-data" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="mengenal-data">
+<h1>Mengenal Data<a class="headerlink" href="#mengenal-data" title="Permalink to this headline">#</a></h1>
 <section id="data-objek-dan-tipe-atribut">
 <h2>Data Objek dan Tipe Atribut<a class="headerlink" href="#data-objek-dan-tipe-atribut" title="Permalink to this headline">#</a></h2>
 <p>Kumpulan data terdiri dari objek data. Objek data mewakili entitas—dalam database penjualan, objek tersebut mungkin berupa pelanggan, barang toko, dan penjualan; dalam database medis, objeknya mungkin pasien; dalam database universitas, objeknya mungkin mahasiswa, profesor, dan kursus. Objek data biasanya dijelaskan oleh atribut. Objek data juga dapat disebut sebagai sampel, contoh, contoh, poin data, atau objek. Jika objek data disimpan dalam database, itu adalah tupel data. Artinya, baris database sesuai dengan objek data, dan kolom sesuai dengan atribut.</p>
@@ -670,13 +704,6 @@ Karena atribut berskala interval bersifat numerik, kita dapat menghitung nilai r
 \overline{x}=\frac{\sum \limits_{i=1}^{N}x_i}{N}=\frac{x_1 + x_2+ ... + x_N}{N}\
 \]</div>
 <p>Ini sesuai dengan fungsi agregat bawaan, rata-rata (<em>avg()</em> dalam SQL), yang disediakan dalam <em>relational database systems</em>.</p>
-<p>Agar prapemrosesan data berhasil, penting untuk memiliki gambaran keseluruhan tentang data Anda. Deskripsi statistik dasar dapat digunakan untuk mengidentifikasi properti data dan menyoroti nilai data mana yang harus diperlakukan sebagai noise atau outlier.
-Bagian ini membahas tiga bidang deskripsi statistik dasar. Kita mulai dengan ukuran tendensi sentral (Bagian 2.2.1), yang mengukur lokasi tengah atau pusat distribusi data. Berbicara secara intuitif, mengingat atribut, di mana sebagian besar nilainya jatuh? Secara khusus, kita membahas rata-rata, median, modus, dan midrange.
-Selain menilai kecenderungan sentral dari kumpulan data kami, kami juga ingin memiliki gagasan tentang penyebaran data. Artinya, bagaimana data tersebar? Ukuran dispersi data yang paling umum adalah jangkauan, kuartil, dan jangkauan interkuartil; ringkasan lima angka dan plot kotak; dan varians dan standar deviasi data Langkah-langkah ini berguna untuk mengidentifikasi outlier dan dijelaskan dalam Bagian 2.2.2.
-Terakhir, kita dapat menggunakan banyak tampilan grafis dari deskripsi statistik dasar untuk memeriksa data kita secara visual (Bagian 2.2.3). Sebagian besar paket perangkat lunak penyajian data statistik atau grafis mencakup diagram batang, diagram lingkaran, dan grafik garis. Tampilan ringkasan dan distribusi data populer lainnya termasuk plot kuantil, plot kuantil-kuantil, histogram, dan plot pencar.</p>
-<p>Mengukur Tendensi Sentral: Mean, Median, dan Modus
-Pada bagian ini, kita melihat berbagai cara untuk mengukur tendensi sentral data. Misalkan kita memiliki beberapa atribut X, seperti gaji, yang telah dicatat untuk sekumpulan objek. Misalkan x1,x2,…,xN adalah himpunan N nilai pengamatan atau pengamatan untuk X. Di sini, nilai ini juga dapat disebut sebagai kumpulan data (untuk X). Jika kita memplot pengamatan untuk gaji, di mana sebagian besar nilainya akan jatuh? Ini memberi kita gambaran tentang kecenderungan sentral dari data. Ukuran tendensi sentral meliputi mean, median, modus, dan midrange. Ukuran numerik paling umum dan efektif dari “pusat” sekumpulan data adalah rata-rata (aritmatika). Misalkan x1,x2,…,xN adalah sekumpulan nilai atau observasi N, seperti atribut numerik X, seperti gaji. Rata-rata dari himpunan nilai tersebut adalah</p>
-<p>Ini sesuai dengan fungsi agregat bawaan, rata-rata (rata-rata () dalam SQL), yang disediakan dalam sistem basis data relasional.</p>
 <p><strong>Contoh Mean :</strong> Misalkan kita memiliki nilai berikut untuk gaji (dalam ribuan dolar), ditunjukkan dalam urutan meningkat: 30, 36, 47, 50, 52, 52, 56, 60, 63, 70, 70, 110. Maka:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -689,6 +716,94 @@ Pada bagian ini, kita melihat berbagai cara untuk mengukur tendensi sentral data
 \overline{x}=\frac{\sum \limits_{i=1}^{N}w_ix_i}{\sum \limits_{i=1}^{N}w_i}=\frac{w_1x_1 + w_2x_2+ ... + w_Nx_N}{w_1 + w_2+ ... + w_N}\
 \]</div>
 <p>Ini disebut <em><strong>weighted arithmetic mean</strong></em> or <em><strong>the weighted average</strong></em>.</p>
+<p>Meskipun rata-rata adalah besaran tunggal yang paling berguna untuk menggambarkan <em>data set</em>, itu tidak selalu merupakan cara terbaik untuk mengukur pusat data. Masalah utama dengan rata-rata adalah kepekaannya terhadap nilai ekstrim (misalnya outlier). Bahkan sejumlah kecil nilai ekstrem dapat merusak rata-rata. Misalnya, gaji rata-rata di sebuah perusahaan dapat didorong secara substansial oleh beberapa manajer bergaji tinggi. Demikian pula, nilai rata-rata suatu kelas dalam ujian dapat diturunkan sedikit oleh beberapa nilai yang sangat rendah. Untuk mengimbangi efek yang disebabkan oleh sejumlah kecil nilai ekstrem, kita dapat menggunakan <em>Trimmed Mean</em>, yaitu rata-rata yang diperoleh setelah memotong nilai pada ekstrem tinggi dan rendah. Misalnya, kita dapat mengurutkan nilai yang diamati untuk gaji dan menghapus 2% atas dan bawah sebelum menghitung rata-rata. Kita harus menghindari memangkas bagian yang terlalu besar (seperti 20%) di kedua ujungnya, karena hal ini dapat mengakibatkan hilangnya informasi yang berharga.</p>
+<p>Untuk skewed (asimetris) data, ukuran pusat data yang lebih baik adalah median, yang merupakan nilai tengah dalam sekumpulan nilai data terurut. Ini adalah nilai yang memisahkan bagian atas kumpulan data dari bagian bawah.</p>
+<p>Dalam probabilitas dan statistik, median umumnya berlaku untuk data numerik; namun, kami dapat memperluas konsep tersebut ke data ordinal. Misalkan kumpulan data yang diberikan nilai <span class="math notranslate nohighlight">\(N\)</span> untuk atribut <span class="math notranslate nohighlight">\(X\)</span> diurutkan dalam urutan yang meningkat. Jika <span class="math notranslate nohighlight">\(N\)</span> ganjil, maka mediannya adalah nilai tengah dari himpunan terurut. Jika <span class="math notranslate nohighlight">\(N\)</span> genap, maka mediannya tidak tunggal; mediannya adalah dua nilai paling tengah dan nilai apa pun di antaranya. Jika <span class="math notranslate nohighlight">\(X\)</span> adalah atribut numerik dalam hal ini, dengan konvensi, median diambil sebagai rata-rata dari dua nilai paling tengah.</p>
+<p><strong>Contoh Median :</strong> Mari kita cari median data dari contoh sebelumnya. Data sudah diurutkan dalam urutan meningkat. Ada jumlah pengamatan genap (yaitu, 12); oleh karena itu, mediannya tidak tunggal. Itu bisa berupa nilai apa pun dalam dua nilai paling tengah dari 52 dan 56 (yaitu, dalam nilai keenam dan ketujuh dalam daftar). Dengan konvensi, kami menetapkan rata-rata dari dua nilai paling tengah sebagai median; yaitu, 52+56 2 = 108 2 = 54. Jadi, mediannya adalah $54.000.</p>
+<p>Misalkan kita hanya memiliki 11 nilai pertama dalam daftar. Diberikan jumlah nilai ganjil, median adalah nilai paling tengah. Ini adalah nilai keenam dalam daftar ini, yang bernilai $52.8000.</p>
+<p>Median sulit untuk dihitung ketika kita memiliki sejumlah besar pengamatan. Namun, untuk atribut numerik, kita dapat dengan mudah memperkirakan nilainya. Asumsikan bahwa data dikelompokkan dalam interval sesuai dengan nilai data <span class="math notranslate nohighlight">\(x_i\)</span> dan frekuensi (yaitu, jumlah nilai data) dari setiap interval diketahui. Misalnya, karyawan dapat dikelompokkan menurut gaji tahunan mereka dalam interval seperti 10–20.000 dolar, 20–30.000 dolar, dan seterusnya. Biarkan interval yang memuat frekuensi median menjadi interval median. Kami dapat memperkirakan median dari seluruh <em>data set</em> (misalnya, median gaji) dengan interpolasi menggunakan rumus</p>
+<div class="math notranslate nohighlight">
+\[
+median=L_i+(\frac{N/2-(\sum freq)_i}{freq_{median}})width
+\]</div>
+<p>Dimana <span class="math notranslate nohighlight">\(L1\)</span> adalah batas bawah interval median, <span class="math notranslate nohighlight">\(N\)</span> adalah jumlah nilai di seluruh <em>data set</em>, lebih rendah dari interval median, <span class="math notranslate nohighlight">\(freq_{median}\)</span> adalah frekuensi interval median, dan <span class="math notranslate nohighlight">\(width\)</span> adalah lebar interval median.</p>
+<p>Modus adalah ukuran lain dari <em>Central Tendency</em>. Modus untuk <em>data set</em> adalah nilai yang paling sering muncul dalam <em>set</em> tersebut. Oleh karena itu, dapat ditentukan atribut kualitatif dan kuantitatifnya. Mungkin frekuensi terbesar sesuai dengan beberapa nilai yang berbeda, yang menghasilkan lebih dari satu modus. Kumpulan data dengan satu, dua, atau tiga modus masing-masing disebut <strong>unimodal</strong>, <strong>bimodal</strong>, dan <strong>trimodal</strong>. Secara umum, <em>data set</em> dengan dua atau lebih modus adalah <strong>multimodal</strong>. Sebaliknya, jika setiap nilai data hanya muncul sekali, maka tidak ada modus.</p>
+<p><strong>Contoh Modus :</strong> Data dari Contoh Median adalah bimodal. Kedua modus tersebut adalah 52.000 dolar dan 70.000 dolar. Untuk data numerik unimodal yang agak miring (asimetris), kami memiliki hubungan empiris berikut:</p>
+<div class="math notranslate nohighlight">
+\[rata-rata − mode ≈ 3 × (rata-rata − median)\]</div>
+<p>Ini menyiratkan bahwa modus untuk kurva frekuensi unimodal yang agak miring dapat dengan mudah didekati jika nilai rata-rata dan median diketahui.</p>
+<p>Midrange juga dapat digunakan untuk menilai <em>tendency central</em> dari <em>data set</em> numerik. Ini adalah rata-rata dari nilai terbesar dan terkecil di himpunan. Ukuran ini mudah dihitung menggunakan fungsi agregasi SQL, <em>max()</em> dan <em>min()</em>.</p>
+<p><strong>Contoh Midrange :</strong> Midrange data pada contoh Median adalah <span class="math notranslate nohighlight">\(\frac{30.000+110.000}{2} = 70.000\)</span></p>
+<p>Dalam kurva frekuensi unimodal dengan distribusi data simetris sempurna, rata-rata, median, dan modus semuanya berada pada nilai pusat yang sama, seperti yang ditunjukkan pada Gambar (a).
+Data di sebagian besar aplikasi nyata tidak simetris. Mereka malah bisa miring positif, di mana mode terjadi pada nilai yang lebih kecil dari median (Gambar b), atau miring negatif, di mana modus terjadi pada nilai yang lebih besar dari median (Gambar c).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;/content/drive/MyDrive/datamining/tugas/image/central_tendency.png&quot;</span><span class="p">)</span>
+<span class="n">im</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/chapter2_13_0.png" src="_images/chapter2_13_0.png" />
+</div>
+</div>
+</section>
+<section id="mengukur-dispersi-penyebaran-data-jangkauan-kuartil-varians-standar-deviasi-dan-jangkauan-interkuartil">
+<h2>Mengukur Dispersi/Penyebaran Data: Jangkauan, Kuartil, Varians, Standar Deviasi, dan Jangkauan Interkuartil<a class="headerlink" href="#mengukur-dispersi-penyebaran-data-jangkauan-kuartil-varians-standar-deviasi-dan-jangkauan-interkuartil" title="Permalink to this headline">#</a></h2>
+<section id="jangkauan-kuartil-dan-jangkauan-interkuartil">
+<h3>Jangkauan, Kuartil, dan Jangkauan Interkuartil<a class="headerlink" href="#jangkauan-kuartil-dan-jangkauan-interkuartil" title="Permalink to this headline">#</a></h3>
+<p>Misalkan <span class="math notranslate nohighlight">\(x_1,x_2,...,x_N\)</span> adalah himpunan pengamatan untuk beberapa atribut numerik, X. <em>Jangkauan</em> himpunan adalah perbedaan antara nilai terbesar (<em><strong>max()</strong></em>) dan terkecil (<em><strong>min()</strong></em>).</p>
+<p>Misalkan data untuk atribut <span class="math notranslate nohighlight">\(X\)</span> diurutkan dalam urutan numerik yang meningkat. Bayangkan kita dapat memilih titik data tertentu untuk membagi distribusi data menjadi set berurutan dengan ukuran yang sama, seperti pada Gambar dibawah. Titik data ini disebut <em>quantil</em>. <strong>Quantil</strong> adalah titik yang diambil pada interval reguler dari distribusi data, membaginya menjadi set berurutan yang berukuran sama. (Kami mengatakan “pada dasarnya” karena mungkin tidak ada nilai data <span class="math notranslate nohighlight">\(X\)</span> yang membagi data menjadi himpunan bagian yang berukuran persis sama. Agar mudah dibaca, kami akan menyebutnya sama.) <em>q-quantil</em> ke-k untuk distribusi data tertentu adalah nilai <span class="math notranslate nohighlight">\(x\)</span> sehingga paling banyak <span class="math notranslate nohighlight">\(k/q\)</span> dari nilai data kurang dari <span class="math notranslate nohighlight">\(x\)</span> dan paling banyak <span class="math notranslate nohighlight">\((q − k)/q\)</span> dari nilai data lebih dari <span class="math notranslate nohighlight">\(x\)</span>, di mana k adalah bilangan bulat sehingga <span class="math notranslate nohighlight">\(0 &lt; k &lt; q\)</span>. Ada <span class="math notranslate nohighlight">\(q − 1\)</span> <em>q-quantil</em>.</p>
+<p><em>2-quantil</em> adalah titik data yang membagi bagian bawah dan atas distribusi data. Itu sesuai dengan median. <em>4-quantil</em> adalah tiga titik data yang membagi distribusi data menjadi empat bagian yang sama; setiap bagian mewakili seperempat dari distribusi data. Mereka lebih sering disebut sebagai kuartil. <em>100-quantil</em> lebih sering disebut sebagai persentil; mereka membagi distribusi data menjadi 100 set berurutan yang berukuran sama. Median, kuartil, dan persentil adalah bentuk <em>quantil</em> yang paling banyak digunakan.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Gambar Plot Data Distribusi&quot;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;/content/drive/MyDrive/datamining/tugas/image/persebaran_data.png&quot;</span><span class="p">)</span>
+<span class="n">im</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gambar Plot Data Distribusi
+</pre></div>
+</div>
+<img alt="_images/chapter2_16_1.png" src="_images/chapter2_16_1.png" />
+</div>
+</div>
+<p>Kuartil memberikan indikasi pusat, penyebaran, dan bentuk distribusi. Kuartil pertama, dilambangkan dengan Q1, adalah persentil ke-25. Ini memotong 25% terendah dari data. Kuartil ketiga, dilambangkan dengan Q3, adalah persentil ke-75—memotong 75% terendah (atau 25% tertinggi) dari data. Kuartil kedua adalah persentil ke-50. Sebagai median, ini memberikan pusat distribusi data. Jarak antara kuartil pertama dan ketiga adalah ukuran sebaran sederhana yang memberikan rentang yang dicakup oleh bagian tengah data. Jarak ini disebut <strong>range interquartil (IQR)</strong> dan didefinisikan sebagai</p>
+<div class="math notranslate nohighlight">
+\[IQR = Q3 − Q1\]</div>
+<p><strong>Contoh Interquartile range :</strong> Kuartil adalah tiga nilai yang membagi kumpulan data yang diurutkan menjadi empat bagian yang sama. Data pada contoh Median berisi 12 pengamatan, sudah diurutkan dalam urutan meningkat. Jadi, kuartil untuk data ini masing-masing adalah nilai ketiga, keenam, dan kesembilan, dalam daftar terurut. Oleh karena itu, Q1 = 47.000 dan Q3 adalah 63.000. Jadi, rentang interkuartil adalah IQR = 63 − 47 = 16.000. (Perhatikan bahwa nilai keenam adalah median, 52.000, meskipun kumpulan data ini memiliki dua median karena jumlah nilai datanya genap.)</p>
+</section>
+<section id="varians-dan-standar-deviasi">
+<h3>Varians dan Standar Deviasi<a class="headerlink" href="#varians-dan-standar-deviasi" title="Permalink to this headline">#</a></h3>
+<p>Varians dan standar deviasi adalah ukuran dispersi data. Mereka menunjukkan seberapa tersebar distribusi data. Standar deviasi yang rendah berarti bahwa pengamatan data cenderung sangat dekat dengan rata-rata, sedangkan standar deviasi yang tinggi menunjukkan bahwa data tersebar pada rentang nilai yang besar.
+Varian dari <span class="math notranslate nohighlight">\(N\)</span> observasi, <span class="math notranslate nohighlight">\(x_1,x_2,...,x_N\)</span> , untuk atribut numerik <span class="math notranslate nohighlight">\(X\)</span> adalah
+$<span class="math notranslate nohighlight">\(
+σ^2=\frac{1}{N}\sum \limits_{i=1}^{N}(x_i-\overline{x})^2=(\frac{1}{N}\sum \limits_{i=1}^{N}x_i^2)-\overline{x}^2
+\)</span>$</p>
+<p>Dimana <span class="math notranslate nohighlight">\(\overline{x}\)</span> adalah nilai rata-rata dari pengamatan, seperti yang didefinisikan dalam Persamaan. rumus <em>Mean</em>. Standar Deviasi, <span class="math notranslate nohighlight">\(σ\)</span>, dari pengamatan adalah akar pangkat dua dari varians, <span class="math notranslate nohighlight">\(σ^2\)</span> .
+<strong>Contoh Varians dan standar deviasi :</strong> Dalam Contoh Mean, kami menemukan <span class="math notranslate nohighlight">\(\overline{x} = 58.000\)</span> menggunakan rumus rata-rata. Untuk menentukan varians dan standar deviasi data dari contoh tersebut, kami menetapkan <span class="math notranslate nohighlight">\(N = 12\)</span> dan menggunakan Persamaan diatas maka diperoleh:</p>
+<div class="math notranslate nohighlight">
+\[
+σ^2=\frac{1}{12}(30^2+36^2+47^2+...+110^2)-58^2≈379.1
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+σ^2≈\sqrt{379.1}≈19.47.
+\]</div>
+<p>Sifat dasar Standar deviasi, <span class="math notranslate nohighlight">\(σ\)</span>, sebagai ukuran penyebaran adalah sebagai berikut:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(σ\)</span> mengukur penyebaran rata-rata dan harus dipertimbangkan hanya ketika rata-rata dipilih sebagai ukuran pusat.</p></li>
+<li><p><span class="math notranslate nohighlight">\(σ = 0% hanya jika tidak ada sebaran, yaitu jika semua pengamatan memiliki nilai yang sama. Jika tidak, \)</span>σ &gt; 0$.</p></li>
+</ul>
+<p>Yang penting, pengamatan tidak mungkin lebih dari beberapa standar deviasi jauh dari rata-rata. Secara matematis, dengan menggunakan pertidaksamaan <em><strong>Chebyshev</strong></em>, dapat ditunjukkan bahwa sekurang-kurangnya (<span class="math notranslate nohighlight">\(1 − \frac{1}{k^2} × 100%\)</span>) pengamatan tidak lebih dari <span class="math notranslate nohighlight">\(k\)</span> standar deviasi dari rata-rata. Oleh karena itu, standar deviasi merupakan indikator yang baik dari penyebaran <em>data set</em>.
+Perhitungan varians dan standar deviasi dapat diskalakan dalam database besar.</p>
+</section>
 </section>
 </section>
 
