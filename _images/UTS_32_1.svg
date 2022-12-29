@@ -182,7 +182,7 @@
 <g id="node8" class="node">
 <title>7</title>
 <path fill="#eeab7b" stroke="#000000" d="M156.5,-425C156.5,-425 62.5,-425 62.5,-425 56.5,-425 50.5,-419 50.5,-413 50.5,-413 50.5,-354 50.5,-354 50.5,-348 56.5,-342 62.5,-342 62.5,-342 156.5,-342 156.5,-342 162.5,-342 168.5,-348 168.5,-354 168.5,-354 168.5,-413 168.5,-413 168.5,-419 162.5,-425 156.5,-425"/>
-<text text-anchor="start" x="62.5" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Insulin ≤ 3.951</text>
+<text text-anchor="start" x="67.5" y="-409.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Leptin ≤ 7.75</text>
 <text text-anchor="start" x="58.5" y="-394.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.811</text>
 <text text-anchor="start" x="70" y="-379.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 4</text>
 <text text-anchor="start" x="68" y="-364.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [3, 1]</text>
@@ -382,7 +382,7 @@
 <g id="node22" class="node">
 <title>21</title>
 <path fill="#9ccef2" stroke="#000000" d="M811.5,-187C811.5,-187 717.5,-187 717.5,-187 711.5,-187 705.5,-181 705.5,-175 705.5,-175 705.5,-116 705.5,-116 705.5,-110 711.5,-104 717.5,-104 717.5,-104 811.5,-104 811.5,-104 817.5,-104 823.5,-110 823.5,-116 823.5,-116 823.5,-175 823.5,-175 823.5,-181 817.5,-187 811.5,-187"/>
-<text text-anchor="start" x="717" y="-171.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">HOMA ≤ 2.028</text>
+<text text-anchor="start" x="721.5" y="-171.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">BMI ≤ 32.949</text>
 <text text-anchor="start" x="713.5" y="-156.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">entropy = 0.918</text>
 <text text-anchor="start" x="725" y="-141.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">samples = 3</text>
 <text text-anchor="start" x="723" y="-126.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">value = [1, 2]</text>
